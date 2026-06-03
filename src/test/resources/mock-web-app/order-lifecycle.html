@@ -9,15 +9,19 @@
     input, button { padding: 10px; margin: 8px; }
     .catalog-item { border: 1px solid #ddd; padding: 14px; margin-top: 10px; }
     #confirmation-banner { display: none; padding: 14px; background: #e5ffe5; border: 1px solid #5cb85c; }
+    #login-error { display: none; color: #b91c1c; font-weight: 700; margin: 8px; }
   </style>
 </head>
 <body>
   <h1>Mock DTCC Order Lifecycle</h1>
   <div class="card" id="login-panel">
     <h2>Login</h2>
-    <input id="username" placeholder="Username" />
-    <input id="password" type="password" placeholder="Password" />
+    <label for="username">Username</label>
+    <input id="username" aria-label="Username" placeholder="Username" />
+    <label for="password">Password</label>
+    <input id="password" aria-label="Password" type="password" placeholder="Password" />
     <button id="loginBtn" onclick="login()">Login</button>
+    <div id="login-error" role="alert">Invalid username or password.</div>
   </div>
   <div class="card" id="catalog-panel" style="display:none;">
     <h2>Catalogue</h2>
@@ -28,7 +32,18 @@
     <div id="confirmation-banner">ORDER STATUS: SUCCESS - Transaction lifecycle completed.</div>
   </div>
   <script>
-    function login(){ document.getElementById('catalog-panel').style.display='block'; }
+    function login(){
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+      const validCredentialPairs = {
+        'demo_user': 'demo_password',
+        'sdet_user': 'SecureP@ss1',
+        'sdet_dtcc_user': 'SecureP@ss1'
+      };
+      const isValid = validCredentialPairs[username] === password;
+      document.getElementById('login-error').style.display = isValid ? 'none' : 'block';
+      document.getElementById('catalog-panel').style.display = isValid ? 'block' : 'none';
+    }
     function addToCart(){ window.cartReady = true; }
     function openCart(){ if(window.cartReady){ document.getElementById('checkout-btn').style.display='inline-block'; }}
     function checkout(){ document.getElementById('pay-submit-btn').style.display='inline-block'; }
