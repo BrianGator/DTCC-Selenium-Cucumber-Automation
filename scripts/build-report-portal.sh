@@ -1,0 +1,92 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PORTAL_DIR="${1:-target/report-portal}"
+rm -rf "$PORTAL_DIR"
+mkdir -p "$PORTAL_DIR/allure" "$PORTAL_DIR/dashboard" "$PORTAL_DIR/sample-reports" "$PORTAL_DIR/surefire"
+
+if [ -d target/site/allure-report ]; then
+  cp -R target/site/allure-report/. "$PORTAL_DIR/allure/"
+fi
+if [ -d 13_Reports/web-ui ]; then
+  cp -R 13_Reports/web-ui/. "$PORTAL_DIR/dashboard/"
+fi
+if [ -d 13_Reports/allure-sample-results ]; then
+  cp -R 13_Reports/allure-sample-results/. "$PORTAL_DIR/sample-reports/"
+fi
+if [ -d target/surefire-reports ]; then
+  cp -R target/surefire-reports/. "$PORTAL_DIR/surefire/"
+fi
+
+cat > "$PORTAL_DIR/index.html" <<'HTML'
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DTCC Selenium Cucumber Automation - Test Report Portal</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f6f8fb; color: #172033; }
+    header { background: #0f172a; color: white; padding: 32px; }
+    main { padding: 28px 32px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+    .card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,.08); border: 1px solid #e5e7eb; }
+    .card h2 { margin-top: 0; }
+    a.button { display: inline-block; background: #2563eb; color: white; text-decoration: none; padding: 11px 14px; border-radius: 8px; margin: 6px 6px 6px 0; }
+    a.secondary { background: #374151; }
+    code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
+    .note { background: #fff7ed; border-left: 5px solid #f59e0b; padding: 12px 16px; margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DTCC Selenium Cucumber Automation - Test Report Portal</h1>
+    <p>Repository: BrianGator/DTCC-Selenium-Cucumber-Automation</p>
+    <p>Website Under Test: https://www.dtcc.com/</p>
+  </header>
+  <main>
+    <div class="note">
+      <strong>Run tests from GitHub UI:</strong> Use the Actions workflow page. GitHub Pages is static, so it cannot securely start workflows by itself without a GitHub token.
+    </div>
+    <section class="grid">
+      <div class="card">
+        <h2>Live Allure Report</h2>
+        <p>Interactive report generated from the latest GitHub Actions run.</p>
+        <a class="button" href="allure/index.html">Open Live Allure Report</a>
+      </div>
+      <div class="card">
+        <h2>Portfolio Dashboard</h2>
+        <p>Static dashboard with pass/fail summary, links, and example report views.</p>
+        <a class="button" href="dashboard/index.html">Open Dashboard</a>
+      </div>
+      <div class="card">
+        <h2>Sample Allure Reports</h2>
+        <p>Static passed/failed report examples for GitHub review.</p>
+        <a class="button" href="sample-reports/index.html">Sample Allure</a>
+        <a class="button secondary" href="sample-reports/passed-report.html">Passed</a>
+        <a class="button secondary" href="sample-reports/failed-report.html">Failed</a>
+      </div>
+      <div class="card">
+        <h2>Surefire Reports</h2>
+        <p>Raw Maven Surefire/TestNG output from the workflow run.</p>
+        <a class="button" href="surefire/">Open Surefire Folder</a>
+        <a class="button secondary" href="sample-reports/surefire-report.html">Sample Surefire HTML</a>
+      </div>
+      <div class="card">
+        <h2>Run Tests in GitHub Actions</h2>
+        <p>Use the workflow dispatch UI to choose <code>allure-ui</code>, <code>selenide</code>, <code>api</code>, <code>public-site</code>, or failure demo.</p>
+        <a class="button" href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions/workflows/selenium.yml">Open Run Workflow UI</a>
+        <a class="button secondary" href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions">All Actions</a>
+      </div>
+      <div class="card">
+        <h2>Repository</h2>
+        <p>Source code, Maven profiles, TestNG suites, Selenium/Selenide tests, API tests, SQL checks, and reports.</p>
+        <a class="button" href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/">Open Repository</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+HTML
+
+test -f "$PORTAL_DIR/index.html"
