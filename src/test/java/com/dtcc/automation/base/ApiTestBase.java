@@ -1,7 +1,7 @@
 package com.dtcc.automation.base;
 
-import org.wiremock.WireMockServer;
-import org.wiremock.core.WireMockConfiguration;
+import com.github.tomakehurst.wiremock.WireMockServer;
+import com.github.tomakehurst.wiremock.core.WireMockConfiguration;
 
 public class ApiTestBase {
     protected WireMockServer mockApi;

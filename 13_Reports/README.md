@@ -16,8 +16,36 @@ This folder contains sample reporting artifacts that show how passed and failed 
 target/surefire-reports/          TestNG/JUnit XML and text results
 target/cucumber-reports/          Cucumber HTML and JSON results
 target/failed-test-screenshots/   Selenium screenshots captured on failures
+target/allure-results/            Raw Allure results and attachments
+target/site/allure-report/        Generated Allure HTML UI
+target/report-dashboard/          Static dashboard that links to Allure and GitHub Actions
 ```
 
+## GitHub Report URLs
+
+After the `Selenium CI/CD Pipeline with Allure Reports` workflow runs on `main`, use these URLs:
+
+```text
+Run tests from GitHub UI:
+https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions/workflows/selenium.yml
+
+All workflow runs, logs, and downloadable artifacts:
+https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions
+
+Published report dashboard through GitHub Pages:
+https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/
+
+Published Allure HTML report inside the dashboard:
+https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/allure-report/index.html
+```
+
+The report dashboard includes three primary buttons:
+
+- `Open Allure Report`: opens the generated Allure HTML report.
+- `Open Workflow Run`: opens the exact GitHub Actions run when built in CI.
+- `Run Tests in GitHub Actions`: opens GitHub's authenticated workflow dispatch UI so you can choose the suite and run tests from the browser.
+
+A static GitHub Pages site cannot securely start workflows by itself without a backend and token. The dashboard therefore links to GitHub's native workflow UI, which is the safe way to run tests from a browser while preserving repository permissions and audit logs.
 
 ## Browser-Based Report Review
 
@@ -81,16 +109,25 @@ The preferred browser-based report viewer for this project is Allure. Use it loc
 Local generation:
 
 ```bash
-mvn clean test -Pallure-ui -Dallure.results.directory=target/allure-results
-mvn allure:report
-open target/site/allure-report/index.html
+mvn -B clean compile test-compile -DskipTests
+mvn -B clean test -Pallure-ui -Dbrowser=chrome -Dheadless=true -DincludeIntentionalFailures=false
+mvn -B allure:report
+bash scripts/build-report-dashboard.sh target/report-dashboard target/site/allure-report
+```
+
+Windows PowerShell dashboard generation:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\build-report-dashboard.ps1 target\report-dashboard target\site\allure-report
 ```
 
 GitHub UI generation:
 
-1. Push the project to GitHub.
-2. Open **Actions**.
-3. Run **Selenium CI/CD Pipeline with Allure Reports**.
-4. Download raw artifacts or open the published GitHub Pages dashboard.
+1. Open `https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions/workflows/selenium.yml`.
+2. Click **Run workflow**.
+3. Pick a Maven profile such as `allure-ui`, `selenide`, `api`, or `public-site`.
+4. Keep intentional failures set to `false` for stable CI runs.
+5. Open the workflow summary for artifact links.
+6. Open the GitHub Pages dashboard after deployment finishes.
 
 Sample Allure result JSON files are stored in `13_Reports/allure-sample-results/` so reviewers can see the pass/fail data shape used by the Allure dashboard.

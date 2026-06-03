@@ -19,7 +19,7 @@ import java.util.Map;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.lessThan;
 import static io.restassured.RestAssured.given;
-import static org.wiremock.client.WireMock.*;
+import static com.github.tomakehurst.wiremock.client.WireMock.*;
 
 public class BackendTransactionTest extends ApiTestBase {
     private DatabaseClient databaseClient;
