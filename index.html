@@ -3,33 +3,123 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DTCC Selenium Cucumber Automation Reports</title>
+  <title>DTCC Selenium Cucumber Automation - Interim Test Report</title>
   <style>
     body {
       margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
       font-family: Arial, sans-serif;
       background: #f6f8fb;
       color: #172033;
     }
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 28px 36px;
+    }
     main {
-      width: min(720px, calc(100% - 40px));
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 28px 24px 48px;
+    }
+    .notice, .card {
       background: #fff;
       border: 1px solid #d9e1ee;
       border-radius: 8px;
-      padding: 32px;
-      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+      padding: 20px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
     }
-    h1 { margin-top: 0; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .metric {
+      font-size: 34px;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+    .pass { color: #087f5b; }
+    .fail { color: #c92a2a; }
+    .skip { color: #a16207; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid #e5e9f2;
+      text-align: left;
+    }
+    th { background: #eaf0f8; }
     a { color: #1d4ed8; font-weight: 700; }
+    code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>DTCC Selenium Cucumber Automation - Interim Test Report</h1>
+    <p>Text-based report page while the full GitHub Pages + Allure portal is being enabled.</p>
+  </header>
   <main>
-    <h1>Report coming soon.</h1>
-    <p>In the meantime, go to <a href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation">BrianGator/DTCC-Selenium-Cucumber-Automation</a>.</p>
+    <section class="notice">
+      <h2>Status</h2>
+      <p>The stable local suite has been verified. The full interactive Allure report will be published here after GitHub Pages is enabled for GitHub Actions deployments.</p>
+      <p>Repository: <a href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation">BrianGator/DTCC-Selenium-Cucumber-Automation</a></p>
+      <p>Run tests from GitHub UI: <a href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions/workflows/selenium.yml">Selenium CI/CD Pipeline with Allure Reports</a></p>
+    </section>
+
+    <section class="grid" aria-label="Test result totals">
+      <div class="card"><div>Total Stable Tests</div><div class="metric">6</div></div>
+      <div class="card"><div>Passed</div><div class="metric pass">5</div></div>
+      <div class="card"><div>Failed</div><div class="metric fail">0</div></div>
+      <div class="card"><div>Errors</div><div class="metric fail">0</div></div>
+      <div class="card"><div>Skipped</div><div class="metric skip">1</div></div>
+    </section>
+
+    <section class="card">
+      <h2>Stable Allure Suite Summary</h2>
+      <table>
+        <thead>
+          <tr><th>Suite / Area</th><th>Status</th><th>Tests</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Allure UI annotated mock order flow</td><td class="pass">PASS</td><td>1</td><td>Login, cart, checkout, payment, confirmation, screenshots, attachments.</td></tr>
+          <tr><td>Raw Selenium login validation</td><td class="pass">PASS</td><td>1</td><td>Uses public-safe local mock application.</td></tr>
+          <tr><td>Raw Selenium order lifecycle</td><td class="pass">PASS</td><td>1</td><td>Completes mock order lifecycle in headless Chrome.</td></tr>
+          <tr><td>Rest Assured mock API transaction test</td><td class="pass">PASS</td><td>1</td><td>Uses WireMock and fictional transaction data.</td></tr>
+          <tr><td>H2 SQL database validation</td><td class="pass">PASS</td><td>1</td><td>Creates schema, loads sample data, validates counts.</td></tr>
+          <tr><td>Intentional failure demo</td><td class="skip">SKIPPED</td><td>1</td><td>Correctly skipped because <code>includeIntentionalFailures=false</code>.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Verification Commands</h2>
+      <pre><code>mvn -B clean compile test-compile -DskipTests
+Result: BUILD SUCCESS
+
+mvn -B clean test -Pallure-ui -Dbrowser=chrome -Dheadless=true -DincludeIntentionalFailures=false
+Result: BUILD SUCCESS; Tests run: 6, Failures: 0, Errors: 0, Skipped: 1
+
+mvn -B allure:report
+Result: BUILD SUCCESS; target/site/allure-report/index.html generated</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Additional Verified Profiles</h2>
+      <table>
+        <thead>
+          <tr><th>Profile</th><th>Status</th><th>Result</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>api</code></td><td class="pass">PASS</td><td>Tests run: 1, Failures: 0, Errors: 0</td></tr>
+          <tr><td><code>selenide</code></td><td class="pass">PASS</td><td>Tests run: 4, Failures: 0, Errors: 0</td></tr>
+        </tbody>
+      </table>
+    </section>
   </main>
 </body>
 </html>
