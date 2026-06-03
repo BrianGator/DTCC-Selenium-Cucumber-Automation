@@ -43,7 +43,7 @@ concurrency:
 
 jobs:
   test-and-report:
-    name: Run automation tests and publish report dashboard
+    name: Run automation tests and publish Allure report
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -82,7 +82,7 @@ jobs:
           echo "profile=$PROFILE" >> "$GITHUB_OUTPUT"
           echo "include_failures=$INCLUDE_FAILURES" >> "$GITHUB_OUTPUT"
 
-      - name: Run Stable TestNG Allure Suite
+      - name: Run Selenium API Database Tests
         id: tests
         continue-on-error: true
         run: |
@@ -101,11 +101,12 @@ jobs:
           mvn -B allure:report -Dallure.results.directory=target/allure-results
           test -f target/site/allure-report/index.html || (echo "Allure report was not generated" && exit 1)
 
-      - name: Build Report Dashboard
+      - name: Build GitHub Pages Report Portal
         if: always()
+        shell: bash
         run: |
-          bash scripts/build-report-dashboard.sh target/report-dashboard target/site/allure-report
-          test -f target/report-dashboard/index.html || (echo "Report dashboard was not generated" && exit 1)
+          bash scripts/build-report-portal.sh target/report-portal
+          test -f target/report-portal/index.html || (echo "Report portal was not generated" && exit 1)
 
       - name: Upload Raw Test Artifacts
         if: always()
@@ -116,30 +117,61 @@ jobs:
             target/surefire-reports/**
             target/allure-results/**
             target/failed-test-screenshots/**
-            target/report-dashboard/**
           if-no-files-found: warn
 
-      - name: Upload Report Dashboard Artifact
+      - name: Upload Allure HTML Report Artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: automation-report-dashboard
-          path: target/report-dashboard
+          name: allure-html-report
+          path: target/site/allure-report
           if-no-files-found: error
 
-      - name: Configure GitHub Pages
+      - name: Upload Report Portal Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: github-pages-report-portal
+          path: target/report-portal
+          if-no-files-found: error
+
+      - name: Check GitHub Pages Configuration
+        id: pages
         if: always() && github.event_name != 'pull_request'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          status=$(curl -sS -o pages.json -w "%{http_code}" \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages")
+          if [ "$status" = "200" ]; then
+            echo "enabled=true" >> "$GITHUB_OUTPUT"
+            echo "GitHub Pages is enabled for this repository."
+          else
+            echo "enabled=false" >> "$GITHUB_OUTPUT"
+            echo "## GitHub Pages is not enabled yet" >> "$GITHUB_STEP_SUMMARY"
+            echo "The report portal artifact was generated successfully, but Pages deployment is skipped until repository Pages is enabled." >> "$GITHUB_STEP_SUMMARY"
+            echo "Go to Settings > Pages > Build and deployment > Source, then select GitHub Actions. Run this workflow again after saving." >> "$GITHUB_STEP_SUMMARY"
+            echo "API status: $status" >> "$GITHUB_STEP_SUMMARY"
+            cat pages.json || true
+          fi
+
+      - name: Configure GitHub Pages
+        if: always() && github.event_name != 'pull_request' && steps.pages.outputs.enabled == 'true'
         uses: actions/configure-pages@v5
 
-      - name: Upload Report Dashboard to GitHub Pages
-        if: always() && github.event_name != 'pull_request'
+      - name: Upload Report Portal to GitHub Pages
+        if: always() && github.event_name != 'pull_request' && steps.pages.outputs.enabled == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: target/report-dashboard
+          path: target/report-portal
 
-      - name: Deploy Allure Report to GitHub Pages
+      - name: Deploy Report Portal to GitHub Pages
         id: deployment
-        if: always() && github.event_name != 'pull_request'
+        if: always() && github.event_name != 'pull_request' && steps.pages.outputs.enabled == 'true'
         uses: actions/deploy-pages@v4
 
       - name: Add Summary Link
@@ -148,9 +180,15 @@ jobs:
           echo "## Selenium TestNG Allure Execution" >> $GITHUB_STEP_SUMMARY
           echo "Profile: ${{ steps.profile.outputs.profile }}" >> $GITHUB_STEP_SUMMARY
           echo "Intentional failures: ${{ steps.profile.outputs.include_failures }}" >> $GITHUB_STEP_SUMMARY
-          echo "Raw test artifacts, Allure HTML, and the report dashboard are attached to this workflow run." >> $GITHUB_STEP_SUMMARY
-          echo "Published report dashboard URL: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
-          echo "Allure report path: ${{ steps.deployment.outputs.page_url }}allure-report/index.html" >> $GITHUB_STEP_SUMMARY
+          echo "Raw test artifacts, Allure HTML, and the report portal are attached to this workflow run." >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.pages.outputs.enabled }}" = "true" ]; then
+            echo "Report portal: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+            echo "Live Allure report: ${{ steps.deployment.outputs.page_url }}allure/index.html" >> $GITHUB_STEP_SUMMARY
+            echo "Static dashboard: ${{ steps.deployment.outputs.page_url }}dashboard/index.html" >> $GITHUB_STEP_SUMMARY
+            echo "Sample reports: ${{ steps.deployment.outputs.page_url }}sample-reports/index.html" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "Pages URL is not live yet. Download the github-pages-report-portal artifact, or enable Settings > Pages > Source: GitHub Actions and rerun." >> $GITHUB_STEP_SUMMARY
+          fi
 
       - name: Fail Workflow When Stable Tests Failed
         if: always() && steps.tests.outcome == 'failure' && steps.profile.outputs.include_failures != 'true'
