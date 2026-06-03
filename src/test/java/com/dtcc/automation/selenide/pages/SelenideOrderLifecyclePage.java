@@ -16,7 +16,7 @@ public class SelenideOrderLifecyclePage {
     private final SelenideElement btnCart = $("#cart-icon");
     private final SelenideElement btnCheckout = $("#checkout-btn");
     private final SelenideElement btnSubmitPayment = $("#pay-submit-btn");
-    private final SelenideElement lblConfirmation = $(".confirmation-banner");
+    private final SelenideElement lblConfirmation = $("#confirmation-banner");
 
     public void addItemToCart(String itemName) {
         catalogItems.findBy(text(itemName)).$("button").click();
