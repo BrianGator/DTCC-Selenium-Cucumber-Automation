@@ -1,0 +1,47 @@
+{
+  "uuid": "c0711531-5f8c-41b3-a25f-51463abc7cd0",
+  "historyId": "mock-order-lifecycle-passed",
+  "name": "orderLifecycleProducesDetailedAllureReport",
+  "fullName": "com.dtcc.automation.reports.AllureEnabledUiReportTest.orderLifecycleProducesDetailedAllureReport",
+  "status": "passed",
+  "stage": "finished",
+  "start": 1780516573971,
+  "stop": 1780516576271,
+  "labels": [
+    {
+      "name": "epic",
+      "value": "DTCC SDET Automation Framework"
+    },
+    {
+      "name": "feature",
+      "value": "Allure Report UI Demonstration"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    }
+  ],
+  "steps": [
+    {
+      "name": "Login as valid user: sdet_dtcc_user",
+      "status": "passed",
+      "stage": "finished",
+      "start": 1780516574171,
+      "stop": 1780516574671
+    },
+    {
+      "name": "Add item from catalogue: HighVolumeEquity_X1",
+      "status": "passed",
+      "stage": "finished",
+      "start": 1780516574771,
+      "stop": 1780516575171
+    },
+    {
+      "name": "Convert cart to order and submit payment",
+      "status": "passed",
+      "stage": "finished",
+      "start": 1780516575271,
+      "stop": 1780516575871
+    }
+  ]
+}

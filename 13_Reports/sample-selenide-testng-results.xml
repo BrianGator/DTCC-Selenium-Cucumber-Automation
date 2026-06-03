@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <suite name="Selenide UI Automation Suite">
+    <test name="Selenide Login, Order Lifecycle, and Public Site Smoke Tests">
+      <class name="com.dtcc.automation.selenide.SelenideLoginValidationTest">
+        <test-method status="PASS" name="validLoginDisplaysDashboard" duration-ms="842"/>
+        <test-method status="PASS" name="invalidLoginDisplaysValidationMessage" duration-ms="611"/>
+      </class>
+      <class name="com.dtcc.automation.selenide.SelenideOrderLifecycleTest">
+        <test-method status="PASS" name="userCanLoginSelectCatalogueItemCheckoutAndPay" duration-ms="1322"/>
+      </class>
+      <class name="com.dtcc.automation.reports.IntentionalFailureExampleTest">
+        <test-method status="FAIL" name="intentionalSelenideReportFailureExample" duration-ms="405">
+          <exception class="java.lang.AssertionError">
+            <message>Intentional sample failure for report demonstration.</message>
+          </exception>
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

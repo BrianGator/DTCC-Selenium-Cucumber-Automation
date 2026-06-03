@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="28" passed="24" failed="2" skipped="2">
+  <suite name="DTCC Expanded SDET Showcase Suite">
+    <test name="API Tests"><class name="BackendTransactionTest"><test-method name="validateTransactionLifecycleAndDatabaseState" status="PASS"/></class></test>
+    <test name="Login Tests"><class name="LoginValidationTest"><test-method name="validUserCanLogin" status="PASS"/></class></test>
+    <test name="Security Tests"><class name="SecurityHeadersTest"><test-method name="publicSiteShouldReturnCommonSecurityHeaders" status="FAIL"><exception><message>Example failure: Content-Security-Policy header missing from sampled response.</message></exception></test-method></class></test>
+    <test name="Intentional Failure Demo"><class name="IntentionalFailureExampleTest"><test-method name="intentionalApiContractFailureForReportDemo" status="FAIL"><exception><message>Intentional failure example: API returned the wrong content type.</message></exception></test-method></class></test>
+  </suite>
+</testng-results>

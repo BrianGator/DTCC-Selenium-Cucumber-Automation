@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="8" passed="7">
+  <suite name="DTCC Test Case Showcase Suite">
+    <test name="API Tests"><class name="BackendTransactionTest"><test-method name="validateTransactionLifecycleAndDatabaseState" status="PASS"/></class></test>
+    <test name="Login Tests"><class name="LoginValidationTest"><test-method name="validUserCanLoginToMockOrderApplication" status="PASS"/></class></test>
+    <test name="Selenium Tests"><class name="SeleniumOrderLifecycleTest"><test-method name="userCanCompleteFullOrderLifecycleWithSelenium" status="PASS"/></class></test>
+    <test name="SQL Database Tests"><class name="SqlDatabaseValidationTest"><test-method name="validatesSettlementOrdersUsingExampleSqlData" status="PASS"/></class></test>
+    <test name="Reporting Demonstration"><class name="SampleFailure"><test-method name="missingTitleKeyword" status="FAIL"><exception class="AssertionError"><message>Expected public page title to contain required keyword.</message></exception></test-method></class></test>
+  </suite>
+</testng-results>

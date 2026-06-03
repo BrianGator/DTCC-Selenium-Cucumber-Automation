@@ -1,0 +1,4 @@
+FAILED: intentionalApiContractFailureForReportDemo
+java.lang.AssertionError: Intentional failure example: API returned the wrong content type.
+Expected :application/json
+Actual   :application/xml

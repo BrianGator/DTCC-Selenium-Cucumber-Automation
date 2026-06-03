@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Mock DTCC Order Lifecycle</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 40px; background: #f6f8fb; }
+    .card { background: white; padding: 24px; margin-bottom: 18px; border-radius: 8px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+    input, button { padding: 10px; margin: 8px; }
+    .catalog-item { border: 1px solid #ddd; padding: 14px; margin-top: 10px; }
+    #confirmation-banner { display: none; padding: 14px; background: #e5ffe5; border: 1px solid #5cb85c; }
+  </style>
+</head>
+<body>
+  <h1>Mock DTCC Order Lifecycle</h1>
+  <div class="card" id="login-panel">
+    <h2>Login</h2>
+    <input id="username" placeholder="Username" />
+    <input id="password" type="password" placeholder="Password" />
+    <button id="loginBtn" onclick="login()">Login</button>
+  </div>
+  <div class="card" id="catalog-panel" style="display:none;">
+    <h2>Catalogue</h2>
+    <div class="catalog-item">HighVolumeEquity_X1 <button class="add-to-cart" onclick="addToCart()">Add to Cart</button></div>
+    <button id="cart-icon" onclick="openCart()">Cart</button>
+    <button id="checkout-btn" onclick="checkout()" style="display:none;">Convert Cart to Order</button>
+    <button id="pay-submit-btn" onclick="pay()" style="display:none;">Submit Payment</button>
+    <div id="confirmation-banner">ORDER STATUS: SUCCESS - Transaction lifecycle completed.</div>
+  </div>
+  <script>
+    function login(){ document.getElementById('catalog-panel').style.display='block'; }
+    function addToCart(){ window.cartReady = true; }
+    function openCart(){ if(window.cartReady){ document.getElementById('checkout-btn').style.display='inline-block'; }}
+    function checkout(){ document.getElementById('pay-submit-btn').style.display='inline-block'; }
+    function pay(){ document.getElementById('confirmation-banner').style.display='block'; }
+  </script>
+</body>
+</html>

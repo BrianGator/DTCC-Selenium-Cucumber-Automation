@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DTCC Public Website Automation Suite" parallel="false">
+    <listeners>
+        <listener class-name="com.dtcc.automation.utils.TestExecutionListener"/>
+    </listeners>
+    <test name="DTCC Public Website Selenium and Sitemap Tests">
+        <classes>
+            <class name="com.dtcc.automation.publicsite.DtccPublicSiteTemplateTest"/>
+            <class name="com.dtcc.automation.publicsite.DtccSitemapFullCoverageTest"/>
+        </classes>
+    </test>
+</suite>

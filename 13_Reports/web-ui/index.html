@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>DTCC Selenium Cucumber Automation - Sample Test Report Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f6f8fb; color: #1f2937; }
+    header { background: #0f172a; color: #fff; padding: 24px 32px; }
+    main { padding: 24px 32px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+    .card { background: #fff; border-radius: 12px; padding: 18px; box-shadow: 0 2px 8px rgba(0,0,0,.08); }
+    .num { font-size: 32px; font-weight: 700; }
+    .pass { color: #047857; } .fail { color: #b91c1c; } .skip { color: #92400e; }
+    table { width: 100%; border-collapse: collapse; margin-top: 24px; background: #fff; border-radius: 12px; overflow: hidden; }
+    th, td { padding: 12px 14px; border-bottom: 1px solid #e5e7eb; text-align: left; }
+    th { background: #e5e7eb; }
+    code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DTCC Selenium Cucumber Automation</h1>
+    <p>Sample pass/fail report dashboard for GitHub portfolio review.</p>
+  </header>
+  <main>
+    <section class="cards">
+      <div class="card"><div>Total Tests</div><div class="num">28</div></div>
+      <div class="card"><div>Passed</div><div class="num pass">24</div></div>
+      <div class="card"><div>Failed</div><div class="num fail">2</div></div>
+      <div class="card"><div>Skipped</div><div class="num skip">2</div></div>
+    </section>
+
+    <table>
+      <thead><tr><th>Suite</th><th>Passed</th><th>Failed</th><th>Skipped</th></tr></thead>
+      <tbody>
+        <tr><td>API Tests</td><td>5</td><td>0</td><td>0</td></tr>
+        <tr><td>Login Tests</td><td>4</td><td>0</td><td>0</td></tr>
+        <tr><td>Selenium Tests</td><td>3</td><td>0</td><td>0</td></tr>
+        <tr><td>Cucumber Tests</td><td>3</td><td>0</td><td>0</td></tr>
+        <tr><td>SQL Database Tests</td><td>3</td><td>0</td><td>0</td></tr>
+        <tr><td>Security Tests</td><td>1</td><td>1</td><td>0</td></tr>
+        <tr><td>Intentional Failure Demo</td><td>0</td><td>1</td><td>2</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Failed Test Examples</h2>
+    <ul>
+      <li><code>SecurityHeadersTest.publicSiteShouldReturnCommonSecurityHeaders</code> — example missing security header expectation.</li>
+      <li><code>IntentionalFailureExampleTest.intentionalApiContractFailureForReportDemo</code> — intentional API content-type assertion failure.</li>
+    </ul>
+
+    <h2>How to Open This Dashboard</h2>
+    <pre>cd 13_Reports/web-ui
+python -m http.server 8080
+# open http://localhost:8080</pre>
+  </main>
+</body>
+</html>

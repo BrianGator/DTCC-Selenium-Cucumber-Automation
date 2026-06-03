@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DTCC Allure UI Report Suite" verbose="1">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+        <listener class-name="com.dtcc.automation.utils.TestExecutionListener"/>
+    </listeners>
+    <test name="Allure Annotated UI Tests">
+        <classes>
+            <class name="com.dtcc.automation.reports.AllureEnabledUiReportTest"/>
+            <class name="com.dtcc.automation.ui.LoginValidationTest"/>
+            <class name="com.dtcc.automation.ui.SeleniumOrderLifecycleTest"/>
+            <class name="com.dtcc.automation.api.BackendTransactionTest"/>
+            <class name="com.dtcc.automation.database.SqlDatabaseValidationTest"/>
+        </classes>
+    </test>
+</suite>

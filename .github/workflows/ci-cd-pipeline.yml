@@ -1,0 +1,59 @@
+name: DTCC Enterprise Test Automation CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  workflow_dispatch:
+    inputs:
+      suite:
+        description: 'Test suite to execute: all, ui, api, karate, unit'
+        required: true
+        default: 'unit'
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Compile framework
+        run: mvn -q clean compile test-compile -DskipTests
+
+      - name: Run unit tests by default
+        run: mvn test -Dtest=OrderCalculatorTest
+
+      - name: Upload reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dtcc-automation-reports
+          path: |
+            target/surefire-reports
+            target/cucumber-reports
+            target/failed-test-screenshots
+
+
+  public-site-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Run DTCC.com public sitemap smoke tests
+        run: mvn test -Dtest=DtccSitemapFullCoverageTest -Ddtcc.sitemap.maxPages=10
+
+
+# Reviewer showcase command:
+# mvn test -Ptestcases

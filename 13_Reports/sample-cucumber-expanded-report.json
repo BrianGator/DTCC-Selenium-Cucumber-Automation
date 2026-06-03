@@ -1,0 +1,37 @@
+[
+  {
+    "uri": "features/public-site/DtccPublicWebsite.feature",
+    "name": "DTCC public website page coverage",
+    "elements": [
+      {
+        "name": "Validate DTCC home page loads",
+        "steps": [
+          {
+            "name": "Given I open the DTCC public home page",
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "name": "Then the DTCC page should load successfully",
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Validate intentionally broken public site expectation for report demo",
+        "steps": [
+          {
+            "name": "Then the page should contain a fictional locator",
+            "result": {
+              "status": "failed",
+              "error_message": "Intentional failure example for screenshot/report review."
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
