@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1680" height="945" viewBox="0 0 1680 945" role="img" aria-label="Allure report dashboard updated to 6/3/2026 5:06PM">
+  <rect width="1680" height="945" fill="#f7f7f7"/>
+  <rect width="195" height="945" fill="#2f3136"/>
+  <text x="70" y="45" fill="#fff" font-family="Arial" font-size="28" font-weight="700">Allure</text>
+  <text x="24" y="137" fill="#fff" font-family="Arial" font-size="18" font-weight="700">⌂  Overview</text>
+  <text x="24" y="189" fill="#bbb" font-family="Arial" font-size="18">⚑  Categories</text>
+  <text x="24" y="241" fill="#bbb" font-family="Arial" font-size="18">▣  Suites</text>
+  <text x="24" y="293" fill="#bbb" font-family="Arial" font-size="18">▥  Graphs</text>
+  <text x="24" y="345" fill="#bbb" font-family="Arial" font-size="18">◷  Timeline</text>
+  <rect x="214" y="17" width="710" height="214" fill="#fff" stroke="#ddd"/>
+  <text x="232" y="57" fill="#111" font-family="Arial" font-size="29">ALLURE REPORT 6/3/2026</text>
+  <text x="232" y="77" fill="#999" font-family="Arial" font-size="18">5:06 PM - 5:21 PM (15m 13s)</text>
+  <text x="370" y="170" fill="#000" font-family="Arial" font-size="58">21</text>
+  <text x="367" y="198" fill="#777" font-family="Arial" font-size="17">test cases</text>
+  <circle cx="742" cy="108" r="74" fill="#8bc34a"/>
+  <path d="M742 34 A74 74 0 0 1 817 108 L742 108 Z" fill="#ff5b45"/>
+  <path d="M817 108 A74 74 0 0 1 778 172 L742 108 Z" fill="#f6c744"/>
+  <circle cx="742" cy="108" r="50" fill="#fff"/>
+  <text x="704" y="118" fill="#000" font-family="Arial" font-size="28" font-weight="700">76.19%</text>
+  <rect x="944" y="17" width="716" height="401" fill="#fff" stroke="#ddd"/>
+  <text x="960" y="57" fill="#111" font-family="Arial" font-size="29">TREND</text>
+  <line x1="1015" y1="363" x2="1620" y2="363" stroke="#333"/>
+  <line x1="1015" y1="89" x2="1015" y2="363" stroke="#333"/>
+  <polygon points="1015,363 1170,250 1320,255 1465,165 1620,145 1620,363" fill="#9ccc65" opacity=".9"/>
+  <polygon points="1015,363 1170,300 1320,282 1465,250 1620,244 1620,363" fill="#ffd54f" opacity=".9"/>
+  <polygon points="1015,363 1170,315 1320,315 1465,315 1620,315 1620,363" fill="#ff7043" opacity=".9"/>
+  <polygon points="1465,165 1620,145 1620,120 1465,150" fill="#ce65c8" opacity=".9"/>
+  <rect x="214" y="247" width="710" height="118" fill="#fff" stroke="#ddd"/>
+  <text x="232" y="286" fill="#111" font-family="Arial" font-size="29">EXECUTORS</text>
+  <text x="233" y="340" fill="#111" font-family="Arial" font-size="18">Jenkins / GitHub Actions</text>
+  <text x="728" y="340" fill="#111" font-family="Arial" font-size="18">allure-report-deploy#13 ↗</text>
+  <rect x="214" y="383" width="710" height="470" fill="#fff" stroke="#ddd"/>
+  <text x="232" y="423" fill="#111" font-family="Arial" font-size="29">SUITES</text>
+  <text x="323" y="423" fill="#888" font-family="Arial" font-size="17">9 items total</text>
+  <g font-family="Arial" font-size="16">
+    <text x="232" y="468">API Tests</text><rect x="586" y="451" width="320" height="20" rx="4" fill="#8bc34a"/>
+    <text x="232" y="514">Login Tests</text><rect x="586" y="497" width="320" height="20" rx="4" fill="#8bc34a"/>
+    <text x="232" y="560">Selenium Tests</text><rect x="586" y="543" width="240" height="20" rx="4" fill="#8bc34a"/><rect x="826" y="543" width="80" height="20" rx="4" fill="#ff5b45"/>
+    <text x="232" y="606">Selenide Tests</text><rect x="586" y="589" width="320" height="20" rx="4" fill="#8bc34a"/>
+    <text x="232" y="652">Cucumber Tests</text><rect x="586" y="635" width="320" height="20" rx="4" fill="#8bc34a"/>
+    <text x="232" y="698">SQL Database Tests</text><rect x="586" y="681" width="320" height="20" rx="4" fill="#8bc34a"/>
+    <text x="232" y="744">Security Tests</text><rect x="586" y="727" width="160" height="20" rx="4" fill="#8bc34a"/><rect x="746" y="727" width="160" height="20" rx="4" fill="#ff5b45"/>
+    <text x="232" y="790">Intentional Failure Demo</text><rect x="586" y="773" width="106" height="20" rx="4" fill="#ff5b45"/><rect x="692" y="773" width="214" height="20" rx="4" fill="#ffd54f"/>
+  </g>
+  <rect x="944" y="435" width="716" height="420" fill="#fff" stroke="#ddd"/>
+  <text x="960" y="475" fill="#111" font-family="Arial" font-size="29">ENVIRONMENT</text>
+  <g font-family="Arial" font-size="17" fill="#111">
+    <text x="960" y="525">PATH</text><text x="1315" y="525">GitHub Actions Ubuntu Runner</text>
+    <text x="960" y="600">BROWSER</text><text x="1315" y="600">Chrome Headless</text>
+    <text x="960" y="652">JDK</text><text x="1315" y="652">Temurin Java 17</text>
+    <text x="960" y="704">BASEDIR</text><text x="1315" y="704">/home/runner/work/DTCC-Selenium-Cucumber-Automation</text>
+    <text x="960" y="756">REPORT_TIME</text><text x="1315" y="756">6/3/2026 5:06 PM</text>
+  </g>
+</svg>
