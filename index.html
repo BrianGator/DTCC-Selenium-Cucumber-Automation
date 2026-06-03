@@ -76,7 +76,24 @@
     tr:hover td { background: #f9fbff; }
     a { color: var(--blue); font-weight: 700; }
     code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
-    pre { overflow: auto; background: #111827; color: #e5e7eb; padding: 16px; border-radius: 8px; }
+    pre {
+      overflow: auto;
+      background: #050505;
+      color: #39ff88;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid #0f5132;
+    }
+    pre code {
+      background: transparent;
+      color: #39ff88;
+      padding: 0;
+      border-radius: 0;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      line-height: 1.55;
+      white-space: pre;
+    }
     .status-pill {
       display: inline-block;
       min-width: 86px;
