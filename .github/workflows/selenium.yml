@@ -8,11 +8,12 @@ on:
   workflow_dispatch:
     inputs:
       test_profile:
-        description: 'Maven test profile to run'
+        description: 'Maven profile to run'
         required: true
-        default: 'expanded'
+        default: 'allure-ui'
         type: choice
         options:
+          - allure-ui
           - ui
           - selenide
           - api
@@ -22,7 +23,7 @@ on:
           - failure-demo
       include_intentional_failures:
         description: 'Generate example failing tests for report demonstration'
-        required: false
+        required: true
         default: 'false'
         type: choice
         options:
@@ -30,16 +31,23 @@ on:
           - 'true'
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
   actions: read
   checks: write
 
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   test-and-report:
-    name: Run Selenium/TestNG tests and publish Allure UI
+    name: Run automation tests and publish Allure report
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout Source Code
@@ -68,18 +76,32 @@ jobs:
         shell: bash
         run: |
           PROFILE="${{ github.event.inputs.test_profile }}"
-          if [ -z "$PROFILE" ]; then PROFILE="expanded"; fi
+          if [ -z "$PROFILE" ]; then PROFILE="allure-ui"; fi
           INCLUDE_FAILURES="${{ github.event.inputs.include_intentional_failures }}"
           if [ -z "$INCLUDE_FAILURES" ]; then INCLUDE_FAILURES="false"; fi
           echo "profile=$PROFILE" >> "$GITHUB_OUTPUT"
           echo "include_failures=$INCLUDE_FAILURES" >> "$GITHUB_OUTPUT"
 
-      - name: Run Selenium / API / Database / Selenide Tests
-        run: |
-          mvn clean test -P${{ steps.profile.outputs.profile }}             -Dbrowser=chrome             -Dheadless=true             -Denv=qa             -Dallure.results.directory=target/allure-results             -DincludeIntentionalFailures=${{ steps.profile.outputs.include_failures }}
+      - name: Run Selenium API Database Tests
+        id: tests
         continue-on-error: true
+        run: |
+          mkdir -p target/allure-results target/surefire-reports target/failed-test-screenshots
+          mvn -B clean test -P${{ steps.profile.outputs.profile }} \
+            -Dbrowser=chrome \
+            -Dheadless=true \
+            -Denv=qa \
+            -Dallure.results.directory=target/allure-results \
+            -DincludeIntentionalFailures=${{ steps.profile.outputs.include_failures }}
 
-      - name: Upload Raw Surefire and Allure Results
+      - name: Generate Allure HTML Report
+        if: always()
+        run: |
+          mkdir -p target/allure-results
+          mvn -B allure:report -Dallure.results.directory=target/allure-results
+          test -f target/site/allure-report/index.html || (echo "Allure report was not generated" && exit 1)
+
+      - name: Upload Raw Test Artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -90,35 +112,34 @@ jobs:
             target/failed-test-screenshots/**
           if-no-files-found: warn
 
-      - name: Retrieve Allure History
-        uses: actions/checkout@v4
+      - name: Upload Allure HTML Report Artifact
         if: always()
-        continue-on-error: true
+        uses: actions/upload-artifact@v4
         with:
-          ref: gh-pages
-          path: allure-history-repo
+          name: allure-html-report
+          path: target/site/allure-report
+          if-no-files-found: error
 
-      - name: Generate Allure Report Dashboard
-        uses: simple-elf/github-allure-history@v1.1.2
-        if: always()
-        with:
-          allure_results: target/allure-results
-          allure_history: allure-history
-          keep_reports: 20
+      - name: Configure GitHub Pages
+        if: always() && github.event_name != 'pull_request'
+        uses: actions/configure-pages@v5
 
-      - name: Deploy Report Dashboard to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        if: always()
+      - name: Upload Allure Report to GitHub Pages
+        if: always() && github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: allure-history
+          path: target/site/allure-report
+
+      - name: Deploy Allure Report to GitHub Pages
+        id: deployment
+        if: always() && github.event_name != 'pull_request'
+        uses: actions/deploy-pages@v4
 
       - name: Add Summary Link
         if: always()
         run: |
-          echo "## Selenium/TestNG/Allure Execution" >> $GITHUB_STEP_SUMMARY
+          echo "## Selenium TestNG Allure Execution" >> $GITHUB_STEP_SUMMARY
           echo "Profile: ${{ steps.profile.outputs.profile }}" >> $GITHUB_STEP_SUMMARY
           echo "Intentional failures: ${{ steps.profile.outputs.include_failures }}" >> $GITHUB_STEP_SUMMARY
-          echo "Raw test artifacts are attached to this workflow run." >> $GITHUB_STEP_SUMMARY
-          echo "After GitHub Pages is enabled, the Allure dashboard publishes from the gh-pages branch." >> $GITHUB_STEP_SUMMARY
+          echo "Raw test artifacts and the Allure HTML report are attached to this workflow run." >> $GITHUB_STEP_SUMMARY
+          echo "Published Allure report URL: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
