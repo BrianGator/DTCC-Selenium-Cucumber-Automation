@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Failed Tests - Allure Sample</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>body{font-family:Arial,sans-serif;margin:32px;background:#f7f7f7;color:#222}.card{background:#fff;border:1px solid #ddd;border-radius:10px;padding:18px;margin:14px 0}.fail{color:#c62828;font-weight:bold}.trace{background:#2d2f33;color:#f7f7f7;padding:14px;border-radius:8px;overflow:auto}code{background:#eee;padding:2px 5px;border-radius:4px}</style>
+</head>
+<body>
+  <h1>Allure Sample Failed Tests / Defect Evidence</h1>
+  <p>Sample failed-test evidence for GitHub review. Generated date: <strong>6/3/2026 5:06 PM</strong>.</p>
+  <div class="card">
+    <h2 class="fail">FAILED - publicSiteShouldReturnCommonSecurityHeaders</h2>
+    <p><strong>Defect type:</strong> Security header expectation mismatch.</p>
+    <p><strong>Expected:</strong> Public response includes a required security header.</p>
+    <p><strong>Actual:</strong> Header missing in sample response used for demonstration.</p>
+    <pre class="trace">java.lang.AssertionError: Expected security header was not present
+at com.dtcc.automation.security.SecurityHeadersTest.publicSiteShouldReturnCommonSecurityHeaders(SecurityHeadersTest.java:42)</pre>
+  </div>
+  <div class="card">
+    <h2 class="fail">FAILED - intentionalApiContractFailureForReportDemo</h2>
+    <p><strong>Defect type:</strong> Intentional API contract failure for report demonstration.</p>
+    <p>This test is intentionally gated behind <code>-DincludeIntentionalFailures=true</code> and should not run in the stable CI profile.</p>
+    <pre class="trace">java.lang.AssertionError: Expected JSON content type but received text/plain
+at com.dtcc.automation.reports.IntentionalFailureExampleTest.intentionalApiContractFailureForReportDemo(IntentionalFailureExampleTest.java:27)</pre>
+  </div>
+  <p><a href="index.html">Back to Allure sample dashboard</a></p>
+</body>
+</html>
