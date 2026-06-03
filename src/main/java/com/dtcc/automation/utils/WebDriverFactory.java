@@ -14,7 +14,7 @@ public final class WebDriverFactory {
 
     public static WebDriver createDriver() {
         String browser = System.getProperty("browser", ConfigManager.get("browser"));
-        boolean headless = ConfigManager.getBoolean("headless", true);
+        boolean headless = Boolean.parseBoolean(System.getProperty("headless", String.valueOf(ConfigManager.getBoolean("headless", true))));
         WebDriver driver;
         if ("edge".equalsIgnoreCase(browser)) {
             EdgeOptions options = new EdgeOptions();
@@ -31,6 +31,10 @@ public final class WebDriverFactory {
         return driver;
     }
 
+    public static void setDriver(WebDriver driver) {
+        DRIVER_POOL.set(driver);
+    }
+
     public static WebDriver getDriver() {
         return DRIVER_POOL.get();
     }
@@ -39,7 +43,11 @@ public final class WebDriverFactory {
         WebDriver driver = DRIVER_POOL.get();
         if (driver != null) {
             driver.quit();
-            DRIVER_POOL.remove();
         }
+        removeDriver();
+    }
+
+    public static void removeDriver() {
+        DRIVER_POOL.remove();
     }
 }
