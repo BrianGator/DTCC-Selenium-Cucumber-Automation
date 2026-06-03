@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>DTCC Selenium Cucumber Automation - Sample Test Report Dashboard</title>
+  <title>DTCC Selenium Cucumber Automation - Report Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f6f8fb; color: #1f2937; }
@@ -16,31 +16,44 @@
     th, td { padding: 12px 14px; border-bottom: 1px solid #e5e7eb; text-align: left; }
     th { background: #e5e7eb; }
     code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
+    .links a { display: inline-block; margin: 8px 8px 8px 0; padding: 10px 12px; border-radius: 8px; background: #2563eb; color: #fff; text-decoration: none; }
+    .note { background:#fff7ed; border-left: 5px solid #f59e0b; padding: 12px 16px; margin-top: 18px; }
   </style>
 </head>
 <body>
   <header>
     <h1>DTCC Selenium Cucumber Automation</h1>
-    <p>Sample pass/fail report dashboard for GitHub portfolio review.</p>
+    <p>Static sample pass/fail dashboard for GitHub portfolio review.</p>
   </header>
   <main>
     <section class="cards">
-      <div class="card"><div>Total Tests</div><div class="num">28</div></div>
-      <div class="card"><div>Passed</div><div class="num pass">24</div></div>
+      <div class="card"><div>Total Tests</div><div class="num">21</div></div>
+      <div class="card"><div>Passed</div><div class="num pass">16</div></div>
       <div class="card"><div>Failed</div><div class="num fail">2</div></div>
-      <div class="card"><div>Skipped</div><div class="num skip">2</div></div>
+      <div class="card"><div>Skipped</div><div class="num skip">3</div></div>
+      <div class="card"><div>Generated</div><div class="num" style="font-size:22px">6/3/2026<br>5:06 PM</div></div>
+    </section>
+
+    <section class="links">
+      <h2>Open Report Views</h2>
+      <a href="../allure-sample-results/index.html">Allure Sample Dashboard</a>
+      <a href="../allure-sample-results/passed-report.html">Passed Tests</a>
+      <a href="../allure-sample-results/failed-report.html">Failed Tests</a>
+      <a href="../allure-sample-results/surefire-report.html">Surefire Report</a>
+      <a href="../allure-sample-results/allure-report-screenshot-6-3-2026.svg">Allure Screenshot SVG</a>
     </section>
 
     <table>
       <thead><tr><th>Suite</th><th>Passed</th><th>Failed</th><th>Skipped</th></tr></thead>
       <tbody>
-        <tr><td>API Tests</td><td>5</td><td>0</td><td>0</td></tr>
-        <tr><td>Login Tests</td><td>4</td><td>0</td><td>0</td></tr>
-        <tr><td>Selenium Tests</td><td>3</td><td>0</td><td>0</td></tr>
-        <tr><td>Cucumber Tests</td><td>3</td><td>0</td><td>0</td></tr>
-        <tr><td>SQL Database Tests</td><td>3</td><td>0</td><td>0</td></tr>
-        <tr><td>Security Tests</td><td>1</td><td>1</td><td>0</td></tr>
-        <tr><td>Intentional Failure Demo</td><td>0</td><td>1</td><td>2</td></tr>
+        <tr><td>API Tests</td><td class="pass">5</td><td>0</td><td>0</td></tr>
+        <tr><td>Login Tests</td><td class="pass">4</td><td>0</td><td>0</td></tr>
+        <tr><td>Selenium Tests</td><td class="pass">3</td><td class="fail">1</td><td>0</td></tr>
+        <tr><td>Selenide Tests</td><td class="pass">3</td><td>0</td><td>0</td></tr>
+        <tr><td>Cucumber Tests</td><td class="pass">3</td><td>0</td><td>0</td></tr>
+        <tr><td>SQL Database Tests</td><td class="pass">3</td><td>0</td><td>0</td></tr>
+        <tr><td>Security Tests</td><td class="pass">1</td><td class="fail">1</td><td>0</td></tr>
+        <tr><td>Intentional Failure Demo</td><td>0</td><td class="fail">1</td><td class="skip">2</td></tr>
       </tbody>
     </table>
 
@@ -50,10 +63,13 @@
       <li><code>IntentionalFailureExampleTest.intentionalApiContractFailureForReportDemo</code> — intentional API content-type assertion failure.</li>
     </ul>
 
-    <h2>How to Open This Dashboard</h2>
-    <pre>cd 13_Reports/web-ui
+    <div class="note">
+      <strong>How to run locally:</strong>
+      <pre>cd 13_Reports/web-ui
 python -m http.server 8080
 # open http://localhost:8080</pre>
+      <p>For the live report, use GitHub Actions: <strong>Selenium CI/CD Pipeline with Allure Reports</strong>. The live Allure report is published through GitHub Pages after a successful workflow deployment.</p>
+    </div>
   </main>
 </body>
 </html>
