@@ -43,7 +43,7 @@ concurrency:
 
 jobs:
   test-and-report:
-    name: Run automation tests and publish Allure report
+    name: Run automation tests and publish report dashboard
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -82,7 +82,7 @@ jobs:
           echo "profile=$PROFILE" >> "$GITHUB_OUTPUT"
           echo "include_failures=$INCLUDE_FAILURES" >> "$GITHUB_OUTPUT"
 
-      - name: Run Selenium API Database Tests
+      - name: Run Stable TestNG Allure Suite
         id: tests
         continue-on-error: true
         run: |
@@ -101,6 +101,12 @@ jobs:
           mvn -B allure:report -Dallure.results.directory=target/allure-results
           test -f target/site/allure-report/index.html || (echo "Allure report was not generated" && exit 1)
 
+      - name: Build Report Dashboard
+        if: always()
+        run: |
+          bash scripts/build-report-dashboard.sh target/report-dashboard target/site/allure-report
+          test -f target/report-dashboard/index.html || (echo "Report dashboard was not generated" && exit 1)
+
       - name: Upload Raw Test Artifacts
         if: always()
         uses: actions/upload-artifact@v4
@@ -110,25 +116,26 @@ jobs:
             target/surefire-reports/**
             target/allure-results/**
             target/failed-test-screenshots/**
+            target/report-dashboard/**
           if-no-files-found: warn
 
-      - name: Upload Allure HTML Report Artifact
+      - name: Upload Report Dashboard Artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: allure-html-report
-          path: target/site/allure-report
+          name: automation-report-dashboard
+          path: target/report-dashboard
           if-no-files-found: error
 
       - name: Configure GitHub Pages
         if: always() && github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
 
-      - name: Upload Allure Report to GitHub Pages
+      - name: Upload Report Dashboard to GitHub Pages
         if: always() && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
-          path: target/site/allure-report
+          path: target/report-dashboard
 
       - name: Deploy Allure Report to GitHub Pages
         id: deployment
@@ -141,5 +148,12 @@ jobs:
           echo "## Selenium TestNG Allure Execution" >> $GITHUB_STEP_SUMMARY
           echo "Profile: ${{ steps.profile.outputs.profile }}" >> $GITHUB_STEP_SUMMARY
           echo "Intentional failures: ${{ steps.profile.outputs.include_failures }}" >> $GITHUB_STEP_SUMMARY
-          echo "Raw test artifacts and the Allure HTML report are attached to this workflow run." >> $GITHUB_STEP_SUMMARY
-          echo "Published Allure report URL: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "Raw test artifacts, Allure HTML, and the report dashboard are attached to this workflow run." >> $GITHUB_STEP_SUMMARY
+          echo "Published report dashboard URL: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "Allure report path: ${{ steps.deployment.outputs.page_url }}allure-report/index.html" >> $GITHUB_STEP_SUMMARY
+
+      - name: Fail Workflow When Stable Tests Failed
+        if: always() && steps.tests.outcome == 'failure' && steps.profile.outputs.include_failures != 'true'
+        run: |
+          echo "Stable test run failed. Reports were generated and uploaded for review."
+          exit 1
