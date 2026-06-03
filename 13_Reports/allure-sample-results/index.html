@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Allure Sample Report - DTCC Selenium Cucumber Automation</title>
+  <style>
+    :root { --dark:#2d2f33; --green:#8bc34a; --red:#f45b45; --yellow:#f6c744; --purple:#c85ac5; --gray:#b7b7b7; --blue:#1e88e5; }
+    body { margin:0; font-family: Arial, Helvetica, sans-serif; background:#f7f7f7; color:#222; }
+    .layout { display:flex; min-height:100vh; }
+    aside { width:230px; background:var(--dark); color:#fff; padding:24px 18px; }
+    aside h1 { font-size:28px; margin:0 0 40px; }
+    aside nav div { padding:13px 10px; color:#ddd; border-left:4px solid transparent; }
+    aside nav div.active { background:#34373c; border-left-color:#1e88e5; color:#fff; }
+    main { flex:1; padding:22px; }
+    .grid { display:grid; grid-template-columns: 1fr 1fr; gap:20px; }
+    .panel { background:#fff; border:1px solid #ddd; padding:20px; box-shadow:0 1px 2px rgba(0,0,0,.04); }
+    .summary { display:flex; align-items:center; justify-content:space-around; min-height:220px; }
+    .count { font-size:64px; line-height:1; text-align:center; }
+    .sub { color:#777; font-size:18px; }
+    .donut { width:155px; height:155px; border-radius:50%; background:conic-gradient(var(--green) 0 75%, var(--red) 75% 86%, var(--yellow) 86% 94%, var(--purple) 94% 100%); display:flex; align-items:center; justify-content:center; }
+    .donut span { background:#fff; border-radius:50%; width:104px; height:104px; display:flex; align-items:center; justify-content:center; font-size:28px; font-weight:bold; }
+    h2 { margin:0 0 18px; font-weight:500; }
+    .bar-row { display:grid; grid-template-columns: 280px 1fr; align-items:center; gap:14px; padding:9px 0; border-bottom:1px solid #eee; }
+    .bar { height:24px; display:flex; border-radius:4px; overflow:hidden; background:#eee; }
+    .p { background:var(--green); } .f { background:var(--red); } .s { background:var(--yellow); } .b { background:var(--gray); }
+    .bar span { color:#fff; text-align:center; font-size:13px; font-weight:bold; line-height:24px; }
+    table { width:100%; border-collapse:collapse; }
+    th, td { border-bottom:1px solid #eee; padding:11px; text-align:left; }
+    th { background:#f0f2f5; }
+    .pass { color:#2e7d32; font-weight:bold; } .fail { color:#c62828; font-weight:bold; } .skip { color:#9a6b00; font-weight:bold; }
+    .links a { display:inline-block; margin-right:10px; padding:10px 12px; background:#1e88e5; color:#fff; text-decoration:none; border-radius:6px; }
+    @media (max-width: 900px) { .layout { display:block; } aside { width:auto; } .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<div class="layout">
+  <aside>
+    <h1>◆ Allure</h1>
+    <nav>
+      <div class="active">Overview</div>
+      <div>Categories</div>
+      <div>Suites</div>
+      <div>Graphs</div>
+      <div>Timeline</div>
+      <div>Behaviors</div>
+      <div>Packages</div>
+    </nav>
+  </aside>
+  <main>
+    <div class="grid">
+      <section class="panel summary">
+        <div>
+          <h2>ALLURE REPORT 6/3/2026</h2>
+          <div class="sub">5:06 PM - 5:21 PM (15m 13s)</div>
+          <div class="count">21</div>
+          <div class="sub" style="text-align:center">test cases</div>
+        </div>
+        <div class="donut"><span>76.19%</span></div>
+      </section>
+      <section class="panel">
+        <h2>TREND</h2>
+        <svg viewBox="0 0 560 230" width="100%" height="230" role="img" aria-label="Allure test trend chart">
+          <line x1="45" y1="200" x2="540" y2="200" stroke="#333" />
+          <line x1="45" y1="25" x2="45" y2="200" stroke="#333" />
+          <polygon points="45,200 150,145 260,140 380,80 540,62 540,200" fill="#9ccc65" opacity=".9" />
+          <polygon points="45,200 150,170 260,158 380,136 540,132 540,200" fill="#ffd54f" opacity=".9" />
+          <polygon points="45,200 150,172 260,172 380,172 540,172 540,200" fill="#ff7043" opacity=".9" />
+          <polygon points="380,80 540,62 540,45 380,68" fill="#ce65c8" opacity=".9" />
+        </svg>
+      </section>
+      <section class="panel">
+        <h2>SUITES <span class="sub">9 items total</span></h2>
+        <div class="bar-row"><div>API Tests</div><div class="bar"><span class="p" style="width:100%">5</span></div></div>
+        <div class="bar-row"><div>Login Tests</div><div class="bar"><span class="p" style="width:100%">4</span></div></div>
+        <div class="bar-row"><div>Selenium Tests</div><div class="bar"><span class="p" style="width:75%">3</span><span class="f" style="width:25%">1</span></div></div>
+        <div class="bar-row"><div>Selenide Tests</div><div class="bar"><span class="p" style="width:100%">3</span></div></div>
+        <div class="bar-row"><div>Cucumber Tests</div><div class="bar"><span class="p" style="width:100%">3</span></div></div>
+        <div class="bar-row"><div>SQL Database Tests</div><div class="bar"><span class="p" style="width:100%">3</span></div></div>
+        <div class="bar-row"><div>Security Tests</div><div class="bar"><span class="p" style="width:50%">1</span><span class="f" style="width:50%">1</span></div></div>
+        <div class="bar-row"><div>Intentional Failure Demo</div><div class="bar"><span class="f" style="width:33%">1</span><span class="s" style="width:67%">2</span></div></div>
+      </section>
+      <section class="panel">
+        <h2>ENVIRONMENT</h2>
+        <table>
+          <tbody>
+            <tr><th>Browser</th><td>Chrome Headless</td></tr>
+            <tr><th>Java</th><td>JDK 17</td></tr>
+            <tr><th>Build Tool</th><td>Maven</td></tr>
+            <tr><th>Executor</th><td>GitHub Actions / Jenkins compatible</td></tr>
+            <tr><th>Base URL</th><td>Public-safe mock app + dtcc.com public pages</td></tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="panel" style="grid-column:1/-1">
+        <h2>Test Case Details</h2>
+        <table>
+          <thead><tr><th>Test</th><th>Status</th><th>Purpose</th></tr></thead>
+          <tbody>
+            <tr><td>validLoginShowsCataloguePanel</td><td class="pass">PASSED</td><td>Selenide auto-wait login validation</td></tr>
+            <tr><td>validateTransactionLifecycleAndDatabaseState</td><td class="pass">PASSED</td><td>REST Assured + SQL persistence validation</td></tr>
+            <tr><td>publicSiteShouldReturnCommonSecurityHeaders</td><td class="fail">FAILED</td><td>Example defect: expected header not present</td></tr>
+            <tr><td>intentionalApiContractFailureForReportDemo</td><td class="fail">FAILED</td><td>Intentional sample failure for report demonstration</td></tr>
+          </tbody>
+        </table>
+        <p class="links">
+          <a href="passed-report.html">Passed Tests</a>
+          <a href="failed-report.html">Failed Tests</a>
+          <a href="surefire-report.html">Surefire Report</a>
+          <a href="../../web-ui/index.html">Portfolio Dashboard</a>
+        </p>
+      </section>
+    </div>
+  </main>
+</div>
+</body>
+</html>
