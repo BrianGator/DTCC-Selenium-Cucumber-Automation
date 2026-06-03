@@ -25,6 +25,11 @@
         <selenide.version>7.3.0</selenide.version>
         <allure.version>2.13.9</allure.version>
         <allure.maven.version>2.10.0</allure.maven.version>
+        <suiteXmlFile>src/test/resources/testng-suites/allure-ui-suite.xml</suiteXmlFile>
+        <env>qa</env>
+        <browser>chrome</browser>
+        <headless>true</headless>
+        <includeIntentionalFailures>false</includeIntentionalFailures>
     </properties>
 
     <dependencies>
@@ -99,12 +104,12 @@
             <version>${selenide.version}</version>
             <scope>test</scope>
         </dependency>
-<dependency>
-    <groupId>io.qameta.allure</groupId>
-    <artifactId>allure-testng</artifactId>
-    <version>${allure.version}</version>
-    <scope>test</scope>
-</dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-testng</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
     <build>
@@ -131,22 +136,24 @@
                         <browser>${browser}</browser>
                         <headless>${headless}</headless>
                         <includeIntentionalFailures>${includeIntentionalFailures}</includeIntentionalFailures>
+                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
                     </systemPropertyVariables>
+                    <failIfNoSpecifiedTests>false</failIfNoSpecifiedTests>
                     <includes>
                         <include>**/*Test.java</include>
                         <include>**/*Runner.java</include>
                     </includes>
                 </configuration>
             </plugin>
-<plugin>
-    <groupId>io.qameta.allure</groupId>
-    <artifactId>allure-maven</artifactId>
-    <version>${allure.maven.version}</version>
-    <configuration>
-        <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
-        <reportDirectory>${project.build.directory}/site/allure-report</reportDirectory>
-    </configuration>
-</plugin>
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>${allure.maven.version}</version>
+                <configuration>
+                    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+                    <reportDirectory>${project.build.directory}/site/allure-report</reportDirectory>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 
@@ -202,24 +209,22 @@
                 </plugins>
             </build>
         </profile>
-
-<profile>
-    <id>expanded</id>
-    <properties>
-        <suiteXmlFile>src/test/resources/testng-suites/expanded-showcase-suite.xml</suiteXmlFile>
-        <env>qa</env>
-        <browser>chrome</browser>
-        <headless>true</headless>
-    </properties>
-</profile>
-<profile>
-    <id>failure-demo</id>
-    <properties>
-        <suiteXmlFile>src/test/resources/testng-suites/intentional-failure-demo-suite.xml</suiteXmlFile>
-        <includeIntentionalFailures>true</includeIntentionalFailures>
-    </properties>
-</profile>
-
+        <profile>
+            <id>expanded</id>
+            <properties>
+                <suiteXmlFile>src/test/resources/testng-suites/expanded-showcase-suite.xml</suiteXmlFile>
+                <env>qa</env>
+                <browser>chrome</browser>
+                <headless>true</headless>
+            </properties>
+        </profile>
+        <profile>
+            <id>failure-demo</id>
+            <properties>
+                <suiteXmlFile>src/test/resources/testng-suites/intentional-failure-demo-suite.xml</suiteXmlFile>
+                <includeIntentionalFailures>true</includeIntentionalFailures>
+            </properties>
+        </profile>
         <profile>
             <id>selenide</id>
             <properties>
@@ -229,15 +234,15 @@
                 <headless>true</headless>
             </properties>
         </profile>
-<profile>
-    <id>allure-ui</id>
-    <properties>
-        <suiteXmlFile>src/test/resources/testng-suites/allure-ui-suite.xml</suiteXmlFile>
-        <env>qa</env>
-        <browser>chrome</browser>
-        <headless>true</headless>
-        <includeIntentionalFailures>false</includeIntentionalFailures>
-    </properties>
-</profile>
+        <profile>
+            <id>allure-ui</id>
+            <properties>
+                <suiteXmlFile>src/test/resources/testng-suites/allure-ui-suite.xml</suiteXmlFile>
+                <env>qa</env>
+                <browser>chrome</browser>
+                <headless>true</headless>
+                <includeIntentionalFailures>false</includeIntentionalFailures>
+            </properties>
+        </profile>
     </profiles>
 </project>
