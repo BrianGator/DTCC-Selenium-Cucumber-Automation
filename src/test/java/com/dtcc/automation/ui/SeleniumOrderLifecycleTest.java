@@ -10,15 +10,15 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 public class SeleniumOrderLifecycleTest extends UiTestBase {
-    @Test(description = "Selenium validates login, catalogue selection, cart, checkout, payment, and confirmation")
+    @Test(description = "Selenium validates login, catalogue selection, cart, checkout, submit, and confirmation")
     public void userCanCompleteFullOrderLifecycleWithSelenium() {
         WebDriver driver = openMockOrderApplication();
-        new LoginPage(driver).login("sdet_dtcc_user", "SecureP@ss1");
+        new LoginPage(driver).login("demo_user", "demo_password");
         OrderLifecyclePage orderPage = new OrderLifecyclePage(driver);
         orderPage.addItemToCart("HighVolumeEquity_X1");
         orderPage.convertCartToOrder();
-        orderPage.processPayment();
-        Assert.assertTrue(orderPage.getConfirmationMessage().contains("SUCCESS"));
+        orderPage.submitPayment();
+        Assert.assertTrue(orderPage.confirmationText().contains("SUCCESS"));
     }
 
     @AfterMethod(alwaysRun = true)
