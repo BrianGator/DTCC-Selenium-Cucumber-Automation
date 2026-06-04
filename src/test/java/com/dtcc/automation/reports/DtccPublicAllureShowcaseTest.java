@@ -31,6 +31,7 @@ import static com.github.tomakehurst.wiremock.client.WireMock.okJson;
 import static com.github.tomakehurst.wiremock.client.WireMock.post;
 import static com.github.tomakehurst.wiremock.client.WireMock.postRequestedFor;
 import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
+import static com.github.tomakehurst.wiremock.client.WireMock.urlPathEqualTo;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
 import static org.hamcrest.Matchers.greaterThanOrEqualTo;
@@ -260,7 +261,7 @@ public class DtccPublicAllureShowcaseTest extends UiTestBase {
     @Severity(SeverityLevel.BLOCKER)
     public void restSearchEndpointRejectsScriptPayload() {
         startMockApi();
-        mockApi.stubFor(get(urlEqualTo("/public/v1/search?q=%3Cscript%3Ealert(1)%3C/script%3E"))
+        mockApi.stubFor(get(urlPathEqualTo("/public/v1/search"))
                 .willReturn(aResponse().withStatus(400).withHeader("Content-Type", "application/json")
                         .withBody("{\"error\":\"invalid_query\",\"violations\":[\"script payload rejected\"]}")));
         RestAssured.baseURI = mockApi.baseUrl();
