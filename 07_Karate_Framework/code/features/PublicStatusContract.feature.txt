@@ -1,0 +1,15 @@
+Feature: Public status API contract validation with Karate
+
+Background:
+  * url baseUrl
+
+Scenario: Health status endpoint responds
+  Given path '/api/public/status'
+  When method get
+  Then status 200
+
+Scenario: Search endpoint validates empty query
+  Given path '/api/public/search'
+  And param q = ''
+  When method get
+  Then status 400
