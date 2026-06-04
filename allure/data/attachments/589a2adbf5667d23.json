@@ -1,0 +1,15 @@
+{
+  "knownWarnings": [
+    {
+      "area": "Selenium Chrome DevTools",
+      "message": "CDP version warning may appear when local Chrome is newer than Selenium's bundled devtools artifact.",
+      "impact": "Non-fatal. Stable assertions still pass."
+    },
+    {
+      "area": "Intentional failure demos",
+      "message": "Skipped by default unless includeIntentionalFailures=true.",
+      "impact": "Expected in stable runs."
+    }
+  ],
+  "currentStableErrors": []
+}

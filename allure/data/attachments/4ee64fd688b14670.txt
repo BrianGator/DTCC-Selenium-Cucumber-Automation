@@ -1,0 +1,6 @@
+Report evidence inventory:
+- Allure: primary interactive report for TestNG, Selenium UI, REST API, SQL, and report quality gates.
+- Cucumber: BDD feature/scenario language for account and order workflows.
+- Surefire/TestNG XML: raw Maven execution evidence used by CI.
+- GitHub Actions logs: environment setup, Maven command output, artifact upload, and gh-pages publish steps.
+- GitHub Pages portal: consolidated view that embeds Allure and explains supporting artifacts.

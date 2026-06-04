@@ -1,0 +1,9 @@
+{
+  "stableSuite": "allure-ui",
+  "requiredResult": "0 failures, 0 errors",
+  "intentionalFailuresDefault": false,
+  "publicSafeOnly": true,
+  "reportRequired": "target/site/allure-report/index.html",
+  "pagesReportRequired": "https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/allure/index.html",
+  "status": "PASS"
+}

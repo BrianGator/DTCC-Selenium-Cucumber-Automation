@@ -6,34 +6,34 @@
   <title>DTCC Cucumber BDD Report</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #f6f8fb; color: #172033; }
-    header { background: #0f172a; color: white; padding: 28px 32px; }
-    main { max-width: 1000px; margin: 0 auto; padding: 28px 24px 48px; }
-    .card { background: white; border: 1px solid #d9e1ee; border-radius: 8px; padding: 20px; margin-bottom: 18px; box-shadow: 0 4px 14px rgba(15, 23, 42, .06); }
-    a.button { display: inline-block; background: #2563eb; color: white; text-decoration: none; padding: 11px 14px; border-radius: 8px; margin: 6px 6px 6px 0; }
-    a.secondary { background: #374151; }
+    header { background: #0f172a; color: white; padding: 18px 24px; }
+    main { max-width: 1040px; margin: 0 auto; padding: 22px 20px 42px; }
+    section { background: white; border: 1px solid #d9e1ee; border-radius: 8px; padding: 18px; margin-bottom: 16px; }
+    a { color: #1d4ed8; font-weight: 700; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #e5e9f2; vertical-align: top; }
+    th { background: #eef3f9; }
     code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Cucumber BDD Report</h1>
-    <p>Business-readable feature/scenario evidence for the DTCC public-safe automation framework.</p>
-  </header>
+  <header><h1>Cucumber BDD Report</h1></header>
   <main>
-    <section class="card">
-      <h2>BDD Report Links</h2>
-      <p>If the current workflow profile ran Cucumber, open the generated HTML or JSON below.</p>
-      <a class="button" href="cucumber-pretty.html">Open Cucumber HTML</a>
-      <a class="button secondary" href="CucumberTestReport.json">Open Cucumber JSON</a>
+    <section>
+      <h2>BDD Output</h2>
+      <p>Cucumber is the business-readable report for feature and scenario coverage. The generated HTML should not execute test payloads; unsafe values are represented as plain text.</p>
+      <p><a href="cucumber-pretty.html">Open Cucumber HTML</a> | <a href="CucumberTestReport.json">Open Cucumber JSON</a> | <a href="../">Back to consolidated portal</a></p>
     </section>
-    <section class="card">
-      <h2>When This Page Has No Generated Cucumber HTML</h2>
-      <p>The default <code>allure-ui</code> profile focuses on the Allure/TestNG report. To generate fresh BDD output, run a workflow profile that includes <code>com.dtcc.automation.runners.CucumberTestRunner</code>.</p>
-      <p>The runner is configured to write <code>target/cucumber-reports/cucumber-pretty.html</code> and <code>target/cucumber-reports/CucumberTestReport.json</code>.</p>
-    </section>
-    <section class="card">
-      <h2>Best Report Pairing</h2>
-      <p>Use <a href="../allure/index.html">Allure</a> for engineering diagnostics and this Cucumber view for feature/scenario language.</p>
+    <section>
+      <h2>What This Report Covers</h2>
+      <table>
+        <thead><tr><th>Feature Area</th><th>Expected Evidence</th></tr></thead>
+        <tbody>
+          <tr><td>Account authentication</td><td>Valid login examples, invalid credentials, blank credentials, script-like payload text, and SQL-style payload text.</td></tr>
+          <tr><td>Order lifecycle</td><td>Login, catalog selection, cart, checkout, payment submission, and confirmation scenarios.</td></tr>
+          <tr><td>DTCC public site</td><td>Public-safe page rendering checks for home, about, client center, news, legal, and product pages.</td></tr>
+        </tbody>
+      </table>
     </section>
   </main>
 </body>
