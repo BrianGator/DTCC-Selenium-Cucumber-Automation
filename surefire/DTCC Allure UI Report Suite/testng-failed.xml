@@ -24,8 +24,8 @@
       </class> <!-- com.dtcc.automation.reports.DtccExtendedAllureCoverageTest -->
       <class name="com.dtcc.automation.reports.DtccPublicAllureShowcaseTest">
         <methods>
-          <include name="intentionalUiDefectExampleIsOptInOnly"/>
           <include name="intentionalRestDefectExampleIsOptInOnly"/>
+          <include name="intentionalUiDefectExampleIsOptInOnly"/>
           <include name="setUpUiDriver"/>
           <include name="stopMockApi"/>
           <include name="tearDownUiDriver"/>
