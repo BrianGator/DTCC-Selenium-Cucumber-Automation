@@ -1,1 +1,1 @@
-{"id":"14630373ca722dc07b8f860420202a10","fullName":"com.dtcc.automation.reports.DtccPublicAllureShowcaseTest.invalidLoginDoesNotExposeCatalogPanel","name":"Invalid login does not expose catalog content","status":"passed","testResultsByEnv":{"default":"ff03d6299a6bce4e2e3c08341f829e28"}}
+{"id":"14630373ca722dc07b8f860420202a10","fullName":"com.dtcc.automation.reports.DtccPublicAllureShowcaseTest.invalidLoginDoesNotExposeCatalogPanel","name":"Invalid login does not expose catalog content","status":"passed","testResultsByEnv":{"default":"06ffe7635e01a69be60c66311e048ca7"}}
