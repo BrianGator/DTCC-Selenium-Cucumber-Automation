@@ -19,7 +19,7 @@ public class OrderLifecycleSteps extends UiTestBase {
     private LoginPage loginPage;
     private OrderLifecyclePage orderPage;
 
-    @Before
+    @Before("not @publicSite")
     public void setup() {
         WebDriver driver = openMockOrderApplication();
         loginPage = new LoginPage(driver);
@@ -96,7 +96,7 @@ public class OrderLifecycleSteps extends UiTestBase {
         Assert.assertTrue(WebDriverFactory.getDriver().findElement(By.id("checkout-btn")).isDisplayed());
     }
 
-    @After
+    @After("not @publicSite")
     public void teardown() {
         WebDriverFactory.quitDriver();
     }
