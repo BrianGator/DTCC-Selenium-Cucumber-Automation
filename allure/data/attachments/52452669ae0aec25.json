@@ -1,0 +1,1 @@
+{table=reporting_customer_vw, validation=PII masking applied, expectedResult=MASKED}
