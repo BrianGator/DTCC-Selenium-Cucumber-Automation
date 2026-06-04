@@ -1,3 +1,4 @@
+@publicSite
 Feature: DTCC public website page coverage
 
   As an SDET publishing a portfolio automation framework
