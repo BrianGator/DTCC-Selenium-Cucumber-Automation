@@ -2,66 +2,66 @@
 <testng-results ignored="0" total="6" passed="5" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-04T00:04:11 UTC" name="DTCC Allure UI Report Suite" finished-at="2026-06-04T00:04:25 UTC" duration-ms="14417">
+  <suite started-at="2026-06-04T00:16:45 UTC" name="DTCC Allure UI Report Suite" finished-at="2026-06-04T00:16:58 UTC" duration-ms="13259">
     <groups>
     </groups>
-    <test started-at="2026-06-04T00:04:11 UTC" name="Allure Annotated UI Tests" finished-at="2026-06-04T00:04:25 UTC" duration-ms="14417">
+    <test started-at="2026-06-04T00:16:45 UTC" name="Allure Annotated UI Tests" finished-at="2026-06-04T00:16:58 UTC" duration-ms="13259">
       <class name="com.dtcc.automation.api.BackendTransactionTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.dtcc.automation.api.BackendTransactionTest@5dafbe45]" started-at="2026-06-04T00:04:23 UTC" name="setup" finished-at="2026-06-04T00:04:24 UTC" duration-ms="889" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.dtcc.automation.api.BackendTransactionTest@5dafbe45]" started-at="2026-06-04T00:16:55 UTC" name="setup" finished-at="2026-06-04T00:16:56 UTC" duration-ms="963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateTransactionLifecycleAndDatabaseState()[pri:0, instance:com.dtcc.automation.api.BackendTransactionTest@5dafbe45]" started-at="2026-06-04T00:04:24 UTC" name="validateTransactionLifecycleAndDatabaseState" finished-at="2026-06-04T00:04:25 UTC" duration-ms="1227" status="PASS">
+        <test-method signature="validateTransactionLifecycleAndDatabaseState()[pri:0, instance:com.dtcc.automation.api.BackendTransactionTest@5dafbe45]" started-at="2026-06-04T00:16:56 UTC" name="validateTransactionLifecycleAndDatabaseState" finished-at="2026-06-04T00:16:58 UTC" duration-ms="1981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateTransactionLifecycleAndDatabaseState -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:com.dtcc.automation.api.BackendTransactionTest@5dafbe45]" started-at="2026-06-04T00:04:25 UTC" name="cleanup" finished-at="2026-06-04T00:04:25 UTC" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:com.dtcc.automation.api.BackendTransactionTest@5dafbe45]" started-at="2026-06-04T00:16:58 UTC" name="cleanup" finished-at="2026-06-04T00:16:58 UTC" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanup -->
       </class> <!-- com.dtcc.automation.api.BackendTransactionTest -->
       <class name="com.dtcc.automation.ui.SeleniumOrderLifecycleTest">
-        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:04:21 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:04:22 UTC" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:16:54 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:16:55 UTC" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpUiDriver -->
-        <test-method signature="userCanCompleteFullOrderLifecycleWithSelenium()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:04:22 UTC" name="userCanCompleteFullOrderLifecycleWithSelenium" description="Selenium validates login, catalogue selection, cart, checkout, submit, and confirmation" finished-at="2026-06-04T00:04:23 UTC" duration-ms="900" status="PASS">
+        <test-method signature="userCanCompleteFullOrderLifecycleWithSelenium()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:16:55 UTC" name="userCanCompleteFullOrderLifecycleWithSelenium" description="Selenium validates login, catalogue selection, cart, checkout, submit, and confirmation" finished-at="2026-06-04T00:16:55 UTC" duration-ms="624" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- userCanCompleteFullOrderLifecycleWithSelenium -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:04:23 UTC" name="tearDown" finished-at="2026-06-04T00:04:23 UTC" duration-ms="319" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:16:55 UTC" name="tearDown" finished-at="2026-06-04T00:16:55 UTC" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:04:23 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:04:23 UTC" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:16:55 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:16:55 UTC" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownUiDriver -->
       </class> <!-- com.dtcc.automation.ui.SeleniumOrderLifecycleTest -->
       <class name="com.dtcc.automation.ui.LoginValidationTest">
-        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:04:21 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:04:21 UTC" duration-ms="274" status="PASS">
+        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:16:54 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:16:54 UTC" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpUiDriver -->
-        <test-method signature="validUserCanLoginToMockOrderApplication()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:04:21 UTC" name="validUserCanLoginToMockOrderApplication" description="Valid login displays the catalogue area in the local mock app" finished-at="2026-06-04T00:04:21 UTC" duration-ms="317" status="PASS">
+        <test-method signature="validUserCanLoginToMockOrderApplication()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:16:54 UTC" name="validUserCanLoginToMockOrderApplication" description="Valid login displays the catalogue area in the local mock app" finished-at="2026-06-04T00:16:54 UTC" duration-ms="317" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validUserCanLoginToMockOrderApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:04:21 UTC" name="tearDown" finished-at="2026-06-04T00:04:21 UTC" duration-ms="69" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:16:54 UTC" name="tearDown" finished-at="2026-06-04T00:16:54 UTC" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:04:21 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:04:21 UTC" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:16:54 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:16:54 UTC" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownUiDriver -->
       </class> <!-- com.dtcc.automation.ui.LoginValidationTest -->
       <class name="com.dtcc.automation.reports.AllureEnabledUiReportTest">
-        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:04:11 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:04:19 UTC" duration-ms="7914" status="PASS">
+        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:45 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:16:52 UTC" duration-ms="6648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpUiDriver -->
-        <test-method signature="intentionalFailureCreatesAllureDefectExample()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:04:19 UTC" name="intentionalFailureCreatesAllureDefectExample" description="Intentional Allure failure example for defect management" finished-at="2026-06-04T00:04:19 UTC" duration-ms="24" status="SKIP">
+        <test-method signature="intentionalFailureCreatesAllureDefectExample()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:52 UTC" name="intentionalFailureCreatesAllureDefectExample" description="Intentional Allure failure example for defect management" finished-at="2026-06-04T00:16:52 UTC" duration-ms="20" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Intentional failure demo skipped. Run with -DincludeIntentionalFailures=true.]]>
@@ -107,33 +107,33 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intentionalFailureCreatesAllureDefectExample -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:04:19 UTC" name="tearDown" finished-at="2026-06-04T00:04:19 UTC" duration-ms="72" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:52 UTC" name="tearDown" finished-at="2026-06-04T00:16:52 UTC" duration-ms="75" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:04:19 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:04:19 UTC" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:52 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:16:52 UTC" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownUiDriver -->
-        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:04:19 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:04:19 UTC" duration-ms="275" status="PASS">
+        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:52 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:16:52 UTC" duration-ms="314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpUiDriver -->
-        <test-method signature="orderLifecycleProducesDetailedAllureReport()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:04:19 UTC" name="orderLifecycleProducesDetailedAllureReport" description="Allure-enabled order flow should complete successfully" finished-at="2026-06-04T00:04:21 UTC" duration-ms="1501" status="PASS">
+        <test-method signature="orderLifecycleProducesDetailedAllureReport()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:52 UTC" name="orderLifecycleProducesDetailedAllureReport" description="Allure-enabled order flow should complete successfully" finished-at="2026-06-04T00:16:54 UTC" duration-ms="1347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderLifecycleProducesDetailedAllureReport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:04:21 UTC" name="tearDown" finished-at="2026-06-04T00:04:21 UTC" duration-ms="75" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:54 UTC" name="tearDown" finished-at="2026-06-04T00:16:54 UTC" duration-ms="77" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:04:21 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:04:21 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:54 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:16:54 UTC" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownUiDriver -->
       </class> <!-- com.dtcc.automation.reports.AllureEnabledUiReportTest -->
       <class name="com.dtcc.automation.database.SqlDatabaseValidationTest">
-        <test-method signature="validatesSettlementOrdersUsingExampleSqlData()[pri:0, instance:com.dtcc.automation.database.SqlDatabaseValidationTest@2254127a]" started-at="2026-06-04T00:04:25 UTC" name="validatesSettlementOrdersUsingExampleSqlData" description="Creates H2 SQL schema, loads example data, and validates settlement status counts" finished-at="2026-06-04T00:04:25 UTC" duration-ms="10" status="PASS">
+        <test-method signature="validatesSettlementOrdersUsingExampleSqlData()[pri:0, instance:com.dtcc.automation.database.SqlDatabaseValidationTest@2254127a]" started-at="2026-06-04T00:16:58 UTC" name="validatesSettlementOrdersUsingExampleSqlData" description="Creates H2 SQL schema, loads example data, and validates settlement status counts" finished-at="2026-06-04T00:16:58 UTC" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validatesSettlementOrdersUsingExampleSqlData -->
