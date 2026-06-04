@@ -1,1 +1,0 @@
-{table=settlement_orders, validation=order status persisted, expectedResult=PROCESSED}
