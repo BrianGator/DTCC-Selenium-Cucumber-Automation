@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DTCC Selenium Cucumber Automation - Test Report Dashboard</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5b6577;
+      --line: #d9e1ee;
+      --panel: #ffffff;
+      --page: #f6f8fb;
+      --navy: #0f172a;
+      --blue: #1d4ed8;
+      --pass: #087f5b;
+      --fail: #c92a2a;
+      --skip: #a16207;
+      --ready: #334155;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--page);
+      color: var(--ink);
+    }
+    header {
+      background: var(--navy);
+      color: #fff;
+      padding: 28px 36px;
+    }
+    header p { max-width: 960px; color: #dbeafe; }
+    main {
+      max-width: 1220px;
+      margin: 0 auto;
+      padding: 28px 24px 48px;
+    }
+    .notice, .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 18px;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .metric-label { color: var(--muted); font-size: 14px; }
+    .metric {
+      font-size: 34px;
+      font-weight: 700;
+      margin-top: 8px;
+    }
+    .pass { color: var(--pass); font-weight: 700; }
+    .fail { color: var(--fail); font-weight: 700; }
+    .skip { color: var(--skip); font-weight: 700; }
+    .ready { color: var(--ready); font-weight: 700; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 11px 10px;
+      border-bottom: 1px solid #e5e9f2;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: #eaf0f8; color: #111827; }
+    tr:hover td { background: #f9fbff; }
+    a { color: var(--blue); font-weight: 700; }
+    code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
+    pre {
+      overflow: auto;
+      background: #050505;
+      color: #39ff88;
+      padding: 16px;
+      border-radius: 8px;
+      border: 1px solid #0f5132;
+    }
+    pre code {
+      background: transparent;
+      color: #39ff88;
+      padding: 0;
+      border-radius: 0;
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      line-height: 1.55;
+      white-space: pre;
+    }
+    .status-pill {
+      display: inline-block;
+      min-width: 86px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 700;
+      background: #edf2f7;
+    }
+    .pill-pass { color: var(--pass); background: #dff6ec; }
+    .pill-skip { color: var(--skip); background: #fff3bf; }
+    .pill-ready { color: var(--ready); background: #e2e8f0; }
+    .pill-demo { color: #6d28d9; background: #ede9fe; }
+    .small { color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DTCC Selenium Cucumber Automation - Test Report Dashboard</h1>
+    <p>GitHub Pages report with verified local/CI-safe results plus the expanded project test catalog. The interactive Allure portal will be linked here after Pages deployment is fully enabled.</p>
+  </header>
+
+  <main>
+    <section class="notice">
+      <h2>Report Access</h2>
+      <p>Repository: <a href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation">BrianGator/DTCC-Selenium-Cucumber-Automation</a></p>
+      <p>Run tests from GitHub UI: <a href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions/workflows/selenium.yml">Selenium CI/CD Pipeline with Allure Reports</a></p>
+      <p class="small">This page is public-safe. It uses local mock UI, WireMock API services, H2 database checks, and no private DTCC systems, credentials, or internal URLs.</p>
+    </section>
+
+    <section class="grid" aria-label="Verified test result totals">
+      <div class="card"><div class="metric-label">Verified Stable Tests</div><div class="metric">11</div></div>
+      <div class="card"><div class="metric-label">Verified Passed</div><div class="metric pass">10</div></div>
+      <div class="card"><div class="metric-label">Verified Failed</div><div class="metric fail">0</div></div>
+      <div class="card"><div class="metric-label">Verified Errors</div><div class="metric fail">0</div></div>
+      <div class="card"><div class="metric-label">Verified Skipped</div><div class="metric skip">1</div></div>
+      <div class="card"><div class="metric-label">Catalog Scenarios</div><div class="metric">48</div></div>
+    </section>
+
+    <section class="card">
+      <h2>Verified Suite Summary</h2>
+      <table>
+        <thead>
+          <tr><th>Suite / Profile</th><th>Status</th><th>Tests</th><th>Result</th><th>Coverage</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>allure-ui</code></td><td><span class="status-pill pill-pass">PASS</span></td><td>6</td><td>5 passed, 0 failed, 0 errors, 1 skipped</td><td>Allure annotated UI, Selenium UI, API, database, intentional failure guard</td></tr>
+          <tr><td><code>api</code></td><td><span class="status-pill pill-pass">PASS</span></td><td>1</td><td>1 passed, 0 failed, 0 errors</td><td>Rest Assured + WireMock mock backend transaction validation</td></tr>
+          <tr><td><code>selenide</code></td><td><span class="status-pill pill-pass">PASS</span></td><td>4</td><td>4 passed, 0 failed, 0 errors</td><td>Selenide browser flows against the local mock app</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Expanded Test Catalog</h2>
+      <table>
+        <thead>
+          <tr><th>#</th><th>Type</th><th>Scenario</th><th>Status</th><th>Report Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Allure UI</td><td>Annotated order flow creates customer, cart, checkout, payment, confirmation</td><td><span class="status-pill pill-pass">PASS</span></td><td>Screenshot and step attachments</td></tr>
+          <tr><td>2</td><td>Selenium UI</td><td>Valid demo login succeeds</td><td><span class="status-pill pill-pass">PASS</span></td><td>Headless Chrome</td></tr>
+          <tr><td>3</td><td>Selenium UI</td><td>Order lifecycle completes in mock app</td><td><span class="status-pill pill-pass">PASS</span></td><td>Public-safe local HTML app</td></tr>
+          <tr><td>4</td><td>API</td><td>Mock transaction API returns expected account payload</td><td><span class="status-pill pill-pass">PASS</span></td><td>WireMock</td></tr>
+          <tr><td>5</td><td>Database</td><td>H2 database schema and transaction count validate</td><td><span class="status-pill pill-pass">PASS</span></td><td>In-memory SQL</td></tr>
+          <tr><td>6</td><td>Guardrail</td><td>Intentional failure demo remains disabled by default</td><td><span class="status-pill pill-skip">SKIPPED</span></td><td>Only runs with explicit opt-in</td></tr>
+          <tr><td>7</td><td>Selenide UI</td><td>Mock login page opens and accepts valid credentials</td><td><span class="status-pill pill-pass">PASS</span></td><td>Selenide profile</td></tr>
+          <tr><td>8</td><td>Selenide UI</td><td>Product search/filter controls are visible and usable</td><td><span class="status-pill pill-pass">PASS</span></td><td>Selenide profile</td></tr>
+          <tr><td>9</td><td>Selenide UI</td><td>Cart summary updates after adding sample order item</td><td><span class="status-pill pill-pass">PASS</span></td><td>Selenide profile</td></tr>
+          <tr><td>10</td><td>Selenide UI</td><td>Checkout confirmation state renders correctly</td><td><span class="status-pill pill-pass">PASS</span></td><td>Selenide profile</td></tr>
+          <tr><td>11</td><td>API</td><td>Backend transaction happy path validates status code and body</td><td><span class="status-pill pill-pass">PASS</span></td><td>API profile</td></tr>
+          <tr><td>12</td><td>Compile</td><td>Main source compiles with Java 17</td><td><span class="status-pill pill-pass">PASS</span></td><td>Maven compile</td></tr>
+          <tr><td>13</td><td>Compile</td><td>Test source compiles with Java 17</td><td><span class="status-pill pill-pass">PASS</span></td><td>Maven test-compile</td></tr>
+          <tr><td>14</td><td>Allure</td><td>Raw Allure results directory is generated</td><td><span class="status-pill pill-pass">PASS</span></td><td><code>target/allure-results</code></td></tr>
+          <tr><td>15</td><td>Allure</td><td>Allure HTML report index is generated</td><td><span class="status-pill pill-pass">PASS</span></td><td><code>target/site/allure-report/index.html</code></td></tr>
+          <tr><td>16</td><td>Dashboard</td><td>GitHub Pages portal index generation</td><td><span class="status-pill pill-pass">PASS</span></td><td>Static portal builder</td></tr>
+          <tr><td>17</td><td>Artifact</td><td>Raw Surefire reports are uploaded by workflow</td><td><span class="status-pill pill-pass">PASS</span></td><td>Workflow artifact</td></tr>
+          <tr><td>18</td><td>Artifact</td><td>Allure HTML report is uploaded by workflow</td><td><span class="status-pill pill-pass">PASS</span></td><td>Workflow artifact</td></tr>
+          <tr><td>19</td><td>Artifact</td><td>Report portal artifact is uploaded by workflow</td><td><span class="status-pill pill-pass">PASS</span></td><td>Workflow artifact</td></tr>
+          <tr><td>20</td><td>UI Login</td><td>Invalid credentials show login error</td><td><span class="status-pill pill-ready">READY</span></td><td>Configured for mock app coverage</td></tr>
+          <tr><td>21</td><td>UI Login</td><td>Blank username/password validation</td><td><span class="status-pill pill-ready">READY</span></td><td>Recommended expansion</td></tr>
+          <tr><td>22</td><td>UI Login</td><td>Keyboard submit from password field</td><td><span class="status-pill pill-ready">READY</span></td><td>Accessibility workflow</td></tr>
+          <tr><td>23</td><td>UI Accessibility</td><td>Username field has accessible label</td><td><span class="status-pill pill-ready">READY</span></td><td>Mock app label coverage</td></tr>
+          <tr><td>24</td><td>UI Accessibility</td><td>Password field has accessible label</td><td><span class="status-pill pill-ready">READY</span></td><td>Mock app label coverage</td></tr>
+          <tr><td>25</td><td>UI Accessibility</td><td>Error message is announced after invalid login</td><td><span class="status-pill pill-ready">READY</span></td><td>ARIA-ready check</td></tr>
+          <tr><td>26</td><td>UI Cart</td><td>Add first product to cart</td><td><span class="status-pill pill-ready">READY</span></td><td>Expanded UI suite</td></tr>
+          <tr><td>27</td><td>UI Cart</td><td>Add multiple products to cart</td><td><span class="status-pill pill-ready">READY</span></td><td>Expanded UI suite</td></tr>
+          <tr><td>28</td><td>UI Cart</td><td>Remove product from cart</td><td><span class="status-pill pill-ready">READY</span></td><td>Expanded UI suite</td></tr>
+          <tr><td>29</td><td>UI Cart</td><td>Cart total recalculates after quantity change</td><td><span class="status-pill pill-ready">READY</span></td><td>Expanded UI suite</td></tr>
+          <tr><td>30</td><td>UI Checkout</td><td>Shipping form accepts valid public-safe address</td><td><span class="status-pill pill-ready">READY</span></td><td>Mock data only</td></tr>
+          <tr><td>31</td><td>UI Checkout</td><td>Required shipping fields validate correctly</td><td><span class="status-pill pill-ready">READY</span></td><td>Mock data only</td></tr>
+          <tr><td>32</td><td>UI Checkout</td><td>Payment method selection persists through review</td><td><span class="status-pill pill-ready">READY</span></td><td>No real payment data</td></tr>
+          <tr><td>33</td><td>UI Checkout</td><td>Order confirmation number is displayed</td><td><span class="status-pill pill-ready">READY</span></td><td>Mock order id</td></tr>
+          <tr><td>34</td><td>API Negative</td><td>Missing transaction id returns validation error</td><td><span class="status-pill pill-ready">READY</span></td><td>WireMock expansion</td></tr>
+          <tr><td>35</td><td>API Negative</td><td>Unknown account returns not found payload</td><td><span class="status-pill pill-ready">READY</span></td><td>WireMock expansion</td></tr>
+          <tr><td>36</td><td>API Contract</td><td>Transaction response schema validation</td><td><span class="status-pill pill-ready">READY</span></td><td>JSON schema validator</td></tr>
+          <tr><td>37</td><td>API Contract</td><td>Error response schema validation</td><td><span class="status-pill pill-ready">READY</span></td><td>JSON schema validator</td></tr>
+          <tr><td>38</td><td>Database</td><td>Insert sample transaction row</td><td><span class="status-pill pill-ready">READY</span></td><td>H2 expansion</td></tr>
+          <tr><td>39</td><td>Database</td><td>Update sample transaction status</td><td><span class="status-pill pill-ready">READY</span></td><td>H2 expansion</td></tr>
+          <tr><td>40</td><td>Database</td><td>Delete sample transaction row</td><td><span class="status-pill pill-ready">READY</span></td><td>H2 expansion</td></tr>
+          <tr><td>41</td><td>Cucumber BDD</td><td>Given user logs in, when checkout completes, then confirmation appears</td><td><span class="status-pill pill-ready">READY</span></td><td>BDD suite coverage</td></tr>
+          <tr><td>42</td><td>Cucumber BDD</td><td>Given invalid login, then access is denied</td><td><span class="status-pill pill-ready">READY</span></td><td>BDD suite coverage</td></tr>
+          <tr><td>43</td><td>Cucumber BDD</td><td>Given order API is available, then transaction status is returned</td><td><span class="status-pill pill-ready">READY</span></td><td>BDD suite coverage</td></tr>
+          <tr><td>44</td><td>Public Site</td><td>Public demo website smoke navigation</td><td><span class="status-pill pill-ready">READY</span></td><td>No private URLs</td></tr>
+          <tr><td>45</td><td>Public Site</td><td>Public demo website title and content validation</td><td><span class="status-pill pill-ready">READY</span></td><td>No private URLs</td></tr>
+          <tr><td>46</td><td>Report UI</td><td>Dashboard links point to Actions, repo, and report artifacts</td><td><span class="status-pill pill-ready">READY</span></td><td>Portal validation</td></tr>
+          <tr><td>47</td><td>Report UI</td><td>Allure report link resolves after Pages deployment</td><td><span class="status-pill pill-ready">READY</span></td><td>Pages validation</td></tr>
+          <tr><td>48</td><td>Failure Demo</td><td>Intentional failing tests generate red Allure examples only when enabled</td><td><span class="status-pill pill-demo">OPT-IN</span></td><td><code>includeIntentionalFailures=true</code></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Verification Commands</h2>
+      <pre><code>mvn -B clean compile test-compile -DskipTests
+Result: BUILD SUCCESS
+
+mvn -B clean test -Pallure-ui -Dbrowser=chrome -Dheadless=true -DincludeIntentionalFailures=false
+Result: BUILD SUCCESS; Tests run: 6, Failures: 0, Errors: 0, Skipped: 1
+
+mvn -B test -Papi -DincludeIntentionalFailures=false -Dallure.results.directory=target/allure-results
+Result: BUILD SUCCESS; Tests run: 1, Failures: 0, Errors: 0
+
+mvn -B test -Pselenide -Dbrowser=chrome -Dheadless=true -DincludeIntentionalFailures=false -Dallure.results.directory=target/allure-results
+Result: BUILD SUCCESS; Tests run: 4, Failures: 0, Errors: 0
+
+mvn -B allure:report
+Result: BUILD SUCCESS; target/site/allure-report/index.html generated</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Legend</h2>
+      <p><span class="status-pill pill-pass">PASS</span> Verified passing in the stable local/CI-safe run.</p>
+      <p><span class="status-pill pill-ready">READY</span> Included in the expanded project report catalog and ready to automate or run in an expanded profile.</p>
+      <p><span class="status-pill pill-demo">OPT-IN</span> Demo failure coverage that must only run when intentionally enabled.</p>
+      <p><span class="status-pill pill-skip">SKIPPED</span> Correctly excluded from the default stable run.</p>
+    </section>
+  </main>
+</body>
+</html>
