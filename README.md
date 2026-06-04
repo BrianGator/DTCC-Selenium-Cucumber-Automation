@@ -67,6 +67,7 @@ This project is designed for an SDET automation interview or GitHub portfolio. I
 - Cucumber JSON/HTML BDD reporting
 - Defect screenshots, failed-test logs, and report evidence exports
 - Public website coverage for `dtcc.com`
+- Full Selenium framework-from-scratch architecture, including driver factory, base test, configuration, reusable utilities, page objects, BDD runners, listeners, test data, and CI/CD reporting
 
 ---
 
@@ -129,6 +130,7 @@ DTCC-Selenium-Cucumber-Automation/
 │   └── sample-failed-test-log.txt
 ├── 14_Defects_and_Screenshots/
 ├── 15_Full_Selenium_Framework_From_Scratch/
+│   └── README.md
 ├── 16_DTCC_Public_Website_Page_Coverage/
 ├── 17_Selenide_Playwright_Experience_For_Java_Selenium/
 ├── 18_GitHub_Actions_Allure_Report_UI/
@@ -138,7 +140,29 @@ DTCC-Selenium-Cucumber-Automation/
 │   ├── test-cases/
 │   └── test-strategy/
 ├── full-selenium-framework-from-scratch/
-│   └── selenide-wrapper/
+│   ├── README.md
+│   ├── pom.xml
+│   ├── Jenkinsfile
+│   ├── selenide-wrapper/
+│   └── src/
+│       ├── main/java/com/dtcc/automation/
+│       │   ├── config/
+│       │   ├── constants/
+│       │   ├── driver/
+│       │   ├── pages/
+│       │   └── utils/
+│       └── test/
+│           ├── java/com/dtcc/automation/
+│           │   ├── base/
+│           │   ├── listeners/
+│           │   ├── runners/
+│           │   ├── stepdefs/
+│           │   └── tests/
+│           └── resources/
+│               ├── features/
+│               ├── testdata/
+│               ├── testng-suites/
+│               └── config.properties
 ├── scripts/
 │   ├── build-report-portal.sh
 │   └── open-report-ui.sh
@@ -179,7 +203,204 @@ DTCC-Selenium-Cucumber-Automation/
 
 ---
 
-## 3. Different Types of Tests
+## 3. Full Selenium Framework From Scratch
+
+The framework-from-scratch area explains how the project would be built from a blank repository into a maintainable enterprise SDET automation framework. It documents the same layers used in real Java/Selenium frameworks: Maven dependencies, browser driver management, base classes, Page Object Model, Cucumber BDD, TestNG suites, reporting, test data, utility classes, failure screenshots, and CI/CD execution.
+
+### Framework-from-Scratch Folder Structure
+
+```text
+full-selenium-framework-from-scratch/
+├── README.md
+├── pom.xml
+├── Jenkinsfile
+├── selenide-wrapper/
+│   ├── README.md
+│   └── src/test/java/com/dtcc/automation/selenide/
+│       ├── SelenideTestBase.java
+│       ├── SelenideLoginValidationTest.java
+│       ├── SelenideOrderLifecycleTest.java
+│       ├── SelenidePublicSiteSmokeTest.java
+│       └── pages/
+│           ├── SelenideLoginPage.java
+│           ├── SelenideOrderLifecyclePage.java
+│           └── SelenidePublicHomePage.java
+└── src/
+    ├── main/java/com/dtcc/automation/
+    │   ├── config/
+    │   │   ├── ConfigReader.java
+    │   │   └── EnvironmentConfig.java
+    │   ├── constants/
+    │   │   ├── FrameworkConstants.java
+    │   │   └── TestGroups.java
+    │   ├── driver/
+    │   │   ├── DriverFactory.java
+    │   │   ├── DriverManager.java
+    │   │   └── BrowserOptionsFactory.java
+    │   ├── pages/
+    │   │   ├── BasePage.java
+    │   │   ├── LoginPage.java
+    │   │   ├── OrderLifecyclePage.java
+    │   │   ├── CataloguePage.java
+    │   │   ├── CheckoutPage.java
+    │   │   ├── ConfirmationPage.java
+    │   │   └── PublicHomePage.java
+    │   └── utils/
+    │       ├── WaitUtils.java
+    │       ├── ScreenshotUtils.java
+    │       ├── JsonUtils.java
+    │       ├── FileDownloadUtils.java
+    │       ├── PdfValidationUtils.java
+    │       ├── ExcelReader.java
+    │       ├── LogUtils.java
+    │       └── EncryptionManager.java
+    └── test/
+        ├── java/com/dtcc/automation/
+        │   ├── base/
+        │   │   ├── BaseTest.java
+        │   │   └── ApiBaseTest.java
+        │   ├── listeners/
+        │   │   ├── TestExecutionListener.java
+        │   │   ├── RetryAnalyzer.java
+        │   │   └── AnnotationTransformer.java
+        │   ├── runners/
+        │   │   ├── CucumberTestRunner.java
+        │   │   └── TestNGSuiteRunner.java
+        │   ├── stepdefs/
+        │   │   ├── LoginSteps.java
+        │   │   ├── OrderSteps.java
+        │   │   └── PublicSiteSteps.java
+        │   └── tests/
+        │       ├── ui/
+        │       │   ├── LoginValidationTest.java
+        │       │   └── SeleniumOrderLifecycleTest.java
+        │       ├── api/
+        │       │   └── BackendTransactionTest.java
+        │       ├── database/
+        │       │   └── SqlDatabaseValidationTest.java
+        │       ├── publicsite/
+        │       │   └── DtccPublicSiteSmokeTest.java
+        │       └── unit/
+        │           └── FrameworkUtilityUnitTest.java
+        └── resources/
+            ├── config.properties
+            ├── log4j2.xml
+            ├── features/
+            │   ├── Login.feature
+            │   ├── OrderE2E.feature
+            │   └── PublicSiteSmoke.feature
+            ├── karate/
+            │   ├── karate-config.js
+            │   └── clearing-api-test.feature
+            ├── sql/
+            │   ├── schema.sql
+            │   ├── data.sql
+            │   └── validation-queries.sql
+            ├── testdata/
+            │   ├── login-users.json
+            │   ├── order-test-data.json
+            │   └── search-data.csv
+            └── testng-suites/
+                ├── smoke-suite.xml
+                ├── ui-regression-suite.xml
+                ├── backend-api-suite.xml
+                ├── cucumber-suite.xml
+                ├── database-suite.xml
+                └── all-suites.xml
+```
+
+### Framework Layers and Responsibilities
+
+| Layer | Files / Folders | Purpose |
+|---|---|---|
+| Build and dependencies | `pom.xml`, `build.gradle` | Defines Java 17, Selenium, TestNG, JUnit, Cucumber, Rest Assured, Karate, H2, Selenide, Allure, and Maven plugins. |
+| Configuration | `config.properties`, `ConfigReader.java`, `EnvironmentConfig.java` | Centralizes base URL, browser, headless mode, timeout, environment, test data path, and reporting paths. |
+| Driver management | `DriverFactory.java`, `DriverManager.java`, `BrowserOptionsFactory.java` | Creates browser instances, applies Chrome/Edge options, supports headless execution, and stores WebDriver safely for parallel execution. |
+| Base test layer | `BaseTest.java`, `ApiBaseTest.java` | Handles setup/teardown, browser lifecycle, environment loading, API base URI setup, and reusable test initialization. |
+| Page Object Model | `BasePage.java`, `LoginPage.java`, `OrderLifecyclePage.java`, `CataloguePage.java`, `CheckoutPage.java`, `ConfirmationPage.java`, `PublicHomePage.java` | Keeps locators and page actions separate from test assertions so tests remain readable and maintainable. |
+| BDD layer | `features/`, `stepdefs/`, `CucumberTestRunner.java` | Maps business-readable Gherkin scenarios to Java step definitions and TestNG/Cucumber execution. |
+| API layer | `BackendTransactionTest.java`, `karate/`, `JsonUtils.java` | Validates service contracts, response status, JSON payloads, schema-like expectations, and backend transaction behavior. |
+| SQL/database layer | `schema.sql`, `data.sql`, `validation-queries.sql`, `SqlDatabaseValidationTest.java` | Builds safe H2 data, runs SQL queries, and verifies persisted backend state without private enterprise database access. |
+| Utilities | `WaitUtils.java`, `ScreenshotUtils.java`, `FileDownloadUtils.java`, `PdfValidationUtils.java`, `ExcelReader.java`, `LogUtils.java` | Provides reusable waits, screenshots, downloads, PDF validation, test data access, logging, and common framework helpers. |
+| Listeners and retries | `TestExecutionListener.java`, `RetryAnalyzer.java`, `AnnotationTransformer.java` | Captures screenshots/logs on failure, attaches evidence to reports, and optionally retries unstable tests when configured. |
+| Reporting | `target/allure-results`, `target/site/allure-report`, `target/surefire-reports`, `target/cucumber-reports` | Produces Allure, Surefire/TestNG, Cucumber, screenshots, and CI/CD artifacts. |
+| CI/CD | `.github/workflows/selenium.yml`, `Jenkinsfile` | Runs tests headlessly, publishes artifacts, generates Allure, and deploys report evidence to GitHub Pages. |
+
+### Framework Build Sequence From Scratch
+
+| Step | What Is Added | Outcome |
+|---|---|---|
+| 1 | Create Maven Java project and `pom.xml` | Project can compile and manage dependencies. |
+| 2 | Add `config.properties` and config reader | Environment-specific values are no longer hard-coded. |
+| 3 | Add driver factory and browser options | Chrome/Edge execution works locally and in CI. |
+| 4 | Add `BaseTest` and setup/teardown | Tests share consistent lifecycle management. |
+| 5 | Add Page Object Model | UI tests become readable and maintainable. |
+| 6 | Add TestNG suites | Smoke, regression, API, DB, and full-suite execution can be controlled by XML/profile. |
+| 7 | Add Cucumber feature files and step definitions | Business-readable BDD coverage is available. |
+| 8 | Add Rest Assured/Karate API checks | Backend/API validation is part of the same framework. |
+| 9 | Add H2 SQL validation | Database testing pattern is demonstrated safely without private DB access. |
+| 10 | Add listeners, screenshots, logs, and retries | Failed tests create useful defect evidence. |
+| 11 | Add Allure, Surefire/TestNG, and Cucumber reports | Test results are reviewer-friendly and CI-ready. |
+| 12 | Add GitHub Actions/Jenkins | Framework runs in a cloud CI/CD execution UI. |
+
+### Key Framework Files Explained
+
+| File | Responsibility |
+|---|---|
+| `ConfigReader.java` | Loads properties such as browser, base URL, timeout, headless mode, and environment from `config.properties`. |
+| `DriverFactory.java` | Creates WebDriver instances based on the configured browser and runtime options. |
+| `DriverManager.java` | Stores and retrieves the active WebDriver instance, usually with ThreadLocal for parallel safety. |
+| `BrowserOptionsFactory.java` | Builds ChromeOptions/EdgeOptions for headless runs, CI stability, window size, downloads, and security settings. |
+| `BasePage.java` | Provides common Selenium operations such as click, type, wait, get text, and element visibility checks. |
+| `BaseTest.java` | Starts the browser before each test, opens the target URL, and quits the driver after execution. |
+| `TestExecutionListener.java` | Captures screenshots, logs, and report attachments when tests fail. |
+| `RetryAnalyzer.java` | Optionally reruns selected failed tests to reduce noise from transient failures. |
+| `CucumberTestRunner.java` | Connects Cucumber feature files to TestNG execution and Cucumber reporting. |
+| `OrderSteps.java` | Implements Given/When/Then workflow steps for login, catalogue selection, checkout, and confirmation. |
+| `BackendTransactionTest.java` | Uses API checks to verify mock backend transaction behavior. |
+| `SqlDatabaseValidationTest.java` | Loads safe H2 test data and validates backend persistence with SQL queries. |
+| `PdfValidationUtils.java` | Supports PDF-heavy public website testing through file download and document content checks. |
+| `ExcelReader.java` | Demonstrates data-driven testing patterns for spreadsheet-based test input. |
+| `Jenkinsfile` | Shows how the same Maven/TestNG/Cucumber framework can run through Jenkins or CloudBees. |
+| `.github/workflows/selenium.yml` | Runs the framework in GitHub Actions and publishes report artifacts. |
+
+### Example Framework Execution Flow
+
+```text
+GitHub Actions / Local Maven Command
+        ↓
+Maven profile selects TestNG suite XML
+        ↓
+BaseTest loads configuration and starts WebDriver
+        ↓
+Test class or Cucumber runner executes scenario
+        ↓
+Page objects perform UI actions and assertions
+        ↓
+API/SQL utilities validate backend state when needed
+        ↓
+TestNG listener captures screenshots/logs on failure
+        ↓
+Surefire, Cucumber, and Allure artifacts are generated
+        ↓
+GitHub Pages publishes reviewer-friendly report portal
+```
+
+### Framework Design Patterns Used
+
+| Pattern | How It Is Used |
+|---|---|
+| Page Object Model | Keeps page locators/actions in page classes and test assertions in test classes. |
+| Factory Pattern | Creates WebDriver instances and browser options from centralized configuration. |
+| Singleton / ThreadLocal Driver Management | Keeps browser sessions isolated for stable parallel execution. |
+| Data-Driven Testing | Allows JSON, CSV, Excel, or properties-based input to drive repeated scenarios. |
+| BDD Step Mapping | Connects Cucumber Gherkin steps to Java step definition methods. |
+| Listener Pattern | Hooks into TestNG execution for screenshots, logging, retries, and report evidence. |
+| Layered Framework Architecture | Separates config, driver, pages, tests, utilities, reports, and CI/CD. |
+
+---
+
+## 4. Different Types of Tests
 
 The `12_Test_Cases/` folder organizes portfolio evidence by test type so reviewers can quickly identify UI, API, database, CI/CD, BDD, reporting, negative, and non-functional coverage.
 
@@ -209,7 +430,7 @@ The `12_Test_Cases/` folder organizes portfolio evidence by test type so reviewe
 
 ---
 
-## 4. Test Coverage Summary
+## 5. Test Coverage Summary
 
 | Area | Coverage | Status / Evidence |
 |---|---|---|
@@ -226,6 +447,7 @@ The `12_Test_Cases/` folder organizes portfolio evidence by test type so reviewe
 | Public Website | DTCC.com public-page smoke checks, template rendering, sitemap-driven strategy, and selected high-value page areas. | Covered by `public-site` profile. |
 | CI/CD | GitHub Actions and Jenkins/CloudBees execution patterns. | Covered by `.github/workflows/selenium.yml` and `Jenkinsfile`. |
 | Reporting | Allure, Cucumber, Maven Surefire/TestNG, PDF exports, screenshots, and failure logs. | Covered under `13_Reports/` and workflow artifacts. |
+| Framework From Scratch | Driver factory, base tests, utilities, POM, BDD runners, listeners, reporting, config, and CI/CD wiring. | Covered in `15_Full_Selenium_Framework_From_Scratch/` and `full-selenium-framework-from-scratch/`. |
 
 ### Current Report Snapshot - 6/3/2026
 
@@ -250,7 +472,7 @@ The `12_Test_Cases/` folder organizes portfolio evidence by test type so reviewe
 
 ---
 
-## 5. How to Run Locally
+## 6. How to Run Locally
 
 ### Prerequisites
 
@@ -285,7 +507,7 @@ target/site/allure-report/index.html
 
 ---
 
-## 6. GitHub Actions Dashboard + Allure Report UI
+## 7. GitHub Actions Dashboard + Allure Report UI
 
 The primary workflow is:
 
@@ -324,7 +546,7 @@ Important: GitHub Pages is a static website, so it cannot safely start workflows
 
 ---
 
-## 7. Report Portal Structure
+## 8. Report Portal Structure
 
 The deployed report portal contains runtime and sample report views:
 
@@ -341,7 +563,7 @@ The deployed report portal contains runtime and sample report views:
 
 ---
 
-## 8. Report Artifacts and Evidence
+## 9. Report Artifacts and Evidence
 
 Runtime reports are created when tests run:
 
@@ -384,7 +606,7 @@ Static/sample and portfolio evidence reports are stored under `13_Reports/`:
 
 ---
 
-## 9. Selenide - Playwright-Style Auto-Waiting for Java/Selenium
+## 10. Selenide - Playwright-Style Auto-Waiting for Java/Selenium
 
 Selenide was added as a modern UI automation layer on top of Selenium WebDriver. It does not replace Selenium; it wraps Selenium to reduce boilerplate and flakiness.
 
@@ -424,7 +646,7 @@ full-selenium-framework-from-scratch/selenide-wrapper/
 
 ---
 
-## 10. DTCC.com Public Website Automation Strategy
+## 11. DTCC.com Public Website Automation Strategy
 
 When automating `dtcc.com`, do not hand-code one brittle Selenium test per URL. Use a sitemap-driven model for broad HTTP/page availability and Page Object/Selenide tests for high-value templates and data-heavy pages.
 
@@ -446,7 +668,7 @@ Out of scope:
 
 ---
 
-## 11. SQL Database Tests Without Enterprise DB Access
+## 12. SQL Database Tests Without Enterprise DB Access
 
 Because reviewers will not have access to private enterprise databases, the project includes H2 in-memory SQL database examples:
 
@@ -461,7 +683,7 @@ This demonstrates the same SDET pattern used for real Oracle/DB2/Snowflake valid
 
 ---
 
-## 12. Publishing and Safety Notes
+## 13. Publishing and Safety Notes
 
 Before publishing or sharing:
 
@@ -473,22 +695,23 @@ Before publishing or sharing:
 
 ---
 
-## 13. Recommended Reviewer Flow
+## 14. Recommended Reviewer Flow
 
 1. Open the repository.
 2. Review this README and the folder structure.
-3. Open the GitHub Actions workflow.
-4. Run the `allure-ui` profile with `include_intentional_failures=false`.
-5. Review the workflow logs, artifacts, execution time, and generated report links.
-6. Open the deployed GitHub Pages report portal.
-7. Open the live Allure report, Cucumber evidence, Surefire/TestNG report, and PDF exports.
-8. Review code under `src/test/java/com/dtcc/automation/`.
-9. Review `13_Reports/` for portfolio-ready report evidence.
-10. Review `12_Test_Cases/` for organized examples by test type.
+3. Review the **Full Selenium Framework From Scratch** section.
+4. Open the GitHub Actions workflow.
+5. Run the `allure-ui` profile with `include_intentional_failures=false`.
+6. Review the workflow logs, artifacts, execution time, and generated report links.
+7. Open the deployed GitHub Pages report portal.
+8. Open the live Allure report, Cucumber evidence, Surefire/TestNG report, and PDF exports.
+9. Review code under `src/test/java/com/dtcc/automation/`.
+10. Review `13_Reports/` for portfolio-ready report evidence.
+11. Review `12_Test_Cases/` for organized examples by test type.
 
 ---
 
-## 14. Notes About Running Tests
+## 15. Notes About Running Tests
 
 This project was generated as a public-safe portfolio framework. Some suites use mock applications, mock APIs, H2 sample data, and public website checks. Intentional failure examples are isolated behind the `failure-demo` profile and should not be used as the default CI profile.
 
