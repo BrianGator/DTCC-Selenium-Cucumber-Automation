@@ -1,0 +1,228 @@
+%PDF-1.4
+% ASCII-safe generated report PDF
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1052 >>
+stream
+BT
+/F1 12 Tf
+50 760 Td
+14 TL
+(DTCC Selenium Cucumber Automation) Tj
+T*
+(Test Report Dashboard) Tj
+T*
+(Generated from the public GitHub Pages report content.) Tj
+T*
+() Tj
+T*
+(Report URL: https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/) Tj
+T*
+(Repository: https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation) Tj
+T*
+(Workflow: Selenium CI/CD Pipeline with Allure Reports) Tj
+T*
+() Tj
+T*
+(Verified Result Totals) Tj
+T*
+(- Verified Stable Tests: 11) Tj
+T*
+(- Verified Passed: 10) Tj
+T*
+(- Verified Failed: 0) Tj
+T*
+(- Verified Errors: 0) Tj
+T*
+(- Verified Skipped: 1) Tj
+T*
+(- Catalog Scenarios: 48) Tj
+T*
+() Tj
+T*
+(Verified Suite Summary) Tj
+T*
+(- allure-ui: PASS - 6 tests, 5 passed, 0 failed, 0 errors, 1 skipped) Tj
+T*
+(- api: PASS - 1 test, 1 passed, 0 failed, 0 errors) Tj
+T*
+(- selenide: PASS - 4 tests, 4 passed, 0 failed, 0 errors) Tj
+T*
+() Tj
+T*
+(Public Safety) Tj
+T*
+(This report uses local mock UI, WireMock API services, H2 database checks,) Tj
+T*
+(and no private DTCC systems, credentials, or internal URLs.) Tj
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 1851 >>
+stream
+BT
+/F1 12 Tf
+50 760 Td
+14 TL
+(Expanded Test Catalog - Verified and Reported Coverage) Tj
+T*
+() Tj
+T*
+(01 PASS Allure UI - Annotated order flow with screenshots and attachments) Tj
+T*
+(02 PASS Selenium UI - Valid demo login succeeds in headless Chrome) Tj
+T*
+(03 PASS Selenium UI - Order lifecycle completes in the mock app) Tj
+T*
+(04 PASS API - Mock transaction API returns expected account payload) Tj
+T*
+(05 PASS Database - H2 schema and transaction count validate) Tj
+T*
+(06 SKIP Guardrail - Intentional failure demo disabled by default) Tj
+T*
+(07 PASS Selenide UI - Mock login page opens and accepts credentials) Tj
+T*
+(08 PASS Selenide UI - Product search/filter controls visible and usable) Tj
+T*
+(09 PASS Selenide UI - Cart summary updates after adding item) Tj
+T*
+(10 PASS Selenide UI - Checkout confirmation state renders correctly) Tj
+T*
+(11 PASS API - Backend transaction happy path validates status and body) Tj
+T*
+(12 PASS Compile - Main source compiles with Java 17) Tj
+T*
+(13 PASS Compile - Test source compiles with Java 17) Tj
+T*
+(14 PASS Allure - Raw Allure results directory generated) Tj
+T*
+(15 PASS Allure - Allure HTML report index generated) Tj
+T*
+(16 PASS Dashboard - GitHub Pages portal index generation) Tj
+T*
+(17 PASS Artifact - Raw Surefire reports uploaded by workflow) Tj
+T*
+(18 PASS Artifact - Allure HTML report uploaded by workflow) Tj
+T*
+(19 PASS Artifact - Report portal artifact uploaded by workflow) Tj
+T*
+(20 READY UI Login - Invalid credentials show login error) Tj
+T*
+(21 READY UI Login - Blank username/password validation) Tj
+T*
+(22 READY UI Login - Keyboard submit from password field) Tj
+T*
+(23 READY UI Accessibility - Username field accessible label) Tj
+T*
+(24 READY UI Accessibility - Password field accessible label) Tj
+T*
+(25 READY UI Accessibility - Error message announced after invalid login) Tj
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 2081 >>
+stream
+BT
+/F1 12 Tf
+50 760 Td
+14 TL
+(Expanded Test Catalog - Additional Ready/Optional Scenarios) Tj
+T*
+() Tj
+T*
+(26 READY UI Cart - Add first product to cart) Tj
+T*
+(27 READY UI Cart - Add multiple products to cart) Tj
+T*
+(28 READY UI Cart - Remove product from cart) Tj
+T*
+(29 READY UI Cart - Cart total recalculates after quantity change) Tj
+T*
+(30 READY UI Checkout - Shipping form accepts public-safe address) Tj
+T*
+(31 READY UI Checkout - Required shipping fields validate correctly) Tj
+T*
+(32 READY UI Checkout - Payment method selection persists through review) Tj
+T*
+(33 READY UI Checkout - Order confirmation number is displayed) Tj
+T*
+(34 READY API Negative - Missing transaction id returns validation error) Tj
+T*
+(35 READY API Negative - Unknown account returns not found payload) Tj
+T*
+(36 READY API Contract - Transaction response schema validation) Tj
+T*
+(37 READY API Contract - Error response schema validation) Tj
+T*
+(38 READY Database - Insert sample transaction row) Tj
+T*
+(39 READY Database - Update sample transaction status) Tj
+T*
+(40 READY Database - Delete sample transaction row) Tj
+T*
+(41 READY Cucumber BDD - Login, checkout, confirmation scenario) Tj
+T*
+(42 READY Cucumber BDD - Invalid login access denied scenario) Tj
+T*
+(43 READY Cucumber BDD - Order API transaction status scenario) Tj
+T*
+(44 READY Public Site - Public demo website smoke navigation) Tj
+T*
+(45 READY Public Site - Public demo website title/content validation) Tj
+T*
+(46 READY Report UI - Dashboard links point to Actions, repo, artifacts) Tj
+T*
+(47 READY Report UI - Allure report link resolves after Pages deployment) Tj
+T*
+(48 OPT-IN Failure Demo - Intentional failures only when enabled) Tj
+T*
+() Tj
+T*
+(Verification Commands) Tj
+T*
+(mvn -B clean compile test-compile -DskipTests -> BUILD SUCCESS) Tj
+T*
+(mvn -B clean test -Pallure-ui -Dbrowser=chrome -Dheadless=true -DincludeIntentionalFailures=false) Tj
+T*
+(Result: BUILD SUCCESS; Tests run: 6, Failures: 0, Errors: 0, Skipped: 1) Tj
+T*
+(mvn -B allure:report -> BUILD SUCCESS; target/site/allure-report/index.html generated) Tj
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000043 00000 n 
+0000000092 00000 n 
+0000000161 00000 n 
+0000000231 00000 n 
+0000000357 00000 n 
+0000001460 00000 n 
+0000001586 00000 n 
+0000003488 00000 n 
+0000003614 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+5746
+%%EOF
