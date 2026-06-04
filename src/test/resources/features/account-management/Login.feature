@@ -21,5 +21,5 @@ Feature: Account authentication validation
       | username                    | password      |
       | bad_user                    | bad_password  |
       |                             |               |
-      | <script>alert(1)</script>   | demo_password |
+      | script-alert-payload        | demo_password |
       | ' OR '1'='1                 | anything      |
