@@ -91,6 +91,59 @@ jobs:
             -Dallure.results.directory=target/allure-results \
             -DincludeIntentionalFailures=${{ steps.profile.outputs.include_failures }}
 
+      - name: Prepare Allure Report Metadata
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p target/allure-results
+          cat > target/allure-results/environment.properties <<EOF
+          Website=https://www.dtcc.com/
+          Browser=Chrome Headless
+          Test_Profile=${{ steps.profile.outputs.profile }}
+          Intentional_Failures=${{ steps.profile.outputs.include_failures }}
+          Public_Safe_Mode=true
+          Data_Source=Mock UI, WireMock REST API, H2 database
+          EOF
+          cat > target/allure-results/executor.json <<EOF
+          {
+            "name": "GitHub Actions",
+            "type": "github",
+            "url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "buildName": "${{ github.workflow }} #${{ github.run_number }}",
+            "buildUrl": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
+            "reportUrl": "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/allure/index.html"
+          }
+          EOF
+          cat > target/allure-results/categories.json <<'EOF'
+          [
+            {
+              "name": "Intentional demo failures",
+              "matchedStatuses": ["failed"],
+              "messageRegex": ".*Intentional.*"
+            },
+            {
+              "name": "Security validation failures",
+              "matchedStatuses": ["failed", "broken"],
+              "traceRegex": ".*(script|SQL|unauthorized|Bearer|security).*"
+            },
+            {
+              "name": "REST API contract failures",
+              "matchedStatuses": ["failed", "broken"],
+              "traceRegex": ".*(RestAssured|WireMock|statusCode|JSON|schema).*"
+            },
+            {
+              "name": "Browser UI failures",
+              "matchedStatuses": ["failed", "broken"],
+              "traceRegex": ".*(Selenium|WebDriver|Chrome|NoSuchElement|Timeout).*"
+            },
+            {
+              "name": "Skipped opt-in demos",
+              "matchedStatuses": ["skipped"],
+              "messageRegex": ".*Intentional failure demo skipped.*"
+            }
+          ]
+          EOF
+
       - name: Generate Allure HTML Report
         if: always()
         run: |
