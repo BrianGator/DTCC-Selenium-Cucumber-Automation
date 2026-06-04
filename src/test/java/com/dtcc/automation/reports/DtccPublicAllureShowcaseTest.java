@@ -16,7 +16,6 @@ import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -24,13 +23,11 @@ import org.testng.SkipException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
-import java.util.List;
 import java.util.Map;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
 import static com.github.tomakehurst.wiremock.client.WireMock.equalTo;
 import static com.github.tomakehurst.wiremock.client.WireMock.get;
-import static com.github.tomakehurst.wiremock.client.WireMock.getRequestedFor;
 import static com.github.tomakehurst.wiremock.client.WireMock.okJson;
 import static com.github.tomakehurst.wiremock.client.WireMock.post;
 import static com.github.tomakehurst.wiremock.client.WireMock.postRequestedFor;
@@ -38,7 +35,6 @@ import static com.github.tomakehurst.wiremock.client.WireMock.urlEqualTo;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalToIgnoringCase;
 import static org.hamcrest.Matchers.greaterThanOrEqualTo;
-import static org.hamcrest.Matchers.hasKey;
 import static org.hamcrest.Matchers.lessThan;
 
 @Epic("DTCC Public Website Automation")
@@ -256,7 +252,7 @@ public class DtccPublicAllureShowcaseTest extends UiTestBase {
         .when().post("/secure/v1/orders")
         .then().statusCode(201)
                 .body("sanitized", org.hamcrest.Matchers.equalTo(true))
-                .body("orderId", hasKey("bytes").not());
+                .body("orderId", org.hamcrest.Matchers.equalTo("DTCC-PUBLIC-100"));
 
         mockApi.verify(postRequestedFor(urlEqualTo("/secure/v1/orders")));
     }
