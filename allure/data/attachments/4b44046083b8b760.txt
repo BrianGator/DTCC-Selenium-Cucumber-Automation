@@ -1,0 +1,2 @@
+Report area: Allure packages
+Expected evidence: Java package and class organization

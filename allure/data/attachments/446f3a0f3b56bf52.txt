@@ -1,0 +1,3 @@
+Table: reporting_customer_vw
+Validation: masked customer view check
+Expected: MASKED

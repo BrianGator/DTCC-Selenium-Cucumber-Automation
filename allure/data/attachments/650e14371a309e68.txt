@@ -1,0 +1,3 @@
+Page: Home
+Evidence: Navigation header, hero content, footer, public links
+Type: smoke

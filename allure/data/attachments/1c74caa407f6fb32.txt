@@ -1,0 +1,2 @@
+Report area: Allure categories
+Expected evidence: Intentional failures and classified defect groups

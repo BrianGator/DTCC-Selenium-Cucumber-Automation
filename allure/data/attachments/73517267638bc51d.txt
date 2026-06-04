@@ -1,0 +1,3 @@
+Page: Global Trade Repository
+Evidence: Dynamic table shell, filter controls, jurisdiction data
+Type: regression

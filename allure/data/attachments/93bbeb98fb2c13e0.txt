@@ -1,0 +1,3 @@
+Table: client_reference
+Validation: service reference check
+Expected: VALID

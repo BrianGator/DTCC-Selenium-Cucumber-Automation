@@ -1,0 +1,3 @@
+Page: Search Results
+Evidence: Keyword input, result summaries, empty-state messaging
+Type: search

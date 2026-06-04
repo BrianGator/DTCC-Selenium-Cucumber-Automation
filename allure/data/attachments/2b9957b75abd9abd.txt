@@ -1,0 +1,2 @@
+Report area: GitHub Actions summary
+Expected evidence: Workflow execution links and artifact links

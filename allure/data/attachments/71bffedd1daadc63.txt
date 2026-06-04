@@ -1,0 +1,2 @@
+Report area: Quality gates
+Expected evidence: Pass rate and blocker defect checks

@@ -1,0 +1,3 @@
+Table: currency_reference
+Validation: currency reference check
+Expected: ENFORCED

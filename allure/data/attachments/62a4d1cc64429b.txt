@@ -1,0 +1,1 @@
+{"api":"Clearing Eligibility","endpoint":"/public/v1/clearing/eligibility","expectedStatus":200,"keyField":"eligible"}

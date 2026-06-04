@@ -1,0 +1,3 @@
+Table: active_settlements_vw
+Validation: active records check
+Expected: ACTIVE_ONLY

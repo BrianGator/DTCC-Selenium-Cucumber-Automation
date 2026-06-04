@@ -1,0 +1,3 @@
+Table: query_performance_log
+Validation: query timing check
+Expected: UNDER_500MS

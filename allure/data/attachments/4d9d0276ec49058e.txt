@@ -1,0 +1,3 @@
+Table: document_downloads
+Validation: document access check
+Expected: DOWNLOADED

@@ -1,0 +1,3 @@
+Page: News and Insights
+Evidence: Article cards, headline text, dates, pagination
+Type: content

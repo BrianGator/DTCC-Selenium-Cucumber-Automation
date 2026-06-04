@@ -1,0 +1,1 @@
+{"api":"Market Status","endpoint":"/public/v1/market/status","expectedStatus":200,"keyField":"status"}

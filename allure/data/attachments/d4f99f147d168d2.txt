@@ -1,0 +1,2 @@
+Report area: Allure overview
+Expected evidence: Launch status, suites, categories, graphs, environment

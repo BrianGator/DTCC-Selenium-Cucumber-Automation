@@ -1,0 +1,2 @@
+Report area: Consolidated dashboard
+Expected evidence: Embedded Allure frame and status summary

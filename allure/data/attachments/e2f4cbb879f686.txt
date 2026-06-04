@@ -1,0 +1,1 @@
+{"api":"Search Input Validation","endpoint":"/public/v1/search","expectedStatus":400,"keyField":"error"}

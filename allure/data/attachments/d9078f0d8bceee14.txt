@@ -1,0 +1,1 @@
+{"api":"Contract Version","endpoint":"/public/v1/version","expectedStatus":200,"keyField":"version"}

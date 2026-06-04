@@ -1,0 +1,2 @@
+Report area: Allure behaviors
+Expected evidence: Epic, feature, and story groupings

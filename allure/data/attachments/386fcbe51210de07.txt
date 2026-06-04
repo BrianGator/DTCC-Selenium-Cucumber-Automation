@@ -1,0 +1,1 @@
+{"api":"Risk Summary Authorization","endpoint":"/secure/v1/risk/summary","expectedStatus":401,"keyField":"unauthorized"}

@@ -1,0 +1,1 @@
+{"api":"Client Service Directory","endpoint":"/public/v1/client-center/services","expectedStatus":200,"keyField":"serviceGroup"}

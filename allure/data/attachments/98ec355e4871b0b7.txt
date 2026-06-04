@@ -1,0 +1,2 @@
+Report area: Surefire report
+Expected evidence: Raw TestNG XML and runner diagnostics

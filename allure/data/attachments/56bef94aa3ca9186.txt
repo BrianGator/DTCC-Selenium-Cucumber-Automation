@@ -1,0 +1,3 @@
+Page: Products and Services
+Evidence: Template title, product cards, service navigation
+Type: content

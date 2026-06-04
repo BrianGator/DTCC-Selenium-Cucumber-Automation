@@ -1,0 +1,3 @@
+Table: order_audit
+Validation: state transition check
+Expected: ACCEPTED_TO_PROCESSED

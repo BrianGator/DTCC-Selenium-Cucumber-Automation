@@ -1,0 +1,3 @@
+Table: settlement_orders
+Validation: order status check
+Expected: PROCESSED

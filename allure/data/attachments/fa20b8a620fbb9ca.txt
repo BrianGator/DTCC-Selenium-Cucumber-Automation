@@ -1,0 +1,3 @@
+Table: etl_reconciliation
+Validation: record count check
+Expected: MATCHED

@@ -1,0 +1,3 @@
+Table: failed_transactions
+Validation: reason code check
+Expected: VALIDATION_ERROR

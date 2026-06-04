@@ -1,0 +1,1 @@
+{"api":"Document Metadata","endpoint":"/public/v1/documents/{id}","expectedStatus":200,"keyField":"contentType"}
