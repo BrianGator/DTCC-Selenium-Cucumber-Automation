@@ -1,0 +1,1 @@
+{table=currency_reference, constraintStatus=ENFORCED, allowed=USD,EUR,GBP}
