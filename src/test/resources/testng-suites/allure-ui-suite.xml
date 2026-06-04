@@ -4,10 +4,11 @@
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
         <listener class-name="com.dtcc.automation.utils.TestExecutionListener"/>
     </listeners>
-    <test name="Allure Annotated UI Tests">
+    <test name="Allure Annotated UI API Database Tests">
         <classes>
             <class name="com.dtcc.automation.reports.AllureEnabledUiReportTest"/>
             <class name="com.dtcc.automation.reports.DtccPublicAllureShowcaseTest"/>
+            <class name="com.dtcc.automation.reports.DtccExtendedAllureCoverageTest"/>
             <class name="com.dtcc.automation.ui.LoginValidationTest"/>
             <class name="com.dtcc.automation.ui.SeleniumOrderLifecycleTest"/>
             <class name="com.dtcc.automation.api.BackendTransactionTest"/>
