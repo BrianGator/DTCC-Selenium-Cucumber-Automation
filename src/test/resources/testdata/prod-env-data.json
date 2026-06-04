@@ -1,3 +1,0 @@
-{
-  "note": "Never store production credentials in Git. Use Jenkins/CloudBees credentials binding, Vault, or environment variables."
-}

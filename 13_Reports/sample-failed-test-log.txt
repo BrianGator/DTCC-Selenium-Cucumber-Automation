@@ -1,4 +1,0 @@
-[FAILED] SampleFailure.missingTitleKeyword
-AssertionError: Expected public page title to contain required keyword.
-Screenshot: target/failed-test-screenshots/FAILED_missingTitleKeyword_2026-06-03_18-00-00.png
-Action: Open Jira defect using docs/defects/Jira-Defect-Template.md and attach screenshot/logs.

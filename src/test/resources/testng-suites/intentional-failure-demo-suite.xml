@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="DTCC Intentional Failure Demo Suite" verbose="1" parallel="false">
-    <test name="Intentional Failed Test Examples">
-        <classes>
-            <class name="com.dtcc.automation.reports.IntentionalFailureExampleTest"/>
-        </classes>
-    </test>
-</suite>

@@ -1,0 +1,1 @@
+{"id":"7a989f7c8d3f6968bddef9eaf232192a","fullName":"com.dtcc.automation.database.SqlDatabaseValidationTest.validatesSettlementOrdersUsingExampleSqlData","name":"Creates H2 SQL schema, loads example data, and validates settlement status counts","status":"passed","testResultsByEnv":{"default":"107b2295e973be3752642a5891d3af2c"}}
