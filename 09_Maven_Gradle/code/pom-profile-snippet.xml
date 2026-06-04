@@ -1,0 +1,10 @@
+<!-- Maven profile showing how this framework runs a named TestNG suite and Allure output. -->
+<profile>
+    <id>portfolio-regression</id>
+    <properties>
+        <suiteXmlFile>src/test/resources/testng-suites/allure-ui-suite.xml</suiteXmlFile>
+        <browser>chrome</browser>
+        <headless>true</headless>
+        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
+    </properties>
+</profile>
