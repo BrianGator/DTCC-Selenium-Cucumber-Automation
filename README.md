@@ -90,25 +90,26 @@ DTCC-Selenium-Cucumber-Automation/
 ├── 11_Git_Bitbucket_Workflow/
 ├── 12_Test_Cases/
 │   ├── API_Tests/
-│   ├── Login_Tests/
-│   ├── Cucumber_Tests/
-│   ├── Selenium_Tests/
-│   ├── Selenide_Tests/
-│   ├── CI_CD_Tests/
-│   ├── Regression_Tests/
-│   ├── JUnit_Tests/
-│   ├── SQL_Database_Tests/
-│   ├── Unit_Tests/
-│   ├── Security_Tests/
 │   ├── Accessibility_Tests/
-│   ├── Performance_Tests/
 │   ├── Broken_Link_Tests/
-│   ├── PDF_Download_Tests/
+│   ├── CI_CD_Tests/
+│   ├── Cucumber_Tests/
 │   ├── Data_Driven_Tests/
+│   ├── GitHub_Actions_Allure_UI_Tests/
+│   ├── Intentional_Failure_Examples/
+│   ├── JUnit_Tests/
+│   ├── Login_Tests/
 │   ├── Negative_Tests/
+│   ├── PDF_Download_Tests/
+│   ├── Performance_Tests/
+│   ├── Regression_Tests/
+│   ├── SQL_Database_Tests/
+│   ├── Security_Tests/
+│   ├── Selenide_Tests/
+│   ├── Selenium_Tests/
 │   ├── Smoke_Tests/
-│   ├── Visual_Smoke_Tests/
-│   └── Intentional_Failure_Examples/
+│   ├── Unit_Tests/
+│   └── Visual_Smoke_Tests/
 ├── 13_Reports/
 │   ├── allure-sample-results/
 │   │   ├── index.html
@@ -178,7 +179,37 @@ DTCC-Selenium-Cucumber-Automation/
 
 ---
 
-## 3. Test Coverage Summary
+## 3. Different Types of Tests
+
+The `12_Test_Cases/` folder organizes portfolio evidence by test type so reviewers can quickly identify UI, API, database, CI/CD, BDD, reporting, negative, and non-functional coverage.
+
+| Test Type Folder | What It Demonstrates |
+|---|---|
+| `12_Test_Cases/API_Tests/` | REST API validation, status codes, payload fields, schema-style checks, and backend service assertions. |
+| `12_Test_Cases/Accessibility_Tests/` | Accessibility-focused checks such as page structure, labels, keyboard-friendly behavior, and screen-reader-oriented validation examples. |
+| `12_Test_Cases/Broken_Link_Tests/` | Link availability, HTTP status validation, sitemap-driven checks, and public-page link regression coverage. |
+| `12_Test_Cases/CI_CD_Tests/` | CI/CD validation patterns for Jenkins, CloudBees, GitHub Actions, build stages, artifacts, and pipeline reporting. |
+| `12_Test_Cases/Cucumber_Tests/` | BDD feature files, scenarios, step definitions, and Given/When/Then business workflows. |
+| `12_Test_Cases/Data_Driven_Tests/` | Parameterized test data, reusable fixtures, CSV/JSON-style test inputs, and repeatable multi-data validation. |
+| `12_Test_Cases/GitHub_Actions_Allure_UI_Tests/` | GitHub Actions execution UI, Allure report publishing, workflow artifact review, and GitHub Pages report verification. |
+| `12_Test_Cases/Intentional_Failure_Examples/` | Controlled failed-test examples used only for report evidence, screenshots, logs, and defect triage demonstrations. |
+| `12_Test_Cases/JUnit_Tests/` | JUnit-based unit or framework-level test examples. |
+| `12_Test_Cases/Login_Tests/` | Positive and negative login validation, credential handling against mock data, and authentication flow checks. |
+| `12_Test_Cases/Negative_Tests/` | Invalid input, error handling, validation messages, blocked workflows, and failure-path coverage. |
+| `12_Test_Cases/PDF_Download_Tests/` | PDF download checks, file existence validation, content checks, and document-heavy public website testing patterns. |
+| `12_Test_Cases/Performance_Tests/` | Response-time, page-load, throughput, and lightweight performance assertion examples. |
+| `12_Test_Cases/Regression_Tests/` | Reusable end-to-end regression coverage for stable business-critical flows. |
+| `12_Test_Cases/SQL_Database_Tests/` | H2/JDBC database setup, seed data, SQL validation queries, and backend persistence checks. |
+| `12_Test_Cases/Security_Tests/` | Public-safe security checks such as headers, input handling, and intentional security expectation examples. |
+| `12_Test_Cases/Selenide_Tests/` | Selenide UI automation with smart waits, concise selectors, screenshots, and page-source capture on failure. |
+| `12_Test_Cases/Selenium_Tests/` | Raw Selenium WebDriver UI automation, Page Object usage, browser actions, waits, and end-to-end UI flows. |
+| `12_Test_Cases/Smoke_Tests/` | Fast high-level checks for build verification, basic page availability, and critical-path readiness. |
+| `12_Test_Cases/Unit_Tests/` | Isolated method/class validation for framework utilities and business logic examples. |
+| `12_Test_Cases/Visual_Smoke_Tests/` | Basic visual rendering checks, screenshot evidence, and UI layout sanity validation. |
+
+---
+
+## 4. Test Coverage Summary
 
 | Area | Coverage | Status / Evidence |
 |---|---|---|
@@ -219,7 +250,7 @@ DTCC-Selenium-Cucumber-Automation/
 
 ---
 
-## 4. How to Run Locally
+## 5. How to Run Locally
 
 ### Prerequisites
 
@@ -254,7 +285,7 @@ target/site/allure-report/index.html
 
 ---
 
-## 5. GitHub Actions Dashboard + Allure Report UI
+## 6. GitHub Actions Dashboard + Allure Report UI
 
 The primary workflow is:
 
@@ -293,7 +324,7 @@ Important: GitHub Pages is a static website, so it cannot safely start workflows
 
 ---
 
-## 6. Report Portal Structure
+## 7. Report Portal Structure
 
 The deployed report portal contains runtime and sample report views:
 
@@ -310,7 +341,7 @@ The deployed report portal contains runtime and sample report views:
 
 ---
 
-## 7. Report Artifacts and Evidence
+## 8. Report Artifacts and Evidence
 
 Runtime reports are created when tests run:
 
@@ -353,7 +384,7 @@ Static/sample and portfolio evidence reports are stored under `13_Reports/`:
 
 ---
 
-## 8. Selenide - Playwright-Style Auto-Waiting for Java/Selenium
+## 9. Selenide - Playwright-Style Auto-Waiting for Java/Selenium
 
 Selenide was added as a modern UI automation layer on top of Selenium WebDriver. It does not replace Selenium; it wraps Selenium to reduce boilerplate and flakiness.
 
@@ -393,7 +424,7 @@ full-selenium-framework-from-scratch/selenide-wrapper/
 
 ---
 
-## 9. DTCC.com Public Website Automation Strategy
+## 10. DTCC.com Public Website Automation Strategy
 
 When automating `dtcc.com`, do not hand-code one brittle Selenium test per URL. Use a sitemap-driven model for broad HTTP/page availability and Page Object/Selenide tests for high-value templates and data-heavy pages.
 
@@ -415,7 +446,7 @@ Out of scope:
 
 ---
 
-## 10. SQL Database Tests Without Enterprise DB Access
+## 11. SQL Database Tests Without Enterprise DB Access
 
 Because reviewers will not have access to private enterprise databases, the project includes H2 in-memory SQL database examples:
 
@@ -430,7 +461,7 @@ This demonstrates the same SDET pattern used for real Oracle/DB2/Snowflake valid
 
 ---
 
-## 11. Publishing and Safety Notes
+## 12. Publishing and Safety Notes
 
 Before publishing or sharing:
 
@@ -442,7 +473,7 @@ Before publishing or sharing:
 
 ---
 
-## 12. Recommended Reviewer Flow
+## 13. Recommended Reviewer Flow
 
 1. Open the repository.
 2. Review this README and the folder structure.
@@ -453,10 +484,11 @@ Before publishing or sharing:
 7. Open the live Allure report, Cucumber evidence, Surefire/TestNG report, and PDF exports.
 8. Review code under `src/test/java/com/dtcc/automation/`.
 9. Review `13_Reports/` for portfolio-ready report evidence.
+10. Review `12_Test_Cases/` for organized examples by test type.
 
 ---
 
-## 13. Notes About Running Tests
+## 14. Notes About Running Tests
 
 This project was generated as a public-safe portfolio framework. Some suites use mock applications, mock APIs, H2 sample data, and public website checks. Intentional failure examples are isolated behind the `failure-demo` profile and should not be used as the default CI profile.
 
