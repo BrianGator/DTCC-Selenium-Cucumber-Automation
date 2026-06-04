@@ -1,0 +1,1 @@
+{table=etl_reconciliation, expectedResult=MATCHED, validation=source and target counts match}
