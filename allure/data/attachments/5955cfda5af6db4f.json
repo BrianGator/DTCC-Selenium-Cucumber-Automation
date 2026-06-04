@@ -1,0 +1,1 @@
+{expectedResult=0_STALE_ROWS, table=active_settlements_vw, validation=stale records excluded}
