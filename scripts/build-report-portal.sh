@@ -30,34 +30,34 @@ cat > "$PORTAL_DIR/cucumber/index.html" <<'HTML'
   <title>DTCC Cucumber BDD Report</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #f6f8fb; color: #172033; }
-    header { background: #0f172a; color: white; padding: 28px 32px; }
-    main { max-width: 1000px; margin: 0 auto; padding: 28px 24px 48px; }
-    .card { background: white; border: 1px solid #d9e1ee; border-radius: 8px; padding: 20px; margin-bottom: 18px; box-shadow: 0 4px 14px rgba(15, 23, 42, .06); }
-    a.button { display: inline-block; background: #2563eb; color: white; text-decoration: none; padding: 11px 14px; border-radius: 8px; margin: 6px 6px 6px 0; }
-    a.secondary { background: #374151; }
+    header { background: #0f172a; color: white; padding: 18px 24px; }
+    main { max-width: 1040px; margin: 0 auto; padding: 22px 20px 42px; }
+    section { background: white; border: 1px solid #d9e1ee; border-radius: 8px; padding: 18px; margin-bottom: 16px; }
+    a { color: #1d4ed8; font-weight: 700; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #e5e9f2; vertical-align: top; }
+    th { background: #eef3f9; }
     code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Cucumber BDD Report</h1>
-    <p>Business-readable feature/scenario evidence for the DTCC public-safe automation framework.</p>
-  </header>
+  <header><h1>Cucumber BDD Report</h1></header>
   <main>
-    <section class="card">
-      <h2>BDD Report Links</h2>
-      <p>If the current workflow profile ran Cucumber, open the generated HTML or JSON below.</p>
-      <a class="button" href="cucumber-pretty.html">Open Cucumber HTML</a>
-      <a class="button secondary" href="CucumberTestReport.json">Open Cucumber JSON</a>
+    <section>
+      <h2>BDD Output</h2>
+      <p>Cucumber is the business-readable report for feature and scenario coverage. The generated HTML should not execute test payloads; unsafe values are represented as plain text.</p>
+      <p><a href="cucumber-pretty.html">Open Cucumber HTML</a> | <a href="CucumberTestReport.json">Open Cucumber JSON</a> | <a href="../">Back to consolidated portal</a></p>
     </section>
-    <section class="card">
-      <h2>When This Page Has No Generated Cucumber HTML</h2>
-      <p>The default <code>allure-ui</code> profile focuses on the Allure/TestNG report. To generate fresh BDD output, run a workflow profile that includes <code>com.dtcc.automation.runners.CucumberTestRunner</code>.</p>
-      <p>The runner is configured to write <code>target/cucumber-reports/cucumber-pretty.html</code> and <code>target/cucumber-reports/CucumberTestReport.json</code>.</p>
-    </section>
-    <section class="card">
-      <h2>Best Report Pairing</h2>
-      <p>Use <a href="../allure/index.html">Allure</a> for engineering diagnostics and this Cucumber view for feature/scenario language.</p>
+    <section>
+      <h2>What This Report Covers</h2>
+      <table>
+        <thead><tr><th>Feature Area</th><th>Expected Evidence</th></tr></thead>
+        <tbody>
+          <tr><td>Account authentication</td><td>Valid login examples, invalid credentials, blank credentials, script-like payload text, and SQL-style payload text.</td></tr>
+          <tr><td>Order lifecycle</td><td>Login, catalog selection, cart, checkout, payment submission, and confirmation scenarios.</td></tr>
+          <tr><td>DTCC public site</td><td>Public-safe page rendering checks for home, about, client center, news, legal, and product pages.</td></tr>
+        </tbody>
+      </table>
     </section>
   </main>
 </body>
@@ -73,53 +73,35 @@ cat > "$PORTAL_DIR/surefire/index.html" <<'HTML'
   <title>DTCC Surefire TestNG Report Summary</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; background: #f6f8fb; color: #172033; }
-    header { background: #111827; color: white; padding: 28px 32px; }
-    main { max-width: 1120px; margin: 0 auto; padding: 28px 24px 48px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 14px; }
-    .card, table { background: white; border: 1px solid #d9e1ee; border-radius: 8px; box-shadow: 0 4px 14px rgba(15, 23, 42, .06); }
-    .card { padding: 18px; margin-bottom: 18px; }
-    .metric { font-size: 32px; font-weight: 700; margin-top: 6px; }
-    .pass { color: #087f5b; font-weight: 700; }
-    .fail { color: #c92a2a; font-weight: 700; }
-    .skip { color: #a16207; font-weight: 700; }
-    table { width: 100%; border-collapse: collapse; overflow: hidden; }
-    th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid #e5e9f2; vertical-align: top; }
-    th { background: #eaf0f8; }
+    header { background: #111827; color: white; padding: 18px 24px; }
+    main { max-width: 1120px; margin: 0 auto; padding: 22px 20px 42px; }
+    section { background: white; border: 1px solid #d9e1ee; border-radius: 8px; padding: 18px; margin-bottom: 16px; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid #e5e9f2; vertical-align: top; }
+    th { background: #eef3f9; }
     a { color: #1d4ed8; font-weight: 700; }
     code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
+    .ok { color: #087f5b; font-weight: 700; }
+    .warn { color: #a16207; font-weight: 700; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Surefire TestNG Report Summary</h1>
-    <p>Friendly summary for Maven Surefire/TestNG raw output.</p>
-  </header>
+  <header><h1>Surefire/TestNG Runner Evidence</h1></header>
   <main>
-    <section class="grid" aria-label="Surefire summary totals">
-      <div class="card"><div>Total Stable Tests</div><div class="metric">26+</div></div>
-      <div class="card"><div>Stable Failures</div><div class="metric pass">0</div></div>
-      <div class="card"><div>Stable Errors</div><div class="metric pass">0</div></div>
-      <div class="card"><div>Intentional Demos</div><div class="metric skip">Skipped</div></div>
+    <section>
+      <h2>How To Read This Area</h2>
+      <p>Surefire is secondary raw CI evidence. Use <a href="../allure/index.html">Allure</a> as the primary UI report; use this area when checking Maven/TestNG XML, skipped intentional demos, or CI runner diagnostics.</p>
+      <p><span class="ok">Stable failures/errors should be 0.</span> <span class="warn">Intentional demos are skipped by default.</span></p>
     </section>
-    <section class="card">
-      <h2>Intentional Failure Demo Status</h2>
-      <p><strong class="skip">Skipped is expected</strong> when <code>includeIntentionalFailures=false</code>. These tests exist to create red defect examples only when the workflow is explicitly run with intentional failures enabled.</p>
-      <p>The message below is controlled behavior, not a stable-suite failure:</p>
-      <p><code>Intentional failure demo skipped. Run with -DincludeIntentionalFailures=true.</code></p>
-    </section>
-    <section class="card">
-      <h2>Raw Surefire Files</h2>
+    <section>
+      <h2>Raw Files</h2>
       <table>
-        <thead><tr><th>Report</th><th>Purpose</th></tr></thead>
+        <thead><tr><th>File</th><th>Purpose</th></tr></thead>
         <tbody>
-          <tr><td><a href="emailable-report.html">emailable-report.html</a></td><td>TestNG HTML summary when generated by Surefire/TestNG.</td></tr>
-          <tr><td><a href="testng-results.xml">testng-results.xml</a></td><td>Raw TestNG XML with pass/fail/skip details.</td></tr>
+          <tr><td><a href="emailable-report.html">emailable-report.html</a></td><td>TestNG HTML runner summary when generated.</td></tr>
+          <tr><td><a href="testng-results.xml">testng-results.xml</a></td><td>Raw pass/fail/skip XML used for troubleshooting CI results.</td></tr>
         </tbody>
       </table>
-    </section>
-    <section class="card">
-      <h2>Best Report View</h2>
-      <p>Use the <a href="../allure/index.html">Allure report</a> for Overview, Categories, Suites, Graphs, Timeline, Behaviors, and Packages. Surefire is kept as raw Maven evidence.</p>
     </section>
   </main>
 </body>
@@ -132,71 +114,87 @@ cat > "$PORTAL_DIR/index.html" <<'HTML'
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>DTCC Selenium Cucumber Automation - Test Report Portal</title>
+  <title>DTCC Automation Report Portal</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f6f8fb; color: #172033; }
-    header { background: #0f172a; color: white; padding: 32px; }
-    main { padding: 28px 32px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
-    .card { background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,.08); border: 1px solid #e5e7eb; }
-    .card h2 { margin-top: 0; }
-    a.button { display: inline-block; background: #2563eb; color: white; text-decoration: none; padding: 11px 14px; border-radius: 8px; margin: 6px 6px 6px 0; }
-    a.secondary { background: #374151; }
+    :root { --ink:#172033; --muted:#5b677a; --line:#d9e1ee; --panel:#ffffff; --brand:#0f172a; --ok:#087f5b; --warn:#a16207; --link:#1d4ed8; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; background: #f6f8fb; color: var(--ink); }
+    header { background: var(--brand); color: white; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+    header h1 { margin: 0; font-size: 20px; line-height: 1.2; }
+    header p { margin: 3px 0 0; color: #cbd5e1; font-size: 13px; }
+    nav { display: flex; gap: 10px 14px; flex-wrap: wrap; align-items: center; }
+    nav a { color: #dbeafe; text-decoration: none; font-size: 13px; font-weight: 700; border-bottom: 1px solid transparent; }
+    nav a:hover { border-bottom-color: #dbeafe; }
+    main { padding: 16px 20px 28px; max-width: 1680px; margin: 0 auto; }
+    .summary { display: grid; grid-template-columns: minmax(260px, 1.2fr) minmax(420px, 2fr); gap: 14px; margin-bottom: 14px; align-items: stretch; }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 14px; }
+    .panel h2 { margin: 0 0 10px; font-size: 17px; }
+    .status-grid { display: grid; grid-template-columns: repeat(4, minmax(80px, 1fr)); gap: 8px; margin-bottom: 12px; }
+    .metric { border: 1px solid #e5e9f2; border-radius: 6px; padding: 9px; background: #fbfdff; }
+    .metric span { display: block; color: var(--muted); font-size: 12px; }
+    .metric strong { display: block; font-size: 20px; margin-top: 4px; }
+    .ok { color: var(--ok); }
+    .warn { color: var(--warn); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { padding: 9px 8px; border-bottom: 1px solid #e5e9f2; text-align: left; vertical-align: top; }
+    th { color: #344256; background: #eef3f9; }
+    a { color: var(--link); font-weight: 700; }
     code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
-    .note { background: #fff7ed; border-left: 5px solid #f59e0b; padding: 12px 16px; margin: 20px 0; }
+    .allure-frame { width: 100%; height: calc(100vh - 260px); min-height: 680px; border: 1px solid var(--line); border-radius: 8px; background: white; }
+    .report-note { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+    .compact-links { display: flex; flex-wrap: wrap; gap: 10px 14px; font-size: 13px; margin-top: 10px; }
+    @media (max-width: 980px) { .summary { grid-template-columns: 1fr; } .status-grid { grid-template-columns: repeat(2, minmax(80px, 1fr)); } .allure-frame { height: 720px; } }
   </style>
 </head>
 <body>
   <header>
-    <h1>DTCC Selenium Cucumber Automation - Test Report Portal</h1>
-    <p>Repository: BrianGator/DTCC-Selenium-Cucumber-Automation</p>
-    <p>Website Under Test: https://www.dtcc.com/</p>
+    <div>
+      <h1>DTCC Automation Report Portal</h1>
+      <p>Public-safe Selenium, Selenide, Cucumber, REST API, SQL, and reporting checks for https://www.dtcc.com/</p>
+    </div>
+    <nav aria-label="Report navigation">
+      <a href="allure/index.html">Allure</a>
+      <a href="cucumber/index.html">Cucumber</a>
+      <a href="surefire/index.html">Surefire/TestNG</a>
+      <a href="dashboard/index.html">Static Dashboard</a>
+      <a href="sample-reports/index.html">Samples</a>
+      <a href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions/workflows/selenium.yml">Run Tests</a>
+      <a href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/">Repo</a>
+    </nav>
   </header>
   <main>
-    <div class="note">
-      <strong>Run tests from GitHub UI:</strong> Use the Actions workflow page. GitHub Pages is static, so it cannot securely start workflows by itself without a GitHub token.
-    </div>
-    <section class="grid">
-      <div class="card">
-        <h2>Live Allure Report</h2>
-        <p>Interactive report generated from the latest GitHub Actions run.</p>
-        <a class="button" href="allure/index.html">Open Live Allure Report</a>
+    <section class="summary" aria-label="Report status and explanation">
+      <div class="panel">
+        <h2>Current Stable Status</h2>
+        <div class="status-grid">
+          <div class="metric"><span>Stable tests</span><strong>30+</strong></div>
+          <div class="metric"><span>Failures</span><strong class="ok">0</strong></div>
+          <div class="metric"><span>Errors</span><strong class="ok">0</strong></div>
+          <div class="metric"><span>Demos</span><strong class="warn">Opt-in</strong></div>
+        </div>
+        <p class="report-note">GitHub Pages is static, so test execution stays in GitHub Actions. This page consolidates the generated reports and makes Allure the default working view.</p>
+        <div class="compact-links">
+          <a href="allure/index.html" target="_blank" rel="noopener">Open Allure full screen</a>
+          <a href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions/workflows/selenium.yml">Run workflow</a>
+          <a href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions">Workflow logs</a>
+        </div>
       </div>
-      <div class="card">
-        <h2>Cucumber BDD Report</h2>
-        <p>Business-readable feature/scenario report when a Cucumber profile has run.</p>
-        <a class="button" href="cucumber/index.html">Open Cucumber BDD</a>
-        <a class="button secondary" href="cucumber/cucumber-pretty.html">Cucumber HTML</a>
+      <div class="panel">
+        <h2>What Each Supporting Report Shows</h2>
+        <table>
+          <thead><tr><th>Area</th><th>Status/Use</th><th>Open When You Need</th></tr></thead>
+          <tbody>
+            <tr><td><a href="allure/index.html">Allure</a></td><td>Primary report: UI, security, REST API, SQL, quality gates, screenshots, attachments, suites, behaviors, timeline.</td><td>Test details, failures, attachments, execution evidence.</td></tr>
+            <tr><td><a href="cucumber/index.html">Cucumber BDD</a></td><td>Feature/scenario view for account, order lifecycle, and public-site behavior language.</td><td>Business-readable Given/When/Then coverage.</td></tr>
+            <tr><td><a href="surefire/index.html">Surefire/TestNG</a></td><td>Raw Maven/TestNG execution evidence. Less visual, useful for CI diagnostics.</td><td>XML/HTML runner output or skipped intentional demos.</td></tr>
+            <tr><td><a href="dashboard/index.html">Static dashboard</a></td><td>Portfolio summary and fallback static report view.</td><td>High-level overview outside Allure.</td></tr>
+          </tbody>
+        </table>
       </div>
-      <div class="card">
-        <h2>Portfolio Dashboard</h2>
-        <p>Static dashboard with pass/fail summary, links, and example report views.</p>
-        <a class="button" href="dashboard/index.html">Open Dashboard</a>
-      </div>
-      <div class="card">
-        <h2>Sample Allure Reports</h2>
-        <p>Static passed/failed report examples for GitHub review.</p>
-        <a class="button" href="sample-reports/index.html">Sample Allure</a>
-        <a class="button secondary" href="sample-reports/passed-report.html">Passed</a>
-        <a class="button secondary" href="sample-reports/failed-report.html">Failed</a>
-      </div>
-      <div class="card">
-        <h2>Surefire Reports</h2>
-        <p>Friendly Maven Surefire/TestNG summary plus raw output from the workflow run.</p>
-        <a class="button" href="surefire/index.html">Open Surefire Summary</a>
-        <a class="button secondary" href="sample-reports/surefire-report.html">Sample Surefire HTML</a>
-      </div>
-      <div class="card">
-        <h2>Run Tests in GitHub Actions</h2>
-        <p>Use the workflow dispatch UI to choose <code>allure-ui</code>, <code>selenide</code>, <code>api</code>, <code>public-site</code>, or failure demo.</p>
-        <a class="button" href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions/workflows/selenium.yml">Open Run Workflow UI</a>
-        <a class="button secondary" href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/actions">All Actions</a>
-      </div>
-      <div class="card">
-        <h2>Repository</h2>
-        <p>Source code, Maven profiles, TestNG suites, Selenium/Selenide tests, API tests, SQL checks, and reports.</p>
-        <a class="button" href="https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/">Open Repository</a>
-      </div>
+    </section>
+    <section aria-label="Embedded Allure report">
+      <iframe class="allure-frame" src="allure/index.html" title="Live Allure Report"></iframe>
+      <p class="report-note">Allure is embedded here by default. Use the full-screen link above if browser iframe restrictions or small screens make navigation cramped.</p>
     </section>
   </main>
 </body>
