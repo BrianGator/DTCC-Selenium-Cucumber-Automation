@@ -31,7 +31,7 @@ on:
           - 'true'
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
   actions: read
@@ -150,41 +150,71 @@ jobs:
           else
             echo "enabled=false" >> "$GITHUB_OUTPUT"
             echo "## GitHub Pages is not enabled yet" >> "$GITHUB_STEP_SUMMARY"
-            echo "The report portal artifact was generated successfully, but Pages deployment is skipped until repository Pages is enabled." >> "$GITHUB_STEP_SUMMARY"
-            echo "Go to Settings > Pages > Build and deployment > Source, then select GitHub Actions. Run this workflow again after saving." >> "$GITHUB_STEP_SUMMARY"
+            echo "The report portal artifact was generated successfully. Publish source should be gh-pages / root after Pages is enabled." >> "$GITHUB_STEP_SUMMARY"
             echo "API status: $status" >> "$GITHUB_STEP_SUMMARY"
             cat pages.json || true
           fi
 
-      - name: Configure GitHub Pages
-        if: always() && github.event_name != 'pull_request' && steps.pages.outputs.enabled == 'true'
-        uses: actions/configure-pages@v5
+      - name: Prefer gh-pages Branch as Pages Source
+        if: always() && github.event_name != 'pull_request'
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          status=$(curl -sS -o update-pages-source.json -w "%{http_code}" \
+            -X PUT \
+            -H "Authorization: Bearer ${GH_TOKEN}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/pages" \
+            -d '{"build_type":"legacy","source":{"branch":"gh-pages","path":"/"}}')
+          if [ "$status" = "204" ]; then
+            echo "GitHub Pages source set to gh-pages / root." >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo "GitHub Pages source update returned HTTP $status. The gh-pages branch will still be updated with the report portal." >> "$GITHUB_STEP_SUMMARY"
+            cat update-pages-source.json || true
+          fi
 
-      - name: Upload Report Portal to GitHub Pages
-        if: always() && github.event_name != 'pull_request' && steps.pages.outputs.enabled == 'true'
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: target/report-portal
-
-      - name: Deploy Report Portal to GitHub Pages
-        id: deployment
-        if: always() && github.event_name != 'pull_request' && steps.pages.outputs.enabled == 'true'
-        uses: actions/deploy-pages@v4
+      - name: Publish Report Portal to gh-pages Branch
+        if: always() && github.event_name != 'pull_request' && steps.tests.outcome != 'failure'
+        shell: bash
+        run: |
+          set -euo pipefail
+          publish_dir="$(mktemp -d)"
+          cp -R target/report-portal/. "$publish_dir/"
+          touch "$publish_dir/.nojekyll"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin gh-pages || true
+          if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
+            git checkout --detach origin/gh-pages
+          else
+            git checkout --orphan gh-pages
+          fi
+          find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          cp -R "$publish_dir/." .
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No gh-pages report changes to publish."
+          else
+            git commit -m "Publish latest test report portal"
+            git push origin HEAD:gh-pages
+          fi
 
       - name: Add Summary Link
         if: always()
         run: |
+          pages_url="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
           echo "## Selenium TestNG Allure Execution" >> $GITHUB_STEP_SUMMARY
           echo "Profile: ${{ steps.profile.outputs.profile }}" >> $GITHUB_STEP_SUMMARY
           echo "Intentional failures: ${{ steps.profile.outputs.include_failures }}" >> $GITHUB_STEP_SUMMARY
           echo "Raw test artifacts, Allure HTML, and the report portal are attached to this workflow run." >> $GITHUB_STEP_SUMMARY
-          if [ "${{ steps.pages.outputs.enabled }}" = "true" ]; then
-            echo "Report portal: ${{ steps.deployment.outputs.page_url }}" >> $GITHUB_STEP_SUMMARY
-            echo "Live Allure report: ${{ steps.deployment.outputs.page_url }}allure/index.html" >> $GITHUB_STEP_SUMMARY
-            echo "Static dashboard: ${{ steps.deployment.outputs.page_url }}dashboard/index.html" >> $GITHUB_STEP_SUMMARY
-            echo "Sample reports: ${{ steps.deployment.outputs.page_url }}sample-reports/index.html" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "Pages URL is not live yet. Download the github-pages-report-portal artifact, or enable Settings > Pages > Source: GitHub Actions and rerun." >> $GITHUB_STEP_SUMMARY
+          echo "Report portal: ${pages_url}" >> $GITHUB_STEP_SUMMARY
+          echo "Live Allure report: ${pages_url}allure/index.html" >> $GITHUB_STEP_SUMMARY
+          echo "Static dashboard: ${pages_url}dashboard/index.html" >> $GITHUB_STEP_SUMMARY
+          echo "Sample reports: ${pages_url}sample-reports/index.html" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.pages.outputs.enabled }}" != "true" ]; then
+            echo "If the public URL still returns 404, enable Settings > Pages > Source: Deploy from a branch > gh-pages / root." >> $GITHUB_STEP_SUMMARY
           fi
 
       - name: Fail Workflow When Stable Tests Failed
