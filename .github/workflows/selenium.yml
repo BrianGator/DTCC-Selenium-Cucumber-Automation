@@ -49,6 +49,8 @@ jobs:
     steps:
       - name: Checkout Source Code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Java JDK 17
         uses: actions/setup-java@v4
@@ -79,53 +81,6 @@ jobs:
           echo "profile=$PROFILE" >> "$GITHUB_OUTPUT"
           echo "include_failures=$INCLUDE_FAILURES" >> "$GITHUB_OUTPUT"
 
-      - name: Restore Previous Allure History
-        if: always()
-        continue-on-error: true
-        shell: bash
-        run: |
-          mkdir -p target/allure-results/history target/previous-allure-history
-          git fetch origin gh-pages:refs/remotes/origin/gh-pages || true
-          if git show-ref --verify --quiet refs/remotes/origin/gh-pages; then
-            git --work-tree=target/previous-allure-history checkout origin/gh-pages -- allure/history || true
-            if [ -d target/previous-allure-history/allure/history ]; then
-              cp -R target/previous-allure-history/allure/history/. target/allure-results/history/ || true
-            fi
-          fi
-
-      - name: Seed Allure History When No Prior Trend Exists
-        if: always()
-        shell: bash
-        run: |
-          mkdir -p target/allure-results/history
-          if [ ! -f target/allure-results/history/history-trend.json ]; then
-            cat > target/allure-results/history/history-trend.json <<'EOF'
-          [
-            {"buildOrder":1,"reportName":"Seed Run 1","reportUrl":"https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/allure/index.html","data":{"total":42,"passed":34,"failed":3,"broken":1,"skipped":4,"unknown":0}},
-            {"buildOrder":2,"reportName":"Seed Run 2","reportUrl":"https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/allure/index.html","data":{"total":57,"passed":49,"failed":2,"broken":0,"skipped":6,"unknown":0}},
-            {"buildOrder":3,"reportName":"Seed Run 3","reportUrl":"https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/allure/index.html","data":{"total":82,"passed":71,"failed":3,"broken":0,"skipped":8,"unknown":0}}
-          ]
-          EOF
-          fi
-          if [ ! -f target/allure-results/history/categories-trend.json ]; then
-            cat > target/allure-results/history/categories-trend.json <<'EOF'
-          [
-            {"buildOrder":1,"reportName":"Seed Run 1","reportUrl":"https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/allure/index.html","data":{"Intentional demo failures":2,"Security validation failures":1,"REST API contract failures":1}},
-            {"buildOrder":2,"reportName":"Seed Run 2","reportUrl":"https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/allure/index.html","data":{"Intentional demo failures":2,"Security validation failures":0,"REST API contract failures":0}},
-            {"buildOrder":3,"reportName":"Seed Run 3","reportUrl":"https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/allure/index.html","data":{"Intentional demo failures":3,"Security validation failures":0,"REST API contract failures":0}}
-          ]
-          EOF
-          fi
-          if [ ! -f target/allure-results/history/duration-trend.json ]; then
-            cat > target/allure-results/history/duration-trend.json <<'EOF'
-          [
-            {"buildOrder":1,"reportName":"Seed Run 1","reportUrl":"https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/allure/index.html","data":{"duration":35000}},
-            {"buildOrder":2,"reportName":"Seed Run 2","reportUrl":"https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/allure/index.html","data":{"duration":42000}},
-            {"buildOrder":3,"reportName":"Seed Run 3","reportUrl":"https://briangator.github.io/DTCC-Selenium-Cucumber-Automation/allure/index.html","data":{"duration":51000}}
-          ]
-          EOF
-          fi
-
       - name: Run Selenium API Database Tests
         id: tests
         continue-on-error: true
@@ -138,40 +93,17 @@ jobs:
             -Dallure.results.directory=target/allure-results \
             -DincludeIntentionalFailures=${{ steps.profile.outputs.include_failures }}
 
-      - name: Prepare Allure Report Metadata
+      - name: Prepare Allure History Metadata Categories Executor
         if: always()
         shell: bash
         run: |
-          mkdir -p target/allure-results
-          cat > target/allure-results/environment.properties <<EOF
-          Repository=https://github.com/BrianGator/DTCC-Selenium-Cucumber-Automation/
-          Website=https://www.dtcc.com/
-          Browser=Chrome Headless
-          Test_Profile=${{ steps.profile.outputs.profile }}
-          Intentional_Failures=${{ steps.profile.outputs.include_failures }}
-          Public_Safe_Mode=true
-          Data_Source=Mock UI, WireMock REST API, H2 database
-          Owner=Brian McCarthy
-          EOF
-          cat > target/allure-results/executor.json <<EOF
-          {
-            "name": "GitHub Actions",
-            "type": "github",
-            "url": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
-            "buildName": "${{ github.workflow }} #${{ github.run_number }}",
-            "buildUrl": "https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}",
-            "reportUrl": "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/allure/index.html"
-          }
-          EOF
-          cat > target/allure-results/categories.json <<'EOF'
-          [
-            {"name":"Intentional demo failures","matchedStatuses":["failed"],"messageRegex":".*Intentional.*"},
-            {"name":"Security validation failures","matchedStatuses":["failed","broken"],"traceRegex":".*(script|SQL|unauthorized|Bearer|security).*"},
-            {"name":"REST API contract failures","matchedStatuses":["failed","broken"],"traceRegex":".*(RestAssured|WireMock|statusCode|JSON|schema).*"},
-            {"name":"Browser UI failures","matchedStatuses":["failed","broken"],"traceRegex":".*(Selenium|WebDriver|Chrome|NoSuchElement|Timeout).*"},
-            {"name":"Skipped opt-in demos","matchedStatuses":["skipped"],"messageRegex":".*Intentional failure demo skipped.*"}
-          ]
-          EOF
+          git fetch origin gh-pages:refs/remotes/origin/gh-pages || true
+          bash scripts/prepare-allure-history.sh target/allure-results
+          test -f target/allure-results/history/history-trend.json || (echo "history trend missing" && exit 1)
+          test -f target/allure-results/history/categories-trend.json || (echo "categories trend missing" && exit 1)
+          test -f target/allure-results/history/duration-trend.json || (echo "duration trend missing" && exit 1)
+          test -f target/allure-results/categories.json || (echo "categories missing" && exit 1)
+          test -f target/allure-results/executor.json || (echo "executor missing" && exit 1)
 
       - name: Generate Allure HTML Report
         if: always()
@@ -179,6 +111,7 @@ jobs:
           mkdir -p target/allure-results
           mvn -B allure:report -Dallure.results.directory=target/allure-results
           test -f target/site/allure-report/index.html || (echo "Allure report was not generated" && exit 1)
+          if [ -d target/site/allure-report/history ]; then ls -la target/site/allure-report/history; fi
 
       - name: Generate Cucumber BDD Report
         id: cucumber
@@ -288,7 +221,7 @@ jobs:
           fi
 
       - name: Publish Report Portal to gh-pages Branch
-        if: always() && github.event_name != 'pull_request' && steps.tests.outcome != 'failure' && steps.cucumber.outcome != 'failure'
+        if: always() && github.event_name != 'pull_request' && (steps.tests.outcome != 'failure' || steps.profile.outputs.include_failures == 'true') && steps.cucumber.outcome != 'failure'
         shell: bash
         run: |
           set -euo pipefail
@@ -309,7 +242,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "No gh-pages report changes to publish."
           else
-            git commit -m "Publish latest test report portal with PDFs"
+            git commit -m "Publish latest test report portal with Allure trends"
             git push origin HEAD:gh-pages
           fi
 
