@@ -151,6 +151,20 @@ jobs:
           mvn -B allure:report -Dallure.results.directory=target/allure-results
           test -f target/site/allure-report/index.html || (echo "Allure report was not generated" && exit 1)
 
+      - name: Generate Cucumber BDD Report
+        id: cucumber
+        if: always()
+        continue-on-error: true
+        run: |
+          mkdir -p target/cucumber-reports
+          mvn -B test -Pui \
+            -Dbrowser=chrome \
+            -Dheadless=true \
+            -Denv=qa \
+            -DincludeIntentionalFailures=false
+          test -f target/cucumber-reports/cucumber-pretty.html || (echo "Cucumber HTML report was not generated" && exit 1)
+          test -f target/cucumber-reports/CucumberTestReport.json || (echo "Cucumber JSON report was not generated" && exit 1)
+
       - name: Build GitHub Pages Report Portal
         if: always()
         shell: bash
@@ -166,6 +180,7 @@ jobs:
           path: |
             target/surefire-reports/**
             target/allure-results/**
+            target/cucumber-reports/**
             target/failed-test-screenshots/**
           if-no-files-found: warn
 
@@ -229,7 +244,7 @@ jobs:
           fi
 
       - name: Publish Report Portal to gh-pages Branch
-        if: always() && github.event_name != 'pull_request' && steps.tests.outcome != 'failure'
+        if: always() && github.event_name != 'pull_request' && steps.tests.outcome != 'failure' && steps.cucumber.outcome != 'failure'
         shell: bash
         run: |
           set -euo pipefail
@@ -261,9 +276,10 @@ jobs:
           echo "## Selenium TestNG Allure Execution" >> $GITHUB_STEP_SUMMARY
           echo "Profile: ${{ steps.profile.outputs.profile }}" >> $GITHUB_STEP_SUMMARY
           echo "Intentional failures: ${{ steps.profile.outputs.include_failures }}" >> $GITHUB_STEP_SUMMARY
-          echo "Raw test artifacts, Allure HTML, and the report portal are attached to this workflow run." >> $GITHUB_STEP_SUMMARY
+          echo "Raw test artifacts, Allure HTML, Cucumber BDD, and the report portal are attached to this workflow run." >> $GITHUB_STEP_SUMMARY
           echo "Report portal: ${pages_url}" >> $GITHUB_STEP_SUMMARY
           echo "Live Allure report: ${pages_url}allure/index.html" >> $GITHUB_STEP_SUMMARY
+          echo "Cucumber BDD report: ${pages_url}cucumber/index.html" >> $GITHUB_STEP_SUMMARY
           echo "Static dashboard: ${pages_url}dashboard/index.html" >> $GITHUB_STEP_SUMMARY
           echo "Sample reports: ${pages_url}sample-reports/index.html" >> $GITHUB_STEP_SUMMARY
           if [ "${{ steps.pages.outputs.enabled }}" != "true" ]; then
@@ -274,4 +290,10 @@ jobs:
         if: always() && steps.tests.outcome == 'failure' && steps.profile.outputs.include_failures != 'true'
         run: |
           echo "Stable test run failed. Reports were generated and uploaded for review."
+          exit 1
+
+      - name: Fail Workflow When Cucumber BDD Tests Failed
+        if: always() && steps.cucumber.outcome == 'failure'
+        run: |
+          echo "Cucumber BDD test run failed. Reports were generated and uploaded for review."
           exit 1
