@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="19.329" tests="43" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="19.263" tests="43" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -13,7 +13,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/temurin-17-jdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/runner/work/DTCC-Selenium-Cucumber-Automation/DTCC-Selenium-Cucumber-Automation/target/surefire/surefirebooter-20260604023035742_3.jar /home/runner/work/DTCC-Selenium-Cucumber-Automation/DTCC-Selenium-Cucumber-Automation/target/surefire 2026-06-04T02-30-35_670-jvmRun1 surefire-20260604023035742_1tmp surefire_0-20260604023035742_2tmp"/>
+    <property name="sun.java.command" value="/home/runner/work/DTCC-Selenium-Cucumber-Automation/DTCC-Selenium-Cucumber-Automation/target/surefire/surefirebooter-20260604023239620_3.jar /home/runner/work/DTCC-Selenium-Cucumber-Automation/DTCC-Selenium-Cucumber-Automation/target/surefire 2026-06-04T02-32-39_546-jvmRun1 surefire-20260604023239620_1tmp surefire_0-20260604023239620_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/home/runner/work/DTCC-Selenium-Cucumber-Automation/DTCC-Selenium-Cucumber-Automation/target/test-classes:/home/runner/work/DTCC-Selenium-Cucumber-Automation/DTCC-Selenium-Cucumber-Automation/target/classes:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-java/4.21.0/selenium-java-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-api/4.21.0/selenium-api-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.21.0/selenium-chrome-driver-4.21.0.jar:/home/runner/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.21.0/selenium-chromium-driver-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-json/4.21.0/selenium-json-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.21.0/selenium-manager-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.21.0/selenium-devtools-v123-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v124/4.21.0/selenium-devtools-v124-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v125/4.21.0/selenium-devtools-v125-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.21.0/selenium-devtools-v85-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.21.0/selenium-edge-driver-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.21.0/selenium-firefox-driver-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-http/4.21.0/selenium-http-4.21.0.jar:/home/runner/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.21.0/selenium-ie-driver-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.21.0/selenium-remote-driver-4.21.0.jar:/home/runner/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-api/1.38.0/opentelemetry-api-1.38.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-context/1.38.0/opentelemetry-context-1.38.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.38.0/opentelemetry-exporter-logging-1.38.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.38.0/opentelemetry-sdk-common-1.38.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.38.0/opentelemetry-sdk-extension-autoconfigure-spi-1.38.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.38.0/opentelemetry-sdk-extension-autoconfigure-1.38.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.38.0-alpha/opentelemetry-api-incubator-1.38.0-alpha.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.38.0/opentelemetry-sdk-trace-1.38.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.38.0/opentelemetry-sdk-1.38.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.38.0/opentelemetry-sdk-metrics-1.38.0.jar:/home/runner/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.38.0/opentelemetry-sdk-logs-1.38.0.jar:/home/runner/.m2/repository/net/bytebuddy/byte-buddy/1.14.15/byte-buddy-1.14.15.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-os/4.21.0/selenium-os-4.21.0.jar:/home/runner/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.21.0/selenium-safari-driver-4.21.0.jar:/home/runner/.m2/repository/org/seleniumhq/selenium/selenium-support/4.21.0/selenium-support-4.21.0.jar:/home/runner/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/home/runner/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/home/runner/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/home/runner/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar:/home/runner/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar:/home/runner/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/runner/.m2/repository/io/cucumber/cucumber-java/7.18.0/cucumber-java-7.18.0.jar:/home/runner/.m2/repository/io/cucumber/cucumber-core/7.18.0/cucumber-core-7.18.0.jar:/home/runner/.m2/repository/io/cucumber/cucumber-gherkin/7.18.0/cucumber-gherkin-7.18.0.jar:/home/runner/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.18.0/cucumber-gherkin-messages-7.18.0.jar:/home/runner/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/home/runner/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/home/runner/.m2/repository/io/cucumber/testng-xml-formatter/0.1.0/testng-xml-formatter-0.1.0.jar:/home/runner/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/home/runner/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/home/runner/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/home/runner/.m2/repository/io/cucumber/datatable/7.18.0/datatable-7.18.0.jar:/home/runner/.m2/repository/io/cucumber/cucumber-plugin/7.18.0/cucumber-plugin-7.18.0.jar:/home/runner/.m2/repository/io/cucumber/docstring/7.18.0/docstring-7.18.0.jar:/home/runner/.m2/repository/io/cucumber/html-formatter/21.3.1/html-formatter-21.3.1.jar:/home/runner/.m2/repository/io/cucumber/junit-xml-formatter/0.4.0/junit-xml-formatter-0.4.0.jar:/home/runner/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/home/runner/.m2/repository/io/cucumber/cucumber-testng/7.18.0/cucumber-testng-7.18.0.jar:/home/runner/.m2/repository/io/rest-assured/rest-assured/5.4.0/rest-assured-5.4.0.jar:/home/runner/.m2/repository/org/apache/groovy/groovy/4.0.16/groovy-4.0.16.jar:/home/runner/.m2/repository/org/apache/groovy/groovy-xml/4.0.16/groovy-xml-4.0.16.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/home/runner/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/home/runner/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/home/runner/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/home/runner/.m2/repository/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar:/home/runner/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/home/runner/.m2/repository/io/rest-assured/json-path/5.4.0/json-path-5.4.0.jar:/home/runner/.m2/repository/org/apache/groovy/groovy-json/4.0.16/groovy-json-4.0.16.jar:/home/runner/.m2/repository/io/rest-assured/rest-assured-common/5.4.0/rest-assured-common-5.4.0.jar:/home/runner/.m2/repository/io/rest-assured/xml-path/5.4.0/xml-path-5.4.0.jar:/home/runner/.m2/repository/io/rest-assured/json-schema-validator/5.4.0/json-schema-validator-5.4.0.jar:/home/runner/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/home/runner/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/home/runner/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/home/runner/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/home/runner/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/home/runner/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/home/runner/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/home/runner/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/home/runner/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/home/runner/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/home/runner/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/home/runner/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/home/runner/.m2/repository/com/google/guava/guava/32.0.1-jre/guava-32.0.1-jre.jar:/home/runner/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/home/runner/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/home/runner/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/home/runner/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/home/runner/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/home/runner/.m2/repository/com/intuit/karate/karate-junit5/1.4.1/karate-junit5-1.4.1.jar:/home/runner/.m2/repository/com/intuit/karate/karate-core/1.4.1/karate-core-1.4.1.jar:/home/runner/.m2/repository/org/graalvm/js/js-scriptengine/22.3.3/js-scriptengine-22.3.3.jar:/home/runner/.m2/repository/org/graalvm/sdk/graal-sdk/22.3.3/graal-sdk-22.3.3.jar:/home/runner/.m2/repository/org/graalvm/js/js/22.3.3/js-22.3.3.jar:/home/runner/.m2/repository/org/graalvm/regex/regex/22.3.3/regex-22.3.3.jar:/home/runner/.m2/repository/org/graalvm/truffle/truffle-api/22.3.3/truffle-api-22.3.3.jar:/home/runner/.m2/repository/com/ibm/icu/icu4j/71.1/icu4j-71.1.jar:/home/runner/.m2/repository/org/thymeleaf/thymeleaf/3.1.2.RELEASE/thymeleaf-3.1.2.RELEASE.jar:/home/runner/.m2/repository/ognl/ognl/3.3.4/ognl-3.3.4.jar:/home/runner/.m2/repository/org/javassist/javassist/3.29.0-GA/javassist-3.29.0-GA.jar:/home/runner/.m2/repository/org/attoparser/attoparser/2.0.7.RELEASE/attoparser-2.0.7.RELEASE.jar:/home/runner/.m2/repository/org/unbescape/unbescape/1.1.6.RELEASE/unbescape-1.1.6.RELEASE.jar:/home/runner/.m2/repository/com/linecorp/armeria/armeria/1.25.2/armeria-1.25.2.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.15.2/jackson-datatype-jdk8-2.15.2.jar:/home/runner/.m2/repository/io/micrometer/micrometer-core/1.11.3/micrometer-core-1.11.3.jar:/home/runner/.m2/repository/io/micrometer/micrometer-commons/1.11.3/micrometer-commons-1.11.3.jar:/home/runner/.m2/repository/io/micrometer/micrometer-observation/1.11.3/micrometer-observation-1.11.3.jar:/home/runner/.m2/repository/org/hdrhistogram/HdrHistogram/2.1.12/HdrHistogram-2.1.12.jar:/home/runner/.m2/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/home/runner/.m2/repository/io/netty/netty-transport/4.1.96.Final/netty-transport-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-common/4.1.96.Final/netty-common-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-buffer/4.1.96.Final/netty-buffer-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-resolver/4.1.96.Final/netty-resolver-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-codec-haproxy/4.1.96.Final/netty-codec-haproxy-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-codec/4.1.96.Final/netty-codec-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-codec-http2/4.1.96.Final/netty-codec-http2-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-handler/4.1.96.Final/netty-handler-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-codec-http/4.1.96.Final/netty-codec-http-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-resolver-dns/4.1.96.Final/netty-resolver-dns-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-codec-dns/4.1.96.Final/netty-codec-dns-4.1.96.Final.jar:/home/runner/.m2/repository/org/reactivestreams/reactive-streams/1.0.4/reactive-streams-1.0.4.jar:/home/runner/.m2/repository/io/netty/netty-handler-proxy/4.1.96.Final/netty-handler-proxy-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-codec-socks/4.1.96.Final/netty-codec-socks-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final-linux-x86_64.jar:/home/runner/.m2/repository/io/netty/netty-transport-native-epoll/4.1.96.Final/netty-transport-native-epoll-4.1.96.Final-linux-x86_64.jar:/home/runner/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.96.Final/netty-transport-classes-epoll-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final-linux-aarch_64.jar:/home/runner/.m2/repository/io/netty/netty-transport-native-epoll/4.1.96.Final/netty-transport-native-epoll-4.1.96.Final-linux-aarch_64.jar:/home/runner/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final-osx-x86_64.jar:/home/runner/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final-osx-x86_64.jar:/home/runner/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.96.Final/netty-transport-classes-kqueue-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.96.Final/netty-resolver-dns-native-macos-4.1.96.Final-osx-x86_64.jar:/home/runner/.m2/repository/io/netty/netty-resolver-dns-classes-macos/4.1.96.Final/netty-resolver-dns-classes-macos-4.1.96.Final.jar:/home/runner/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final-osx-aarch_64.jar:/home/runner/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final-osx-aarch_64.jar:/home/runner/.m2/repository/io/netty/netty-resolver-dns-native-macos/4.1.96.Final/netty-resolver-dns-native-macos-4.1.96.Final-osx-aarch_64.jar:/home/runner/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-linux-x86_64.jar:/home/runner/.m2/repository/io/netty/netty-tcnative-classes/2.0.61.Final/netty-tcnative-classes-2.0.61.Final.jar:/home/runner/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-linux-aarch_64.jar:/home/runner/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-osx-x86_64.jar:/home/runner/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-osx-aarch_64.jar:/home/runner/.m2/repository/io/netty/netty-tcnative-boringssl-static/2.0.61.Final/netty-tcnative-boringssl-static-2.0.61.Final-windows-x86_64.jar:/home/runner/.m2/repository/com/aayushatharva/brotli4j/brotli4j/1.12.0/brotli4j-1.12.0.jar:/home/runner/.m2/repository/com/aayushatharva/brotli4j/service/1.12.0/service-1.12.0.jar:/home/runner/.m2/repository/com/aayushatharva/brotli4j/native-linux-x86_64/1.12.0/native-linux-x86_64-1.12.0.jar:/home/runner/.m2/repository/ch/qos/logback/logback-classic/1.4.11/logback-classic-1.4.11.jar:/home/runner/.m2/repository/ch/qos/logback/logback-core/1.4.11/logback-core-1.4.11.jar:/home/runner/.m2/repository/org/slf4j/jcl-over-slf4j/2.0.9/jcl-over-slf4j-2.0.9.jar:/home/runner/.m2/repository/org/antlr/antlr4-runtime/4.11.1/antlr4-runtime-4.11.1.jar:/home/runner/.m2/repository/net/minidev/json-smart/2.4.10/json-smart-2.4.10.jar:/home/runner/.m2/repository/net/minidev/accessors-smart/2.4.9/accessors-smart-2.4.9.jar:/home/runner/.m2/repository/org/ow2/asm/asm/9.3/asm-9.3.jar:/home/runner/.m2/repository/org/yaml/snakeyaml/2.0/snakeyaml-2.0.jar:/home/runner/.m2/repository/de/siegmar/fastcsv/2.2.1/fastcsv-2.2.1.jar:/home/runner/.m2/repository/info/picocli/picocli/4.7.1/picocli-4.7.1.jar:/home/runner/.m2/repository/io/github/classgraph/classgraph/4.8.160/classgraph-4.8.160.jar:/home/runner/.m2/repository/io/github/t12y/resemble/1.0.2/resemble-1.0.2.jar:/home/runner/.m2/repository/io/github/t12y/ssim/1.0.0/ssim-1.0.0.jar:/home/runner/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.3/junit-jupiter-engine-5.9.3.jar:/home/runner/.m2/repository/org/junit/platform/junit-platform-engine/1.9.3/junit-platform-engine-1.9.3.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.1/jackson-databind-2.17.1.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.1/jackson-annotations-2.17.1.jar:/home/runner/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.1/jackson-core-2.17.1.jar:/home/runner/.m2/repository/com/h2database/h2/2.2.224/h2-2.2.224.jar:/home/runner/.m2/repository/org/wiremock/wiremock/3.6.0/wiremock-3.6.0.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-server/11.0.20/jetty-server-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-http/11.0.20/jetty-http-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-io/11.0.20/jetty-io-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/toolchain/jetty-jakarta-servlet-api/5.0.2/jetty-jakarta-servlet-api-5.0.2.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-servlet/11.0.20/jetty-servlet-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-security/11.0.20/jetty-security-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-servlets/11.0.20/jetty-servlets-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-util/11.0.20/jetty-util-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-webapp/11.0.20/jetty-webapp-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-xml/11.0.20/jetty-xml-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-proxy/11.0.20/jetty-proxy-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-client/11.0.20/jetty-client-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/http2/http2-server/11.0.20/http2-server-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/http2/http2-common/11.0.20/http2-common-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/http2/http2-hpack/11.0.20/http2-hpack-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-alpn-server/11.0.20/jetty-alpn-server-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-alpn-java-server/11.0.20/jetty-alpn-java-server-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-alpn-java-client/11.0.20/jetty-alpn-java-client-11.0.20.jar:/home/runner/.m2/repository/org/eclipse/jetty/jetty-alpn-client/11.0.20/jetty-alpn-client-11.0.20.jar:/home/runner/.m2/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.17.1/jackson-datatype-jsr310-2.17.1.jar:/home/runner/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.3.1/httpclient5-5.3.1.jar:/home/runner/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2.4/httpcore5-5.2.4.jar:/home/runner/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2.4/httpcore5-h2-5.2.4.jar:/home/runner/.m2/repository/org/xmlunit/xmlunit-core/2.10.0/xmlunit-core-2.10.0.jar:/home/runner/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/runner/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/runner/.m2/repository/org/xmlunit/xmlunit-legacy/2.10.0/xmlunit-legacy-2.10.0.jar:/home/runner/.m2/repository/org/xmlunit/xmlunit-placeholders/2.10.0/xmlunit-placeholders-2.10.0.jar:/home/runner/.m2/repository/net/javacrumbs/json-unit/json-unit-core/2.38.0/json-unit-core-2.38.0.jar:/home/runner/.m2/repository/org/hamcrest/hamcrest-core/2.2/hamcrest-core-2.2.jar:/home/runner/.m2/repository/com/jayway/jsonpath/json-path/2.9.0/json-path-2.9.0.jar:/home/runner/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/runner/.m2/repository/com/github/jknack/handlebars/4.3.1/handlebars-4.3.1.jar:/home/runner/.m2/repository/com/github/jknack/handlebars-helpers/4.3.1/handlebars-helpers-4.3.1.jar:/home/runner/.m2/repository/commons-fileupload/commons-fileupload/1.5/commons-fileupload-1.5.jar:/home/runner/.m2/repository/com/networknt/json-schema-validator/1.4.0/json-schema-validator-1.4.0.jar:/home/runner/.m2/repository/com/ethlo/time/itu/1.8.0/itu-1.8.0.jar:/home/runner/.m2/repository/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.15.3/jackson-dataformat-yaml-2.15.3.jar:/home/runner/.m2/repository/commons-io/commons-io/2.16.1/commons-io-2.16.1.jar:/home/runner/.m2/repository/com/codeborne/selenide/7.3.0/selenide-7.3.0.jar:/home/runner/.m2/repository/com/codeborne/selenide-core/7.3.0/selenide-core-7.3.0.jar:/home/runner/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/home/runner/.m2/repository/io/qameta/allure/allure-testng/2.35.2/allure-testng-2.35.2.jar:/home/runner/.m2/repository/io/qameta/allure/allure-java-commons/2.35.2/allure-java-commons-2.35.2.jar:/home/runner/.m2/repository/io/qameta/allure/allure-model/2.35.2/allure-model-2.35.2.jar:/home/runner/.m2/repository/io/qameta/allure/allure-test-filter/2.35.2/allure-test-filter-2.35.2.jar:"/>
     <property name="allure.results.directory" value="/home/runner/work/DTCC-Selenium-Cucumber-Automation/DTCC-Selenium-Cucumber-Automation/target/allure-results"/>
@@ -29,7 +29,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/home/runner/work/DTCC-Selenium-Cucumber-Automation/DTCC-Selenium-Cucumber-Automation/target/surefire/surefirebooter-20260604023035742_3.jar"/>
+    <property name="surefire.real.class.path" value="/home/runner/work/DTCC-Selenium-Cucumber-Automation/DTCC-Selenium-Cucumber-Automation/target/surefire/surefirebooter-20260604023239620_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.19+10"/>
     <property name="user.name" value="runner"/>
@@ -58,10 +58,11 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](1)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="3.406">
+  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](3)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="3.572">
     <system-out><![CDATA[
-@publicSafe @dtccAreas
-Scenario Outline: Validate primary DTCC website area coverage scope                                                                # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:15
+Scenario Outline: Login screen rejects invalid or unsafe credentials             # src/test/resources/features/account-management/Login.feature:25
+
+Scenario Outline: Login screen rejects invalid or unsafe credentials # src/test/resources/features/account-management/Login.feature:23
 
 Scenario Outline: Login screen accepts valid public-safe test credentials      # src/test/resources/features/account-management/Login.feature:12
 
@@ -70,192 +71,188 @@ Scenario Outline: Validate primary DTCC website area coverage scope             
 
 Scenario Outline: Login screen rejects invalid or unsafe credentials                           # src/test/resources/features/account-management/Login.feature:24
 
-Scenario Outline: Login screen rejects invalid or unsafe credentials # src/test/resources/features/account-management/Login.feature:23
-
-Scenario Outline: Login screen accepts valid public-safe test credentials           # src/test/resources/features/account-management/Login.feature:10
+Scenario Outline: Login screen accepts valid public-safe test credentials        # src/test/resources/features/account-management/Login.feature:11
 
 Scenario Outline: Login screen rejects invalid or unsafe credentials              # src/test/resources/features/account-management/Login.feature:22
 
-Scenario Outline: Login screen accepts valid public-safe test credentials        # src/test/resources/features/account-management/Login.feature:11
+Scenario Outline: Login screen accepts valid public-safe test credentials           # src/test/resources/features/account-management/Login.feature:10
+
+@publicSafe @dtccAreas
+Scenario Outline: Validate primary DTCC website area coverage scope                                                                # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:15
 
 @publicSafe @dtccAreas
 Scenario Outline: Validate primary DTCC website area coverage scope                                                                  # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:14
-
-Scenario Outline: Login screen rejects invalid or unsafe credentials             # src/test/resources/features/account-management/Login.feature:25
-  Given User is on the login screen                                                 # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
-  Given User is on the login screen                                                            # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
-  Given User is on the login screen                                              # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
-  Given User is on the login screen                                              # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
-  Given I review the DTCC website area "Client Center"                                                                               # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
-  When I document the expected public automation evidence "client documentation, support paths, downloads, onboarding, and contacts" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
-  Then the BDD report should show the area status as "Covered"                                                                       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
+  Given I review the DTCC website area "About DTCC"                                                                                # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
+  When I document the expected public automation evidence "corporate profile, leadership, public mission, and company information" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
+  Then the BDD report should show the area status as "Covered"                                                                     # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
   Given User is on the login screen                                               # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
-  Given User is on the login screen                                            # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
+  Given User is on the login screen                                              # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
+  Given User is on the login screen                                  # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
   Given I review the DTCC website area "Important Notices"                                                                         # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
   When I document the expected public automation evidence "notice search, category filters, dates, PDF links, and result listings" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
   Then the BDD report should show the area status as "Covered"                                                                     # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
-  Given User is on the login screen                                  # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
+  Given User is on the login screen                                              # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
+  Given User is on the login screen                                            # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
+  Given I review the DTCC website area "Client Center"                                                                               # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
+  When I document the expected public automation evidence "client documentation, support paths, downloads, onboarding, and contacts" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
+  Then the BDD report should show the area status as "Covered"                                                                       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
+  Given User is on the login screen                                                 # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
+  Given User is on the login screen                                                            # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:40 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](2)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.046">
+  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](3)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="3.577"/>
+  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](3)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.0"/>
+  <testcase name="runScenario[&quot;Login screen rejects invalid or unsafe credentials&quot;, &quot;Account authentication validation&quot;](4)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.98">
     <system-out><![CDATA[
 @publicSafe @dtccAreas
 Scenario Outline: Validate primary DTCC website area coverage scope                                                                 # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:16
-  Given I review the DTCC website area "About DTCC"                                                                                # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
-  When I document the expected public automation evidence "corporate profile, leadership, public mission, and company information" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
-  Then the BDD report should show the area status as "Covered"                                                                     # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](3)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.154">
-    <system-out><![CDATA[
+
 @publicSafe @dtccAreas
 Scenario Outline: Validate primary DTCC website area coverage scope                                                           # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:17
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Login screen rejects invalid or unsafe credentials&quot;, &quot;Account authentication validation&quot;](4)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.953">
-    <system-out><![CDATA[
+
 @publicSafe @dtccAreas
 Scenario Outline: Validate primary DTCC website area coverage scope                                                           # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:18
-  When User attempts login with invalid credentials "script-alert-payload" and "demo_password" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAttemptsInvalidLogin(java.lang.String,java.lang.String)
-  Then The login error should be displayed                                                     # com.dtcc.automation.stepdefs.OrderLifecycleSteps.loginErrorShouldBeDisplayed()
-  And The catalogue should remain hidden                                                       # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldRemainHidden()
+  When User attempts login with invalid credentials "' OR '1'='1" and "anything" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAttemptsInvalidLogin(java.lang.String,java.lang.String)
+  Then The login error should be displayed                                       # com.dtcc.automation.stepdefs.OrderLifecycleSteps.loginErrorShouldBeDisplayed()
+  And The catalogue should remain hidden                                         # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldRemainHidden()
+  When User attempts login with invalid credentials "bad_user" and "bad_password" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAttemptsInvalidLogin(java.lang.String,java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Login screen accepts valid public-safe test credentials&quot;, &quot;Account authentication validation&quot;](5)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.323">
-    <system-out><![CDATA[  When User authenticates with valid credentials "sdet_dtcc_user" and "SecureP@ss1" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
+  <testcase name="runScenario[&quot;Login screen rejects invalid or unsafe credentials&quot;, &quot;Account authentication validation&quot;](5)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.377">
+    <system-out><![CDATA[  When User attempts login with invalid credentials "" and ""        # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAttemptsInvalidLogin(java.lang.String,java.lang.String)
 
 @publicSafe @dtccAreas
 Scenario Outline: Validate primary DTCC website area coverage scope                                                                   # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:19
-  When User attempts login with invalid credentials "' OR '1'='1" and "anything" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAttemptsInvalidLogin(java.lang.String,java.lang.String)
+  Then The login error should be displayed                                        # com.dtcc.automation.stepdefs.OrderLifecycleSteps.loginErrorShouldBeDisplayed()
+  And The catalogue should remain hidden                                          # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldRemainHidden()
+  Then The login error should be displayed                           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.loginErrorShouldBeDisplayed()
+  When User authenticates with valid credentials "sdet_user" and "SecureP@ss1" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
   When User authenticates with valid credentials "demo_user" and "demo_password" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
-  Then The catalogue should be available                                            # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldBeAvailable()
-  Then The login error should be displayed                                       # com.dtcc.automation.stepdefs.OrderLifecycleSteps.loginErrorShouldBeDisplayed()
-  Then The catalogue should be available                                         # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldBeAvailable()
+  And The catalogue should remain hidden                             # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldRemainHidden()
 ]]></system-out>
+    <system-err><![CDATA[Jun 04, 2026 2:32:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:45 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Login screen accepts valid public-safe test credentials&quot;, &quot;Account authentication validation&quot;](6)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.05">
-    <system-out><![CDATA[  And The catalogue should remain hidden                                         # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldRemainHidden()
+  <testcase name="runScenario[&quot;Login screen rejects invalid or unsafe credentials&quot;, &quot;Account authentication validation&quot;](6)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.259">
+    <system-out><![CDATA[  Then The catalogue should be available                                       # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldBeAvailable()
+  When User attempts login with invalid credentials "script-alert-payload" and "demo_password" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAttemptsInvalidLogin(java.lang.String,java.lang.String)
 
 @publicSafe @dtccAreas
 Scenario Outline: Validate primary DTCC website area coverage scope                                                    # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:20
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Login screen rejects invalid or unsafe credentials&quot;, &quot;Account authentication validation&quot;](7)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.166">
-    <system-out><![CDATA[
-@publicSafe @dtccAreas
-Scenario Outline: Validate primary DTCC website area coverage scope                                                                  # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:21
-  When User attempts login with invalid credentials "" and ""        # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAttemptsInvalidLogin(java.lang.String,java.lang.String)
-]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:41 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:41 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](8)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.275">
-    <system-out><![CDATA[  When User authenticates with valid credentials "sdet_user" and "SecureP@ss1" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
-  Given I review the DTCC website area "News and Insights"                                                                    # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
-  When I document the expected public automation evidence "press releases, article pages, headlines, dates, and public links" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
-  Then the BDD report should show the area status as "Covered"                                                                # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
-
-@publicSafe @dtccAreas
-Scenario Outline: Validate primary DTCC website area coverage scope                                                          # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:22
-  When User attempts login with invalid credentials "bad_user" and "bad_password" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAttemptsInvalidLogin(java.lang.String,java.lang.String)
-  Then The login error should be displayed                           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.loginErrorShouldBeDisplayed()
-  Then The catalogue should be available                                       # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldBeAvailable()
-  And The catalogue should remain hidden                             # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldRemainHidden()
-  Then The login error should be displayed                                        # com.dtcc.automation.stepdefs.OrderLifecycleSteps.loginErrorShouldBeDisplayed()
-  And The catalogue should remain hidden                                          # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldRemainHidden()
-  Given I review the DTCC website area "Legal and Regulatory"                                                                 # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
-  When I document the expected public automation evidence "compliance content, legal links, terms, and regulatory references" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
-  Then the BDD report should show the area status as "Covered"                                                                # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
-]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:42 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:42 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:42 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:42 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;Login screen rejects invalid or unsafe credentials&quot;, &quot;Account authentication validation&quot;](10)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.044">
-    <system-out><![CDATA[
-@publicSafe @dtccAreas
-Scenario Outline: Validate public-safe backend/API behavior for report evidence # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:31
+  Then The login error should be displayed                                                     # com.dtcc.automation.stepdefs.OrderLifecycleSteps.loginErrorShouldBeDisplayed()
+  Then The catalogue should be available                                         # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldBeAvailable()
+  And The catalogue should remain hidden                                                       # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldRemainHidden()
   Given I review the DTCC website area "Products and Services"                                                                      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
-  When I document the expected public automation evidence "product taxonomy, landing pages, internal links, and template rendering" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Login screen accepts valid public-safe test credentials&quot;, &quot;Account authentication validation&quot;](7)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.047">
+    <system-out><![CDATA[  When I document the expected public automation evidence "product taxonomy, landing pages, internal links, and template rendering" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
   Then the BDD report should show the area status as "Covered"                                                                      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Login screen accepts valid public-safe test credentials&quot;, &quot;Account authentication validation&quot;](10)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.045"/>
-  <testcase name="runScenario[&quot;Login screen rejects invalid or unsafe credentials&quot;, &quot;Account authentication validation&quot;](11)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.067">
+  <testcase name="runScenario[&quot;Login screen accepts valid public-safe test credentials&quot;, &quot;Account authentication validation&quot;](8)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.006"/>
+  <testcase name="runScenario[&quot;Login screen rejects invalid or unsafe credentials&quot;, &quot;Account authentication validation&quot;](9)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.036">
     <system-out><![CDATA[
 @publicSafe @dtccAreas
-Scenario Outline: Validate public-safe backend/API behavior for report evidence # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:33
+Scenario Outline: Validate primary DTCC website area coverage scope                                                          # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:22
+
+@publicSafe @dtccAreas
+Scenario Outline: Validate primary DTCC website area coverage scope                                                                  # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:21
+
+@publicSafe @dtccAreas
+Scenario Outline: Validate public-safe backend/API behavior for report evidence # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:31
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](10)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.121">
+    <system-out><![CDATA[  When User authenticates with valid credentials "sdet_dtcc_user" and "SecureP@ss1" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
 
 @publicSafe @dtccAreas
 Scenario Outline: Validate public-safe backend/API behavior for report evidence # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:32
 ]]></system-out>
+    <system-err><![CDATA[Jun 04, 2026 2:32:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:46 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](12)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.023">
+  <testcase name="runScenario[&quot;Login screen accepts valid public-safe test credentials&quot;, &quot;Account authentication validation&quot;](11)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.334">
+    <system-out><![CDATA[
+@publicSafe @dtccAreas
+Scenario Outline: Validate public-safe backend/API behavior for report evidence # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:33
+  Then The catalogue should be available                                            # com.dtcc.automation.stepdefs.OrderLifecycleSteps.catalogueShouldBeAvailable()
+  Given I review the DTCC website area "News and Insights"                                                                    # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
+  When I document the expected public automation evidence "press releases, article pages, headlines, dates, and public links" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
+  Then the BDD report should show the area status as "Covered"                                                                # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
+  Given I review the DTCC website area "Legal and Regulatory"                                                                 # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
+  When I document the expected public automation evidence "compliance content, legal links, terms, and regulatory references" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
+  Then the BDD report should show the area status as "Covered"                                                                # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Jun 04, 2026 2:32:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:46 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](12)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.129">
     <system-out><![CDATA[
 @publicSafe @dtccAreas
 Scenario Outline: Validate public-safe backend/API behavior for report evidence # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:34
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](13)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.14">
+  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](13)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.097">
     <system-out><![CDATA[
 @publicSafe @dtccAreas
 Scenario Outline: Validate public-safe backend/API behavior for report evidence # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:35
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](14)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.9">
+  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](14)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.949">
     <system-out><![CDATA[
 @publicSafe @dtccAreas
 Scenario Outline: Validate public-safe backend/API behavior for report evidence # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:36
@@ -263,369 +260,368 @@ Scenario Outline: Validate public-safe backend/API behavior for report evidence 
   When I document the expected public automation evidence "career content, role navigation, employer information, and external links" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
   Then the BDD report should show the area status as "Covered"                                                                        # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
 ]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 04, 2026 2:32:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:47 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 04, 2026 2:32:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:47 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](15)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.942">
+  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](15)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.352">
     <system-out><![CDATA[
 @publicSafe @dtccAreas
 Scenario Outline: Validate public-safe backend/API behavior for report evidence # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:37
-  Given I review the DTCC website area "Search"                                                                              # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
-  When I document the expected public automation evidence "keyword search, result pages, empty states, and input validation" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
-  Then the BDD report should show the area status as "Covered"                                                               # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
   Given I review the DTCC website area "Global Trade Repository"                                                       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
   When I document the expected public automation evidence "dynamic tables, search, sorting, filtering, and pagination" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
   Then the BDD report should show the area status as "Covered"                                                         # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
 ]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:43 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 04, 2026 2:32:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:43 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:44 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:44 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:44 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:47 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](16)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.134">
+  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](17)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.502">
     <system-out><![CDATA[
 @publicSafe @dtccAreas
 Scenario Outline: Validate public-safe backend/API behavior for report evidence # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:38
-  Given I review the DTCC website area "PDF Document Library"                                                                        # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
-  When I document the expected public automation evidence "downloadable documents, content type, filename patterns, and text checks" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
-  Then the BDD report should show the area status as "Covered"                                                                       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
+  Given I prepare a public-safe backend check named "important notice search"   # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
+  When the mock API response status is 200 and key field is "resultCount"       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
+  Then the BDD report should record backend evidence "results returned"         # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
+  Given I prepare a public-safe backend check named "market status"             # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
+  When the mock API response status is 200 and key field is "status"            # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
+  Then the BDD report should record backend evidence "OPEN"                     # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
 ]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 04, 2026 2:32:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:44 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 04, 2026 2:32:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 04, 2026 2:32:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](17)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.235">
+  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](17)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.021">
     <system-out><![CDATA[
 @publicSafe @dtccAreas
 Scenario Outline: Validate database and reporting evidence for public-safe framework data # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:47
 ]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:44 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:44 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](18)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.279">
-    <system-out><![CDATA[  Given I prepare a public-safe backend check named "document metadata"         # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
-  When the mock API response status is 200 and key field is "contentType"       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
-  Then the BDD report should record backend evidence "application/pdf"          # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
-  Given I prepare a public-safe backend check named "client service directory"  # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
-  When the mock API response status is 200 and key field is "serviceGroup"      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
-  Then the BDD report should record backend evidence "Client Center"            # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
-
-@publicSafe @dtccAreas
-Scenario Outline: Validate database and reporting evidence for public-safe framework data # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:48
-  Given I prepare a public-safe backend check named "important notice search"   # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
-  When the mock API response status is 200 and key field is "resultCount"       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
-  Then the BDD report should record backend evidence "results returned"         # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
-]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:45 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:45 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](19)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.022"/>
-  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](20)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.024">
+  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](18)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.24">
     <system-out><![CDATA[
 @publicSafe @dtccAreas
-Scenario Outline: Validate database and reporting evidence for public-safe framework data # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:50
-
+Scenario Outline: Validate database and reporting evidence for public-safe framework data # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:48
+  Given I review the DTCC website area "Search"                                                                              # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
+  When I document the expected public automation evidence "keyword search, result pages, empty states, and input validation" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
+  Then the BDD report should show the area status as "Covered"                                                               # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
+  Given I review the DTCC website area "PDF Document Library"                                                                        # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iReviewTheDtccWebsiteArea(java.lang.String)
+  When I document the expected public automation evidence "downloadable documents, content type, filename patterns, and text checks" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iDocumentExpectedPublicAutomationEvidence(java.lang.String)
+  Then the BDD report should show the area status as "Covered"                                                                       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldShowAreaStatus(java.lang.String)
+]]></system-out>
+    <system-err><![CDATA[Jun 04, 2026 2:32:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate primary DTCC website area coverage scope&quot;, &quot;DTCC public website extended area coverage&quot;](19)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.06">
+    <system-out><![CDATA[
 @publicSafe @dtccAreas
 Scenario Outline: Validate database and reporting evidence for public-safe framework data # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:49
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](21)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.39">
+  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](20)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.159">
+    <system-out><![CDATA[  Given I prepare a public-safe backend check named "document metadata"         # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
+  When the mock API response status is 200 and key field is "contentType"       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
+  Then the BDD report should record backend evidence "application/pdf"          # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
+
+@publicSafe @dtccAreas
+Scenario Outline: Validate database and reporting evidence for public-safe framework data # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:50
+]]></system-out>
+    <system-err><![CDATA[Jun 04, 2026 2:32:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:49 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 04, 2026 2:32:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:49 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 04, 2026 2:32:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:49 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](21)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.236">
     <system-out><![CDATA[
 @publicSafe @dtccAreas
 Scenario Outline: Validate database and reporting evidence for public-safe framework data # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:51
   Given I prepare a public-safe backend check named "missing authorization"     # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
   When the mock API response status is 401 and key field is "error"             # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
   Then the BDD report should record backend evidence "unauthorized"             # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
-  Given I prepare a public-safe backend check named "market status"             # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
-  When the mock API response status is 200 and key field is "status"            # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
-  Then the BDD report should record backend evidence "OPEN"                     # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
   Given I prepare a public-safe backend check named "invalid search query"      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
   When the mock API response status is 400 and key field is "error"             # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
   Then the BDD report should record backend evidence "invalid_query"            # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
+  Given I prepare a public-safe backend check named "client service directory"  # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
+  When the mock API response status is 200 and key field is "serviceGroup"      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
+  Then the BDD report should record backend evidence "Client Center"            # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
 ]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:45 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](22)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.052">
+  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](22)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.047"/>
+  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](23)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.199">
     <system-out><![CDATA[
 @publicSafe @dtccAreas
 Scenario Outline: Validate database and reporting evidence for public-safe framework data # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:52
-]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:45 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:45 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](23)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.062">
-    <system-out><![CDATA[
+
 @publicSafe @dtccAreas
 Scenario Outline: Validate database and reporting evidence for public-safe framework data # src/test/resources/features/public-site/DtccAdditionalWebsiteCoverage.feature:53
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](24)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.43">
+  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](24)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.919">
     <system-out><![CDATA[
 @publicSite
 Scenario: Validate the DTCC home page loads with basic navigation # src/test/resources/features/public-site/DtccPublicWebsite.feature:8
+  Given I prepare a public-safe backend check named "API contract version"      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
+  When the mock API response status is 200 and key field is "version"           # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
+  Then the BDD report should record backend evidence "v1 compatible"            # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
   Given I prepare a public-safe backend check named "rate limit response"       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
   When the mock API response status is 429 and key field is "retryAfterSeconds" # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
   Then the BDD report should record backend evidence "retry window provided"    # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
 ]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](25)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="1.182">
-    <system-out><![CDATA[
-@publicSite
-Scenario Outline: Validate representative public content page templates # src/test/resources/features/public-site/DtccPublicWebsite.feature:20
-  Given I prepare a database validation named "settlement order persisted"                # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
-  When the SQL evidence references table or view "settlement_orders"                      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
-  Then the BDD report should record database result "PROCESSED"                           # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
-  Given I prepare a database validation named "reference data valid"                      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
-  When the SQL evidence references table or view "client_reference"                       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
-  Then the BDD report should record database result "VALID"                               # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
-  Given I prepare a database validation named "document access audited"                   # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
-  When the SQL evidence references table or view "document_downloads"                     # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
-  Then the BDD report should record database result "DOWNLOADED"                          # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
-]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 04, 2026 2:32:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:46 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:46 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:46 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:47 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](26)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.106">
+  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](25)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.24">
+    <system-out><![CDATA[
+@publicSite
+Scenario Outline: Validate representative public content page templates # src/test/resources/features/public-site/DtccPublicWebsite.feature:20
+]]></system-out>
+    <system-err><![CDATA[Jun 04, 2026 2:32:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](26)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.719">
     <system-out><![CDATA[
 @publicSite
 Scenario Outline: Validate representative public content page templates  # src/test/resources/features/public-site/DtccPublicWebsite.feature:21
+  Given I prepare a database validation named "settlement order persisted"                # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
+  When the SQL evidence references table or view "settlement_orders"                      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
+  Then the BDD report should record database result "PROCESSED"                           # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
+  Given I prepare a database validation named "order audit captured"                      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
+  When the SQL evidence references table or view "order_audit"                            # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
+  Given I prepare a database validation named "document access audited"                   # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
+  When the SQL evidence references table or view "document_downloads"                     # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
+  Then the BDD report should record database result "DOWNLOADED"                          # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
+  Given I prepare a database validation named "reference data valid"                      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
+  When the SQL evidence references table or view "client_reference"                       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
+  Then the BDD report should record database result "VALID"                               # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
+  Then the BDD report should record database result "ACCEPTED_TO_PROCESSED"               # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
 ]]></system-out>
+    <system-err><![CDATA[Jun 04, 2026 2:32:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:51 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 04, 2026 2:32:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:51 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Jun 04, 2026 2:32:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:51 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](27)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.257">
+  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](27)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.113">
     <system-out><![CDATA[
 @publicSite
 Scenario Outline: Validate representative public content page templates # src/test/resources/features/public-site/DtccPublicWebsite.feature:22
-  Given I prepare a public-safe backend check named "API contract version"      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPreparePublicSafeBackendCheckNamed(java.lang.String)
-  When the mock API response status is 200 and key field is "version"           # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.mockApiResponseStatusAndKeyField(int,java.lang.String)
-  Then the BDD report should record backend evidence "v1 compatible"            # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordBackendEvidence(java.lang.String)
 ]]></system-out>
+    <system-err><![CDATA[Jun 04, 2026 2:32:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:51 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate public-safe backend/API behavior for report evidence&quot;, &quot;DTCC public website extended area coverage&quot;](28)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.093">
+  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](28)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.04"/>
+  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](29)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.022">
     <system-out><![CDATA[
 @publicSite
 Scenario Outline: Validate representative public content page templates # src/test/resources/features/public-site/DtccPublicWebsite.feature:23
 ]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:47 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](29)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.519">
+  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](30)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.408">
     <system-out><![CDATA[
 @publicSite
 Scenario Outline: Validate representative public content page templates # src/test/resources/features/public-site/DtccPublicWebsite.feature:24
-  Given I prepare a database validation named "order audit captured"                      # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
-  When the SQL evidence references table or view "order_audit"                            # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
-  Then the BDD report should record database result "ACCEPTED_TO_PROCESSED"               # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
-  Given I prepare a database validation named "reconciliation matched"                    # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
-  When the SQL evidence references table or view "etl_reconciliation"                     # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
-  Then the BDD report should record database result "MATCHED"                             # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
-  Given I prepare a database validation named "stale records excluded"                    # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
-  When the SQL evidence references table or view "active_settlements_vw"                  # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
-  Then the BDD report should record database result "0_STALE_ROWS"                        # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
+
+Scenario Outline: Successful user login and complete checkout fulfillment workflow            # src/test/resources/features/trading-order-lifecycle/OrderE2E.feature:13
   Given I prepare a database validation named "PII masking applied"                       # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
   When the SQL evidence references table or view "reporting_customer_vw"                  # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
   Then the BDD report should record database result "MASKED"                              # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
 ]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 04, 2026 2:32:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:47 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:51 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:47 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:51 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:47 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:47 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:51 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](31)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.029">
-    <system-out><![CDATA[
-Scenario Outline: Successful user login and complete checkout fulfillment workflow            # src/test/resources/features/trading-order-lifecycle/OrderE2E.feature:13
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](31)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.003"/>
-  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](32)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.021">
-    <system-out><![CDATA[
-Scenario Outline: Successful user login and complete checkout fulfillment workflow            # src/test/resources/features/trading-order-lifecycle/OrderE2E.feature:14
+  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](31)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.295">
+    <system-out><![CDATA[  Given I prepare a database validation named "reconciliation matched"                    # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
+  When the SQL evidence references table or view "etl_reconciliation"                     # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
+  Then the BDD report should record database result "MATCHED"                             # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
 
-Scenario Outline: Successful user login and complete checkout fulfillment workflow            # src/test/resources/features/trading-order-lifecycle/OrderE2E.feature:15
+Scenario Outline: Successful user login and complete checkout fulfillment workflow            # src/test/resources/features/trading-order-lifecycle/OrderE2E.feature:14
+  Given I prepare a database validation named "stale records excluded"                    # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.iPrepareDatabaseValidationNamed(java.lang.String)
+  When the SQL evidence references table or view "active_settlements_vw"                  # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.sqlEvidenceReferencesTableOrView(java.lang.String)
+  Then the BDD report should record database result "0_STALE_ROWS"                        # com.dtcc.automation.stepdefs.DtccAdditionalWebsiteCoverageSteps.bddReportShouldRecordDatabaseResult(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Validate representative public content page templates&quot;, &quot;DTCC public website page coverage&quot;](33)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="2.846">
+  <testcase name="runScenario[&quot;Validate database and reporting evidence for public-safe framework data&quot;, &quot;DTCC public website extended area coverage&quot;](32)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.0">
+    <system-err><![CDATA[Jun 04, 2026 2:32:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:52 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate representative public content page templates&quot;, &quot;DTCC public website page coverage&quot;](33)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="2.32">
     <system-out><![CDATA[
+Scenario Outline: Successful user login and complete checkout fulfillment workflow            # src/test/resources/features/trading-order-lifecycle/OrderE2E.feature:15
+
 Scenario: Checkout cannot start before an item is selected                       # src/test/resources/features/trading-order-lifecycle/OrderE2E.feature:17
-  Given I open the DTCC public page "https://www.dtcc.com/news"         # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.iOpenTheDtccPublicPage(java.lang.String)
-  Given User is on the login screen                                                           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
-  Given User is on the login screen                                              # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
   Given I open the DTCC public page "https://www.dtcc.com/about"        # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.iOpenTheDtccPublicPage(java.lang.String)
   Given I open the DTCC public page "https://www.dtcc.com/client-center" # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.iOpenTheDtccPublicPage(java.lang.String)
-  Given User is on the login screen                                                           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
-  Then the DTCC page should load successfully                           # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.theDtccPageShouldLoadSuccessfully()
   Then the DTCC page should load successfully                            # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.theDtccPageShouldLoadSuccessfully()
-  Given I open the DTCC public page "https://www.dtcc.com/products"     # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.iOpenTheDtccPublicPage(java.lang.String)
-  Given I open the DTCC public page "https://www.dtcc.com/legal"        # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.iOpenTheDtccPublicPage(java.lang.String)
-  And the page should contain a visible content area                    # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.thePageShouldContainAVisibleContentArea()
-  Then the DTCC page should load successfully                           # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.theDtccPageShouldLoadSuccessfully()
   Then the DTCC page should load successfully                           # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.theDtccPageShouldLoadSuccessfully()
   And the page should contain a visible content area                     # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.thePageShouldContainAVisibleContentArea()
-  Then the DTCC page should load successfully                           # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.theDtccPageShouldLoadSuccessfully()
+  Given User is on the login screen                                                           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
+  And the page should contain a visible content area                    # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.thePageShouldContainAVisibleContentArea()
+  Given User is on the login screen                                                           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
+  Given I open the DTCC public page "https://www.dtcc.com/products"     # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.iOpenTheDtccPublicPage(java.lang.String)
 ]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 04, 2026 2:32:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:48 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:52 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:49 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:53 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:49 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:53 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:49 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:53 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:54 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:54 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:54 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jun 04, 2026 2:32:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:50 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-Jun 04, 2026 2:30:51 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:51 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:54 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Validate representative public content page templates&quot;, &quot;DTCC public website page coverage&quot;](34)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.109">
+  <testcase name="runScenario[&quot;Validate representative public content page templates&quot;, &quot;DTCC public website page coverage&quot;](34)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.026">
     <system-out><![CDATA[
 Scenario: Cart selection makes checkout available                                             # src/test/resources/features/trading-order-lifecycle/OrderE2E.feature:23
-  Given User is on the login screen                                                           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
-  And the page should contain a visible content area                    # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.thePageShouldContainAVisibleContentArea()
 ]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Validate representative public content page templates&quot;, &quot;DTCC public website page coverage&quot;](35)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.212">
-    <system-out><![CDATA[  And the page should contain a visible content area                    # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.thePageShouldContainAVisibleContentArea()
-  And the page should contain a visible content area                    # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.thePageShouldContainAVisibleContentArea()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Validate representative public content page templates&quot;, &quot;DTCC public website page coverage&quot;](36)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.268"/>
-  <testcase name="runScenario[&quot;Validate representative public content page templates&quot;, &quot;DTCC public website page coverage&quot;](37)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.348">
-    <system-out><![CDATA[  Given I open the DTCC public home page                          # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.iOpenTheDtccPublicHomePage()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Checkout cannot start before an item is selected&quot;, &quot;End to End Order Lifecycle Validation&quot;](38)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="1.116">
-    <system-out><![CDATA[  Then the DTCC page should load successfully                     # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.theDtccPageShouldLoadSuccessfully()
-  When User authenticates with valid credentials "demo_user" and "demo_password" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
-  When User authenticates with valid credentials "demo_user" and "demo_password"              # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
-  When User authenticates with valid credentials "sdet_dtcc_user" and "SecureP@ss1"           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
-  And User opens the cart before selecting an item                               # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userOpensCartBeforeSelectingItem()
-  Given User is on the login screen                                                           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
-  Then The checkout action should remain unavailable                             # com.dtcc.automation.stepdefs.OrderLifecycleSteps.checkoutActionShouldRemainUnavailable()
-  And User adds a specific item "HighVolumeEquity_X1" from the catalogue to the shopping cart # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAddsItem(java.lang.String)
-  And User adds a specific item "HighVolumeEquity_X1" from the catalogue to the shopping cart # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAddsItem(java.lang.String)
-  When User authenticates with valid credentials "sdet_user" and "SecureP@ss1"                # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
-]]></system-out>
-    <system-err><![CDATA[Jun 04, 2026 2:30:52 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[Jun 04, 2026 2:32:54 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-Jun 04, 2026 2:30:52 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+Jun 04, 2026 2:32:54 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Successful user login and complete checkout fulfillment workflow&quot;, &quot;End to End Order Lifecycle Validation&quot;](39)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="1.68">
-    <system-out><![CDATA[  And User adds a specific item "HighVolumeEquity_X1" from the catalogue to the shopping cart # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAddsItem(java.lang.String)
-  And User converts the cart contents into a finalized order                                  # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userConvertsCart()
-  And User converts the cart contents into a finalized order                                  # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userConvertsCart()
-  And User submits a valid payment processing profile                                         # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userSubmitsPayment()
-  And User converts the cart contents into a finalized order                                  # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userConvertsCart()
-  Then The order confirmation payload should display a successful transition status           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.orderConfirmationShouldBeSuccessful()
+  <testcase name="runScenario[&quot;Validate representative public content page templates&quot;, &quot;DTCC public website page coverage&quot;](35)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.362">
+    <system-out><![CDATA[  Then the DTCC page should load successfully                           # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.theDtccPageShouldLoadSuccessfully()
+  Given I open the DTCC public page "https://www.dtcc.com/legal"        # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.iOpenTheDtccPublicPage(java.lang.String)
+  Given User is on the login screen                                                           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
+  Given User is on the login screen                                              # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
+  And the page should contain a visible content area                    # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.thePageShouldContainAVisibleContentArea()
+  Then the DTCC page should load successfully                           # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.theDtccPageShouldLoadSuccessfully()
+  Given I open the DTCC public page "https://www.dtcc.com/news"         # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.iOpenTheDtccPublicPage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate representative public content page templates&quot;, &quot;DTCC public website page coverage&quot;](36)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.489">
+    <system-out><![CDATA[  And the page should contain a visible content area                    # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.thePageShouldContainAVisibleContentArea()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate representative public content page templates&quot;, &quot;DTCC public website page coverage&quot;](37)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="0.782">
+    <system-out><![CDATA[  Then the DTCC page should load successfully                           # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.theDtccPageShouldLoadSuccessfully()
+  Given I open the DTCC public home page                          # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.iOpenTheDtccPublicHomePage()
+  And the page should contain a visible content area                    # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.thePageShouldContainAVisibleContentArea()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Checkout cannot start before an item is selected&quot;, &quot;End to End Order Lifecycle Validation&quot;](38)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="1.588">
+    <system-out><![CDATA[  Then the DTCC page should load successfully                     # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.theDtccPageShouldLoadSuccessfully()
+  Given User is on the login screen                                                           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userIsOnLoginScreen()
+  When User authenticates with valid credentials "sdet_dtcc_user" and "SecureP@ss1"           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
   When User authenticates with valid credentials "demo_user" and "demo_password"              # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
-  And User submits a valid payment processing profile                                         # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userSubmitsPayment()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;Successful user login and complete checkout fulfillment workflow&quot;, &quot;End to End Order Lifecycle Validation&quot;](40)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="1.808">
-    <system-out><![CDATA[  And User submits a valid payment processing profile                                         # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userSubmitsPayment()
-  Then The order confirmation payload should display a successful transition status           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.orderConfirmationShouldBeSuccessful()
+  When User authenticates with valid credentials "demo_user" and "demo_password" # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
+  When User authenticates with valid credentials "sdet_user" and "SecureP@ss1"                # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
   And User adds a specific item "HighVolumeEquity_X1" from the catalogue to the shopping cart # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAddsItem(java.lang.String)
+  And User adds a specific item "HighVolumeEquity_X1" from the catalogue to the shopping cart # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAddsItem(java.lang.String)
+  And User opens the cart before selecting an item                               # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userOpensCartBeforeSelectingItem()
+  And User adds a specific item "HighVolumeEquity_X1" from the catalogue to the shopping cart # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAddsItem(java.lang.String)
+  Then The checkout action should remain unavailable                             # com.dtcc.automation.stepdefs.OrderLifecycleSteps.checkoutActionShouldRemainUnavailable()
 ]]></system-out>
+    <system-err><![CDATA[Jun 04, 2026 2:32:55 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+Jun 04, 2026 2:32:55 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.178. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.21.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Successful user login and complete checkout fulfillment workflow&quot;, &quot;End to End Order Lifecycle Validation&quot;](41)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="1.892">
-    <system-out><![CDATA[  Then The order confirmation payload should display a successful transition status           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.orderConfirmationShouldBeSuccessful()
+  <testcase name="runScenario[&quot;Successful user login and complete checkout fulfillment workflow&quot;, &quot;End to End Order Lifecycle Validation&quot;](39)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="2.059">
+    <system-out><![CDATA[  And User converts the cart contents into a finalized order                                  # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userConvertsCart()
+  When User authenticates with valid credentials "demo_user" and "demo_password"              # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAuthenticatesPlain(java.lang.String,java.lang.String)
+  And User converts the cart contents into a finalized order                                  # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userConvertsCart()
+  And User converts the cart contents into a finalized order                                  # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userConvertsCart()
+  And User adds a specific item "HighVolumeEquity_X1" from the catalogue to the shopping cart # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userAddsItem(java.lang.String)
+  And User submits a valid payment processing profile                                         # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userSubmitsPayment()
+  And User submits a valid payment processing profile                                         # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userSubmitsPayment()
+  Then The order confirmation payload should display a successful transition status           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.orderConfirmationShouldBeSuccessful()
+  And User submits a valid payment processing profile                                         # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userSubmitsPayment()
   And User opens the cart before selecting an item                                            # com.dtcc.automation.stepdefs.OrderLifecycleSteps.userOpensCartBeforeSelectingItem()
+  Then The order confirmation payload should display a successful transition status           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.orderConfirmationShouldBeSuccessful()
   Then The checkout action should become available                                            # com.dtcc.automation.stepdefs.OrderLifecycleSteps.checkoutActionShouldBecomeAvailable()
+  Then The order confirmation payload should display a successful transition status           # com.dtcc.automation.stepdefs.OrderLifecycleSteps.orderConfirmationShouldBeSuccessful()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;Cart selection makes checkout available&quot;, &quot;End to End Order Lifecycle Validation&quot;](42)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="1.958"/>
-  <testcase name="runScenario[&quot;Validate the DTCC home page loads with basic navigation&quot;, &quot;DTCC public website page coverage&quot;](43)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="3.901">
+  <testcase name="runScenario[&quot;Successful user login and complete checkout fulfillment workflow&quot;, &quot;End to End Order Lifecycle Validation&quot;](40)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="2.103"/>
+  <testcase name="runScenario[&quot;Cart selection makes checkout available&quot;, &quot;End to End Order Lifecycle Validation&quot;](41)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="2.103"/>
+  <testcase name="runScenario[&quot;Successful user login and complete checkout fulfillment workflow&quot;, &quot;End to End Order Lifecycle Validation&quot;](42)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="2.133"/>
+  <testcase name="runScenario[&quot;Validate the DTCC home page loads with basic navigation&quot;, &quot;DTCC public website page coverage&quot;](43)" classname="com.dtcc.automation.runners.CucumberTestRunner" time="4.24">
     <system-out><![CDATA[  And the page should show public site navigation                 # com.dtcc.automation.stepdefs.DtccPublicWebsiteSteps.thePageShouldShowPublicSiteNavigation()
 ]]></system-out>
   </testcase>
