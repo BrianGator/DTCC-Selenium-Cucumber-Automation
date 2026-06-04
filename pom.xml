@@ -25,6 +25,7 @@
         <selenide.version>7.3.0</selenide.version>
         <allure.version>2.35.2</allure.version>
         <allure.maven.version>3.0.1</allure.maven.version>
+        <allure.report.version>2.29.0</allure.report.version>
         <suiteXmlFile>src/test/resources/testng-suites/allure-ui-suite.xml</suiteXmlFile>
         <env>qa</env>
         <browser>chrome</browser>
@@ -159,6 +160,7 @@
                 <configuration>
                     <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
                     <reportDirectory>${project.build.directory}/site/allure-report</reportDirectory>
+                    <reportVersion>${allure.report.version}</reportVersion>
                 </configuration>
             </plugin>
         </plugins>
