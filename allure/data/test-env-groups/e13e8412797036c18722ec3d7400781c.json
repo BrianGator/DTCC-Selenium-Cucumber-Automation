@@ -1,1 +1,0 @@
-{"id":"e13e8412797036c18722ec3d7400781c","fullName":"com.dtcc.automation.reports.DtccPublicAllureShowcaseTest.restSearchEndpointRejectsScriptPayload","name":"REST search endpoint protects against script query payload","status":"passed","testResultsByEnv":{"default":"a52975d63c9e38d61023aa2fb364e648"}}

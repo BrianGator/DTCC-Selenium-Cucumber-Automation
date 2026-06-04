@@ -1,1 +1,0 @@
-[{"name":"Website","values":["https://www.dtcc.com/"]},{"name":"Browser","values":["Chrome Headless"]},{"name":"Test_Profile","values":["allure-ui"]},{"name":"Intentional_Failures","values":["false"]},{"name":"Public_Safe_Mode","values":["true"]},{"name":"Data_Source","values":["Mock UI, WireMock REST API, H2 database"]}]
