@@ -11,7 +11,6 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Story;
-import io.qameta.allure.Suite;
 import io.qameta.allure.Step;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
@@ -39,7 +38,6 @@ import static org.hamcrest.Matchers.lessThan;
 
 @Epic("DTCC Public Website Automation")
 @Feature("Expanded Allure UI, Security, and REST API Coverage")
-@Suite("DTCC Public Allure Showcase")
 @Owner("Brian McCarthy")
 @Link(name = "DTCC public website", url = "https://www.dtcc.com/")
 public class DtccPublicAllureShowcaseTest extends UiTestBase {
