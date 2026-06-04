@@ -1,0 +1,59 @@
+name: Selenium Allure Report UI Example
+
+on:
+  workflow_dispatch:
+    inputs:
+      test_profile:
+        description: Maven profile to run
+        required: true
+        default: allure-ui
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  test-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+
+      - name: Set up Chrome
+        uses: browser-actions/setup-chrome@v1
+        with:
+          chrome-version: stable
+
+      - name: Run tests
+        run: |
+          mvn -B clean test -P${{ github.event.inputs.test_profile }} \
+            -Dbrowser=chrome \
+            -Dheadless=true \
+            -Dallure.results.directory=target/allure-results
+
+      - name: Prepare Allure history
+        if: always()
+        run: bash scripts/prepare-allure-history.sh target/allure-results
+
+      - name: Generate Allure report
+        if: always()
+        run: mvn -B allure:report -Dallure.results.directory=target/allure-results
+
+      - name: Build report portal
+        if: always()
+        run: bash scripts/build-report-portal.sh target/report-portal
+
+      - name: Upload portal artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: report-portal
+          path: target/report-portal
