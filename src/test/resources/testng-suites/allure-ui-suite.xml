@@ -9,6 +9,7 @@
             <class name="com.dtcc.automation.reports.AllureEnabledUiReportTest"/>
             <class name="com.dtcc.automation.reports.DtccPublicAllureShowcaseTest"/>
             <class name="com.dtcc.automation.reports.DtccExtendedAllureCoverageTest"/>
+            <class name="com.dtcc.automation.reports.DtccAdditionalAllureCoverageTest"/>
             <class name="com.dtcc.automation.ui.LoginValidationTest"/>
             <class name="com.dtcc.automation.ui.SeleniumOrderLifecycleTest"/>
             <class name="com.dtcc.automation.api.BackendTransactionTest"/>
