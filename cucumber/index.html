@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DTCC Cucumber BDD Report</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f6f8fb; color: #172033; }
+    header { background: #0f172a; color: white; padding: 28px 32px; }
+    main { max-width: 1000px; margin: 0 auto; padding: 28px 24px 48px; }
+    .card { background: white; border: 1px solid #d9e1ee; border-radius: 8px; padding: 20px; margin-bottom: 18px; box-shadow: 0 4px 14px rgba(15, 23, 42, .06); }
+    a.button { display: inline-block; background: #2563eb; color: white; text-decoration: none; padding: 11px 14px; border-radius: 8px; margin: 6px 6px 6px 0; }
+    a.secondary { background: #374151; }
+    code { background: #e5e7eb; padding: 2px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Cucumber BDD Report</h1>
+    <p>Business-readable feature/scenario evidence for the DTCC public-safe automation framework.</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>BDD Report Links</h2>
+      <p>If the current workflow profile ran Cucumber, open the generated HTML or JSON below.</p>
+      <a class="button" href="cucumber-pretty.html">Open Cucumber HTML</a>
+      <a class="button secondary" href="CucumberTestReport.json">Open Cucumber JSON</a>
+    </section>
+    <section class="card">
+      <h2>When This Page Has No Generated Cucumber HTML</h2>
+      <p>The default <code>allure-ui</code> profile focuses on the Allure/TestNG report. To generate fresh BDD output, run a workflow profile that includes <code>com.dtcc.automation.runners.CucumberTestRunner</code>.</p>
+      <p>The runner is configured to write <code>target/cucumber-reports/cucumber-pretty.html</code> and <code>target/cucumber-reports/CucumberTestReport.json</code>.</p>
+    </section>
+    <section class="card">
+      <h2>Best Report Pairing</h2>
+      <p>Use <a href="../allure/index.html">Allure</a> for engineering diagnostics and this Cucumber view for feature/scenario language.</p>
+    </section>
+  </main>
+</body>
+</html>

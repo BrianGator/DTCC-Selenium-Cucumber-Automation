@@ -1,143 +1,319 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="5" failed="0" skipped="1">
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-04T00:16:45 UTC" name="DTCC Allure UI Report Suite" finished-at="2026-06-04T00:16:58 UTC" duration-ms="13259">
+  <suite started-at="2026-06-04T01:08:52 UTC" name="DTCC Core UI Automation Suite" finished-at="2026-06-04T01:09:06 UTC" duration-ms="13305">
     <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2026-06-04T00:16:45 UTC" name="Allure Annotated UI Tests" finished-at="2026-06-04T00:16:58 UTC" duration-ms="13259">
-      <class name="com.dtcc.automation.api.BackendTransactionTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.dtcc.automation.api.BackendTransactionTest@5dafbe45]" started-at="2026-06-04T00:16:55 UTC" name="setup" finished-at="2026-06-04T00:16:56 UTC" duration-ms="963" status="PASS">
+    <test started-at="2026-06-04T01:08:52 UTC" name="Cucumber UI E2E Workflows" finished-at="2026-06-04T01:09:06 UTC" duration-ms="13305">
+      <class name="com.dtcc.automation.runners.CucumberTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:52 UTC" name="setUpClass" finished-at="2026-06-04T01:08:53 UTC" duration-ms="397" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7de62196]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateTransactionLifecycleAndDatabaseState()[pri:0, instance:com.dtcc.automation.api.BackendTransactionTest@5dafbe45]" started-at="2026-06-04T00:16:56 UTC" name="validateTransactionLifecycleAndDatabaseState" finished-at="2026-06-04T00:16:58 UTC" duration-ms="1981" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:53 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:08:58 UTC" duration-ms="5124" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login screen rejects invalid or unsafe credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account authentication validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateTransactionLifecycleAndDatabaseState -->
-        <test-method is-config="true" signature="cleanup()[pri:0, instance:com.dtcc.automation.api.BackendTransactionTest@5dafbe45]" started-at="2026-06-04T00:16:58 UTC" name="cleanup" finished-at="2026-06-04T00:16:58 UTC" duration-ms="7" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:53 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:08:58 UTC" duration-ms="5246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login screen accepts valid public-safe test credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account authentication validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cleanup -->
-      </class> <!-- com.dtcc.automation.api.BackendTransactionTest -->
-      <class name="com.dtcc.automation.ui.SeleniumOrderLifecycleTest">
-        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:16:54 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:16:55 UTC" duration-ms="304" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:53 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:08:58 UTC" duration-ms="4949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login screen accepts valid public-safe test credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account authentication validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpUiDriver -->
-        <test-method signature="userCanCompleteFullOrderLifecycleWithSelenium()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:16:55 UTC" name="userCanCompleteFullOrderLifecycleWithSelenium" description="Selenium validates login, catalogue selection, cart, checkout, submit, and confirmation" finished-at="2026-06-04T00:16:55 UTC" duration-ms="624" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:53 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:08:58 UTC" duration-ms="5159" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login screen accepts valid public-safe test credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account authentication validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userCanCompleteFullOrderLifecycleWithSelenium -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:16:55 UTC" name="tearDown" finished-at="2026-06-04T00:16:55 UTC" duration-ms="71" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:53 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:08:58 UTC" duration-ms="5262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login screen rejects invalid or unsafe credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account authentication validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.ui.SeleniumOrderLifecycleTest@7fb4f2a9]" started-at="2026-06-04T00:16:55 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:16:55 UTC" duration-ms="0" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:53 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:08:57 UTC" duration-ms="4847" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login screen rejects invalid or unsafe credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account authentication validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownUiDriver -->
-      </class> <!-- com.dtcc.automation.ui.SeleniumOrderLifecycleTest -->
-      <class name="com.dtcc.automation.ui.LoginValidationTest">
-        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:16:54 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:16:54 UTC" duration-ms="304" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:53 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:08:58 UTC" duration-ms="5155" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Login screen rejects invalid or unsafe credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Account authentication validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpUiDriver -->
-        <test-method signature="validUserCanLoginToMockOrderApplication()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:16:54 UTC" name="validUserCanLoginToMockOrderApplication" description="Valid login displays the catalogue area in the local mock app" finished-at="2026-06-04T00:16:54 UTC" duration-ms="317" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:53 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:09:05 UTC" duration-ms="12807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate the DTCC home page loads with basic navigation"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DTCC public website page coverage"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validUserCanLoginToMockOrderApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:16:54 UTC" name="tearDown" finished-at="2026-06-04T00:16:54 UTC" duration-ms="70" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:53 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:08:59 UTC" duration-ms="6826" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate representative public content page templates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DTCC public website page coverage"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.ui.LoginValidationTest@1b919693]" started-at="2026-06-04T00:16:54 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:16:54 UTC" duration-ms="1" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:53 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:08:59 UTC" duration-ms="6855" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate representative public content page templates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DTCC public website page coverage"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownUiDriver -->
-      </class> <!-- com.dtcc.automation.ui.LoginValidationTest -->
-      <class name="com.dtcc.automation.reports.AllureEnabledUiReportTest">
-        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:45 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:16:52 UTC" duration-ms="6648" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:58 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:09:03 UTC" duration-ms="5249" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate representative public content page templates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DTCC public website page coverage"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpUiDriver -->
-        <test-method signature="intentionalFailureCreatesAllureDefectExample()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:52 UTC" name="intentionalFailureCreatesAllureDefectExample" description="Intentional Allure failure example for defect management" finished-at="2026-06-04T00:16:52 UTC" duration-ms="20" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Intentional failure demo skipped. Run with -DincludeIntentionalFailures=true.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Intentional failure demo skipped. Run with -DincludeIntentionalFailures=true.
-at com.dtcc.automation.reports.AllureEnabledUiReportTest.intentionalFailureCreatesAllureDefectExample(AllureEnabledUiReportTest.java:48)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:58 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:09:03 UTC" duration-ms="5157" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate representative public content page templates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DTCC public website page coverage"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- intentionalFailureCreatesAllureDefectExample -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:52 UTC" name="tearDown" finished-at="2026-06-04T00:16:52 UTC" duration-ms="75" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:58 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:09:03 UTC" duration-ms="5497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful user login and complete checkout fulfillment workflow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["End to End Order Lifecycle Validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:52 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:16:52 UTC" duration-ms="1" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:58 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:09:03 UTC" duration-ms="5406" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful user login and complete checkout fulfillment workflow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["End to End Order Lifecycle Validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownUiDriver -->
-        <test-method is-config="true" signature="setUpUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:52 UTC" name="setUpUiDriver" finished-at="2026-06-04T00:16:52 UTC" duration-ms="314" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:58 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:09:03 UTC" duration-ms="5257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful user login and complete checkout fulfillment workflow"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["End to End Order Lifecycle Validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUpUiDriver -->
-        <test-method signature="orderLifecycleProducesDetailedAllureReport()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:52 UTC" name="orderLifecycleProducesDetailedAllureReport" description="Allure-enabled order flow should complete successfully" finished-at="2026-06-04T00:16:54 UTC" duration-ms="1347" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:58 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:09:03 UTC" duration-ms="5172" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate representative public content page templates"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DTCC public website page coverage"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- orderLifecycleProducesDetailedAllureReport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:54 UTC" name="tearDown" finished-at="2026-06-04T00:16:54 UTC" duration-ms="77" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:58 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:09:02 UTC" duration-ms="3983" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Checkout cannot start before an item is selected"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["End to End Order Lifecycle Validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDownUiDriver()[pri:0, instance:com.dtcc.automation.reports.AllureEnabledUiReportTest@194fad1]" started-at="2026-06-04T00:16:54 UTC" name="tearDownUiDriver" finished-at="2026-06-04T00:16:54 UTC" duration-ms="0" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:08:59 UTC" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-06-04T01:09:03 UTC" duration-ms="3786" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Cart selection makes checkout available"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["End to End Order Lifecycle Validation"]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDownUiDriver -->
-      </class> <!-- com.dtcc.automation.reports.AllureEnabledUiReportTest -->
-      <class name="com.dtcc.automation.database.SqlDatabaseValidationTest">
-        <test-method signature="validatesSettlementOrdersUsingExampleSqlData()[pri:0, instance:com.dtcc.automation.database.SqlDatabaseValidationTest@2254127a]" started-at="2026-06-04T00:16:58 UTC" name="validatesSettlementOrdersUsingExampleSqlData" description="Creates H2 SQL schema, loads example data, and validates settlement status counts" finished-at="2026-06-04T00:16:58 UTC" duration-ms="10" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.dtcc.automation.runners.CucumberTestRunner@34bde49d]" started-at="2026-06-04T01:09:05 UTC" name="tearDownClass" finished-at="2026-06-04T01:09:05 UTC" duration-ms="50" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatesSettlementOrdersUsingExampleSqlData -->
-      </class> <!-- com.dtcc.automation.database.SqlDatabaseValidationTest -->
-    </test> <!-- Allure Annotated UI Tests -->
-  </suite> <!-- DTCC Allure UI Report Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.dtcc.automation.runners.CucumberTestRunner -->
+    </test> <!-- Cucumber UI E2E Workflows -->
+  </suite> <!-- DTCC Core UI Automation Suite -->
 </testng-results>
