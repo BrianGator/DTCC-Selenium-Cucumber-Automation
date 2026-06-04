@@ -1,0 +1,31 @@
+pipeline {
+  agent any
+
+  parameters {
+    choice(name: 'TEST_PROFILE', choices: ['allure-ui', 'ui', 'api', 'selenide', 'public-site'], description: 'Maven profile')
+    booleanParam(name: 'INCLUDE_DEMO_FAILURES', defaultValue: false, description: 'Run sample failing tests')
+  }
+
+  stages {
+    stage('Checkout') {
+      steps { checkout scm }
+    }
+    stage('Compile') {
+      steps { sh 'mvn -B clean compile test-compile -DskipTests' }
+    }
+    stage('Run automated tests') {
+      steps {
+        sh 'mvn -B test -P${TEST_PROFILE} -Dbrowser=chrome -Dheadless=true -DincludeIntentionalFailures=${INCLUDE_DEMO_FAILURES} -Dallure.results.directory=target/allure-results'
+      }
+      post {
+        always {
+          junit allowEmptyResults: true, testResults: 'target/surefire-reports/*.xml'
+          archiveArtifacts allowEmptyArchive: true, artifacts: 'target/allure-results/**,target/failed-test-screenshots/**'
+        }
+      }
+    }
+    stage('Generate Allure') {
+      steps { sh 'mvn -B allure:report' }
+    }
+  }
+}
