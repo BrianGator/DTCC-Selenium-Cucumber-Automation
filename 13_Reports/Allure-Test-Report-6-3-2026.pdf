@@ -1,0 +1,1388 @@
+%PDF-1.4
+%PDFX ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 10 0 R /MediaBox [ 0 0 792 612 ] /Parent 9 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/Contents 11 0 R /MediaBox [ 0 0 792 612 ] /Parent 9 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/Contents 12 0 R /MediaBox [ 0 0 792 612 ] /Parent 9 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+7 0 obj
+<<
+/PageMode /UseNone /Pages 9 0 R /Type /Catalog
+>>
+endobj
+8 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20260604023524+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260604023524+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+9 0 obj
+<<
+/Count 3 /Kids [ 4 0 R 5 0 R 6 0 R ] /Type /Pages
+>>
+endobj
+10 0 obj
+<<
+/Length 9148
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 8 Tf 9.6 TL ET
+.294118 .333333 .388235 rg
+BT 1 0 0 1 333.384 25.2 Tm (Written by Brian McCarthy | Page 1) Tj T* ET
+Q
+q
+1 0 0 1 38.4 549.6 cm
+q
+.058824 .090196 .164706 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 223.11 0 Td (Allure Test Report - 6/3/2026) Tj T* -223.11 0 Td ET
+Q
+Q
+q
+1 0 0 1 38.4 525.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Generated report capture date: 6/3/2026. Source: public GitHub Pages dashboard and repository report artifacts.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 517.6 cm
+Q
+q
+1 0 0 1 38.4 485.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Allure Report Navigation Tabs) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 349.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 128 741.6 -16 re f*
+1 1 1 rg
+n 0 112 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 96 741.6 -16 re f*
+1 1 1 rg
+n 0 80 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 64 741.6 -16 re f*
+1 1 1 rg
+n 0 48 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 32 741.6 -16 re f*
+1 1 1 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 115 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Tab) Tj T* ET
+Q
+Q
+q
+1 0 0 1 104.8 115 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Displayed/covered data) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 99 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Overview) Tj T* ET
+Q
+Q
+q
+1 0 0 1 104.8 99 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Overall test case count, pass percentage, report time window, trend visualization, suites summary, environment, test case details.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Categories) Tj T* ET
+Q
+Q
+q
+1 0 0 1 104.8 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Allure category navigation tab displayed in the report sidebar.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Suites) Tj T* ET
+Q
+Q
+q
+1 0 0 1 104.8 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Suite grouping for API, Login, Selenium, Selenide, Cucumber, SQL Database, Security, Intentional Failure Demo.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Graphs) Tj T* ET
+Q
+Q
+q
+1 0 0 1 104.8 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Graph/trend section available from Allure sidebar.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Timeline) Tj T* ET
+Q
+Q
+q
+1 0 0 1 104.8 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Timeline tab available from Allure sidebar.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Behaviors) Tj T* ET
+Q
+Q
+q
+1 0 0 1 104.8 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Behaviors tab available from Allure sidebar.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Packages) Tj T* ET
+Q
+Q
+q
+1 0 0 1 104.8 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Packages tab available from Allure sidebar.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 128 m 741.6 128 l S
+n 0 0 m 741.6 0 l S
+n 0 0 m 0 128 l S
+n 741.6 0 m 741.6 128 l S
+n 0 112 m 741.6 112 l S
+n 0 96 m 741.6 96 l S
+n 0 80 m 741.6 80 l S
+n 0 64 m 741.6 64 l S
+n 0 48 m 741.6 48 l S
+n 0 32 m 741.6 32 l S
+n 0 16 m 741.6 16 l S
+n 100.8 0 m 100.8 128 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 341.6 cm
+Q
+q
+1 0 0 1 38.4 309.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Overview Metrics) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 205.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 96 741.6 -16 re f*
+1 1 1 rg
+n 0 80 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 64 741.6 -16 re f*
+1 1 1 rg
+n 0 48 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 32 741.6 -16 re f*
+1 1 1 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Field) Tj T* ET
+Q
+Q
+q
+1 0 0 1 176.8 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Value) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Report title) Tj T* ET
+Q
+Q
+q
+1 0 0 1 176.8 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (ALLURE REPORT 6/3/2026) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Time window) Tj T* ET
+Q
+Q
+q
+1 0 0 1 176.8 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (5:06 PM - 5:21 PM \(15m 13s\)) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Test cases) Tj T* ET
+Q
+Q
+q
+1 0 0 1 176.8 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (21) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Pass percentage shown) Tj T* ET
+Q
+Q
+q
+1 0 0 1 176.8 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (76.19%) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Trend) Tj T* ET
+Q
+Q
+q
+1 0 0 1 176.8 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Allure test trend chart displayed on dashboard) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 96 m 741.6 96 l S
+n 0 0 m 741.6 0 l S
+n 0 0 m 0 96 l S
+n 741.6 0 m 741.6 96 l S
+n 0 80 m 741.6 80 l S
+n 0 64 m 741.6 64 l S
+n 0 48 m 741.6 48 l S
+n 0 32 m 741.6 32 l S
+n 0 16 m 741.6 16 l S
+n 172.8 0 m 172.8 96 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 197.6 cm
+Q
+q
+1 0 0 1 38.4 165.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Suites - 9 Items Total) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 45.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 112 741.6 -16 re f*
+1 1 1 rg
+n 0 96 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 80 741.6 -16 re f*
+1 1 1 rg
+n 0 64 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 48 741.6 -16 re f*
+1 1 1 rg
+n 0 32 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 99 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Suite) Tj T* ET
+Q
+Q
+q
+1 0 0 1 198.4 99 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Passed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4 99 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Failed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 99 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Skipped) Tj T* ET
+Q
+Q
+q
+1 0 0 1 414.4 99 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Displayed result) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (API Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 198.4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (5) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 414.4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (100% passed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Login Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 198.4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (4) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 414.4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (100% passed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Selenium Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 198.4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 414.4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (3 passed / 1 failed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Selenide Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 198.4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 414.4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (100% passed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Cucumber Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 198.4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 414.4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (100% passed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (SQL Database Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 198.4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 414.4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (100% passed) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 112 m 741.6 112 l S
+n 0 0 m 0 112 l S
+n 741.6 0 m 741.6 112 l S
+n 0 0 m 741.6 0 l S
+n 0 96 m 741.6 96 l S
+n 0 80 m 741.6 80 l S
+n 0 64 m 741.6 64 l S
+n 0 48 m 741.6 48 l S
+n 0 32 m 741.6 32 l S
+n 0 16 m 741.6 16 l S
+n 194.4 0 m 194.4 112 l S
+n 266.4 0 m 266.4 112 l S
+n 338.4 0 m 338.4 112 l S
+n 410.4 0 m 410.4 112 l S
+Q
+Q
+Q
+ 
+endstream
+endobj
+11 0 obj
+<<
+/Length 6369
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 8 Tf 9.6 TL ET
+.294118 .333333 .388235 rg
+BT 1 0 0 1 333.384 25.2 Tm (Written by Brian McCarthy | Page 2) Tj T* ET
+Q
+q
+1 0 0 1 38.4 525.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 48 741.6 -16 re f*
+1 1 1 rg
+n 0 32 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Suite) Tj T* ET
+Q
+Q
+q
+1 0 0 1 198.4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Passed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Failed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Skipped) Tj T* ET
+Q
+Q
+q
+1 0 0 1 414.4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Displayed result) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Security Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 198.4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 414.4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1 passed / 1 failed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Intentional Failure Demo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 198.4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 270.4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 414.4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1 failed / 2 skipped) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 48 m 741.6 48 l S
+n 0 32 m 0 48 l S
+n 0 0 m 0 32 l S
+n 741.6 32 m 741.6 48 l S
+n 741.6 0 m 741.6 32 l S
+n 0 0 m 741.6 0 l S
+n 0 32 m 741.6 32 l S
+n 194.4 32 m 194.4 48 l S
+n 266.4 32 m 266.4 48 l S
+n 338.4 32 m 338.4 48 l S
+n 410.4 32 m 410.4 48 l S
+n 0 16 m 741.6 16 l S
+n 194.4 0 m 194.4 32 l S
+n 266.4 0 m 266.4 32 l S
+n 338.4 0 m 338.4 32 l S
+n 410.4 0 m 410.4 32 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 517.6 cm
+Q
+q
+1 0 0 1 38.4 485.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Environment Fields) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 381.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 96 741.6 -16 re f*
+1 1 1 rg
+n 0 80 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 64 741.6 -16 re f*
+1 1 1 rg
+n 0 48 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 32 741.6 -16 re f*
+1 1 1 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Field) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Value) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Browser) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Chrome Headless) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Java) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (JDK 17) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Build Tool) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Maven) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Executor) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (GitHub Actions / Jenkins compatible) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Base URL) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Public-safe mock app + dtcc.com public pages) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 96 m 741.6 96 l S
+n 0 0 m 741.6 0 l S
+n 0 0 m 0 96 l S
+n 741.6 0 m 741.6 96 l S
+n 0 80 m 741.6 80 l S
+n 0 64 m 741.6 64 l S
+n 0 48 m 741.6 48 l S
+n 0 32 m 741.6 32 l S
+n 0 16 m 741.6 16 l S
+n 158.4 0 m 158.4 96 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 373.6 cm
+Q
+q
+1 0 0 1 38.4 341.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Test Case Details) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 253.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 80 741.6 -16 re f*
+1 1 1 rg
+n 0 64 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 48 741.6 -16 re f*
+1 1 1 rg
+n 0 32 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Test) Tj T* ET
+Q
+Q
+q
+1 0 0 1 256 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Status) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Purpose) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (validLoginShowsCataloguePanel) Tj T* ET
+Q
+Q
+q
+1 0 0 1 256 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASSED) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Selenide auto-wait login validation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (validateTransactionLifecycleAndDatabaseState) Tj T* ET
+Q
+Q
+q
+1 0 0 1 256 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASSED) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (REST Assured + SQL persistence validation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (publicSiteShouldReturnCommonSecurityHeaders) Tj T* ET
+Q
+Q
+q
+1 0 0 1 256 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (FAILED) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Example defect: expected header not present) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (intentionalApiContractFailureForReportDemo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 256 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (FAILED) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Intentional sample failure for report demonstration) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 80 m 741.6 80 l S
+n 0 0 m 741.6 0 l S
+n 0 0 m 0 80 l S
+n 741.6 0 m 741.6 80 l S
+n 0 64 m 741.6 64 l S
+n 0 48 m 741.6 48 l S
+n 0 32 m 741.6 32 l S
+n 0 16 m 741.6 16 l S
+n 252 0 m 252 80 l S
+n 338.4 0 m 338.4 80 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 245.6 cm
+Q
+ 
+endstream
+endobj
+12 0 obj
+<<
+/Length 4200
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 8 Tf 9.6 TL ET
+.294118 .333333 .388235 rg
+BT 1 0 0 1 333.384 25.2 Tm (Written by Brian McCarthy | Page 3) Tj T* ET
+Q
+q
+1 0 0 1 38.4 553.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Passed Test Evidence) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 471.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 74 741.6 -16 re f*
+1 1 1 rg
+n 0 58 741.6 -26 re f*
+.972549 .980392 .988235 rg
+n 0 32 741.6 -16 re f*
+1 1 1 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 61 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Test) Tj T* ET
+Q
+Q
+q
+1 0 0 1 256 61 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Evidence) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASSED - validLoginShowsCataloguePanel) Tj T* ET
+Q
+Q
+q
+1 0 0 1 256 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 12 Tm /F1 8 Tf 10 TL (Selenide opened the local mock app, submitted valid credentials, and auto-waited for the catalogue panel. Path:) Tj T* (full-selenium-framework-from-scratch/selenide-wrapper) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASSED - validateTransactionLifecycleAndDatabaseState) Tj T* ET
+Q
+Q
+q
+1 0 0 1 256 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (REST Assured validated the mock API response, then the H2 database check confirmed the transaction row and status.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASSED - publicSiteSmokeLoadsHomePage) Tj T* ET
+Q
+Q
+q
+1 0 0 1 256 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Selenium/Selenide public-site smoke test confirmed page title/body rendering and public navigation availability.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 74 m 741.6 74 l S
+n 0 0 m 741.6 0 l S
+n 0 0 m 0 74 l S
+n 741.6 0 m 741.6 74 l S
+n 0 58 m 741.6 58 l S
+n 0 32 m 741.6 32 l S
+n 0 16 m 741.6 16 l S
+n 252 0 m 252 74 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 463.6 cm
+Q
+q
+1 0 0 1 38.4 431.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Failed Test / Defect Evidence) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 335.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 88 763.2 -16 re f*
+1 1 1 rg
+n 0 72 763.2 -36 re f*
+.972549 .980392 .988235 rg
+n 0 36 763.2 -36 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Failed test) Tj T* ET
+Q
+Q
+q
+1 0 0 1 205.6 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Defect type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 378.4 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Expected) Tj T* ET
+Q
+Q
+q
+1 0 0 1 544 75 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Actual / Stack detail) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 59 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (publicSiteShouldReturnCommonSecurityHeaders) Tj T* ET
+Q
+Q
+q
+1 0 0 1 205.6 59 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Security header expectation mismatch) Tj T* ET
+Q
+Q
+q
+1 0 0 1 378.4 49 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 12 Tm /F1 8 Tf 10 TL (Public response includes a required security) Tj T* (header.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 544 39 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 22 Tm /F1 8 Tf 10 TL (Header missing in sample response.) Tj T* (java.lang.AssertionError: Expected security header was not) Tj T* (present at SecurityHeadersTest.java:42) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 23 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (intentionalApiContractFailureForReportDemo) Tj T* ET
+Q
+Q
+q
+1 0 0 1 205.6 13 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 12 Tm /F1 8 Tf 10 TL (Intentional API contract failure for report) Tj T* (demonstration) Tj T* ET
+Q
+Q
+q
+1 0 0 1 378.4 23 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (JSON content type) Tj T* ET
+Q
+Q
+q
+1 0 0 1 544 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 22 Tm /F1 8 Tf 10 TL (Received text/plain. This test is gated behind) Tj T* (-DincludeIntentionalFailures=true. Assertion at) Tj T* (IntentionalFailureExampleTest.java:27) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 88 m 763.2 88 l S
+n 0 0 m 763.2 0 l S
+n 0 0 m 0 88 l S
+n 763.2 0 m 763.2 88 l S
+n 0 72 m 763.2 72 l S
+n 0 36 m 763.2 36 l S
+n 201.6 0 m 201.6 88 l S
+n 374.4 0 m 374.4 88 l S
+n 540 0 m 540 88 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 327.6 cm
+Q
+ 
+endstream
+endobj
+xref
+0 13
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000515 00000 n 
+0000000709 00000 n 
+0000000903 00000 n 
+0000000971 00000 n 
+0000001251 00000 n 
+0000001322 00000 n 
+0000010522 00000 n 
+0000016943 00000 n 
+trailer
+<<
+/ID 
+[<98b6e9effdf4384127bb21cee3a19f12><98b6e9effdf4384127bb21cee3a19f12>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 8 0 R
+/Root 7 0 R
+/Size 13
+>>
+startxref
+21195
+%%EOF

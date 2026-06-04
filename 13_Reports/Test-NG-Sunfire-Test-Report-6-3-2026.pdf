@@ -1,0 +1,886 @@
+%PDF-1.4
+%PDFX ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 9 0 R /MediaBox [ 0 0 792 612 ] /Parent 8 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/Contents 10 0 R /MediaBox [ 0 0 792 612 ] /Parent 8 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/PageMode /UseNone /Pages 8 0 R /Type /Catalog
+>>
+endobj
+7 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20260604023524+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260604023524+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+8 0 obj
+<<
+/Count 2 /Kids [ 4 0 R 5 0 R ] /Type /Pages
+>>
+endobj
+9 0 obj
+<<
+/Length 8366
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 8 Tf 9.6 TL ET
+.294118 .333333 .388235 rg
+BT 1 0 0 1 333.384 25.2 Tm (Written by Brian McCarthy | Page 1) Tj T* ET
+Q
+q
+1 0 0 1 38.4 549.6 cm
+q
+.058824 .090196 .164706 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 169.76 0 Td (TestNG / Surefire Test Report - 6/3/2026) Tj T* -169.76 0 Td ET
+Q
+Q
+q
+1 0 0 1 38.4 525.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Generated report capture date: 6/3/2026. Source: public GitHub Pages dashboard and repository report artifacts.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 517.6 cm
+Q
+q
+1 0 0 1 38.4 485.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Surefire/TestNG Runner Evidence Page) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 453.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 15 Tm /F1 9 Tf 12 TL (Surefire is secondary raw CI evidence. Use Allure as the primary UI report; use this page for Maven/TestNG XML, skipped intentional demos, and runner diagnostics. Stable) Tj T* (failures/errors should be 0. Intentional demos are skipped unless enabled.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 421.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Raw Files Displayed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 365.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 48 741.6 -16 re f*
+1 1 1 rg
+n 0 32 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (File) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Purpose) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (emailable-report.html) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (TestNG HTML runner summary when generated.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (testng-results.xml) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Raw pass/fail/skip XML used for troubleshooting CI results.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 48 m 741.6 48 l S
+n 0 0 m 741.6 0 l S
+n 0 0 m 0 48 l S
+n 741.6 0 m 741.6 48 l S
+n 0 32 m 741.6 32 l S
+n 0 16 m 741.6 16 l S
+n 180 0 m 180 48 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 357.6 cm
+Q
+q
+1 0 0 1 38.4 325.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Sample Maven Surefire Report) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 221.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 96 655.2 -16 re f*
+1 1 1 rg
+n 0 80 655.2 -16 re f*
+.972549 .980392 .988235 rg
+n 0 64 655.2 -16 re f*
+1 1 1 rg
+n 0 48 655.2 -16 re f*
+.972549 .980392 .988235 rg
+n 0 32 655.2 -16 re f*
+1 1 1 rg
+n 0 16 655.2 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Suite) Tj T* ET
+Q
+Q
+q
+1 0 0 1 328 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 385.6 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Passed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 450.4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Failed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 515.2 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Skipped) Tj T* ET
+Q
+Q
+q
+1 0 0 1 580 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Time) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (com.dtcc.automation.api.BackendTransactionTest) Tj T* ET
+Q
+Q
+q
+1 0 0 1 328 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 385.6 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 450.4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 515.2 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 580 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1.21s) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (com.dtcc.automation.ui.LoginValidationTest) Tj T* ET
+Q
+Q
+q
+1 0 0 1 328 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 385.6 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 450.4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 515.2 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 580 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (2.08s) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (com.dtcc.automation.selenide.SelenideLoginValidationTest) Tj T* ET
+Q
+Q
+q
+1 0 0 1 328 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 385.6 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 450.4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 515.2 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 580 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1.75s) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (com.dtcc.automation.security.SecurityHeadersTest) Tj T* ET
+Q
+Q
+q
+1 0 0 1 328 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 385.6 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 450.4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 515.2 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 580 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0.89s) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (com.dtcc.automation.reports.IntentionalFailureExampleTest) Tj T* ET
+Q
+Q
+q
+1 0 0 1 328 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (3) Tj T* ET
+Q
+Q
+q
+1 0 0 1 385.6 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 450.4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 515.2 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (2) Tj T* ET
+Q
+Q
+q
+1 0 0 1 580 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0.46s) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 96 m 655.2 96 l S
+n 0 0 m 655.2 0 l S
+n 0 0 m 0 96 l S
+n 655.2 0 m 655.2 96 l S
+n 0 80 m 655.2 80 l S
+n 0 64 m 655.2 64 l S
+n 0 48 m 655.2 48 l S
+n 0 32 m 655.2 32 l S
+n 0 16 m 655.2 16 l S
+n 324 0 m 324 96 l S
+n 381.6 0 m 381.6 96 l S
+n 446.4 0 m 446.4 96 l S
+n 511.2 0 m 511.2 96 l S
+n 576 0 m 576 96 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 213.6 cm
+Q
+q
+1 0 0 1 38.4 181.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Raw TestNG XML Summary) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 61.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 112 741.6 -16 re f*
+1 1 1 rg
+n 0 96 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 80 741.6 -16 re f*
+1 1 1 rg
+n 0 64 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 48 741.6 -16 re f*
+1 1 1 rg
+n 0 32 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 99 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Field) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 99 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Value) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (skipped) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 83 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (failed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 67 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (1) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (ignored) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (0) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (total) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (8) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (passed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (7) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (suite name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (DTCC Test Case Showcase Suite) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 112 m 741.6 112 l S
+n 0 0 m 741.6 0 l S
+n 0 0 m 0 112 l S
+n 741.6 0 m 741.6 112 l S
+n 0 96 m 741.6 96 l S
+n 0 80 m 741.6 80 l S
+n 0 64 m 741.6 64 l S
+n 0 48 m 741.6 48 l S
+n 0 32 m 741.6 32 l S
+n 0 16 m 741.6 16 l S
+n 180 0 m 180 112 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 53.6 cm
+Q
+ 
+endstream
+endobj
+10 0 obj
+<<
+/Length 3450
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 8 Tf 9.6 TL ET
+.294118 .333333 .388235 rg
+BT 1 0 0 1 333.384 25.2 Tm (Written by Brian McCarthy | Page 2) Tj T* ET
+Q
+q
+1 0 0 1 38.4 557.6 cm
+q
+.066667 .094118 .152941 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (TestNG Test Methods) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 445.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 106 741.6 -16 re f*
+1 1 1 rg
+n 0 90 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 74 741.6 -16 re f*
+1 1 1 rg
+n 0 58 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 42 741.6 -16 re f*
+1 1 1 rg
+n 0 26 741.6 -26 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Test group) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Class) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Method) Tj T* ET
+Q
+Q
+q
+1 0 0 1 587.2 93 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Status / Exception) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (API Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (BackendTransactionTest) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (validateTransactionLifecycleAndDatabaseState) Tj T* ET
+Q
+Q
+q
+1 0 0 1 587.2 77 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 61 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Login Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 61 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (LoginValidationTest) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 61 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (validUserCanLoginToMockOrderApplication) Tj T* ET
+Q
+Q
+q
+1 0 0 1 587.2 61 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Selenium Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (SeleniumOrderLifecycleTest) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (userCanCompleteFullOrderLifecycleWithSelenium) Tj T* ET
+Q
+Q
+q
+1 0 0 1 587.2 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 29 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (SQL Database Tests) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 29 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (SqlDatabaseValidationTest) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 29 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (validatesSettlementOrdersUsingExampleSqlData) Tj T* ET
+Q
+Q
+q
+1 0 0 1 587.2 29 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (PASS) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 13 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Reporting Demonstration) Tj T* ET
+Q
+Q
+q
+1 0 0 1 162.4 13 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (SampleFailure) Tj T* ET
+Q
+Q
+q
+1 0 0 1 342.4 13 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (missingTitleKeyword) Tj T* ET
+Q
+Q
+q
+1 0 0 1 587.2 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 12 Tm /F1 8 Tf 10 TL (FAIL - AssertionError: Expected public) Tj T* (page title to contain required keyword.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 106 m 741.6 106 l S
+n 0 0 m 741.6 0 l S
+n 0 0 m 0 106 l S
+n 741.6 0 m 741.6 106 l S
+n 0 90 m 741.6 90 l S
+n 0 74 m 741.6 74 l S
+n 0 58 m 741.6 58 l S
+n 0 42 m 741.6 42 l S
+n 0 26 m 741.6 26 l S
+n 158.4 0 m 158.4 106 l S
+n 338.4 0 m 338.4 106 l S
+n 583.2 0 m 583.2 106 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 437.6 cm
+Q
+ 
+endstream
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000514 00000 n 
+0000000708 00000 n 
+0000000776 00000 n 
+0000001056 00000 n 
+0000001121 00000 n 
+0000009538 00000 n 
+trailer
+<<
+/ID 
+[<40fd104ee17ad1ad3881aa8af554c7dd><40fd104ee17ad1ad3881aa8af554c7dd>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 7 0 R
+/Root 6 0 R
+/Size 11
+>>
+startxref
+13040
+%%EOF

@@ -1,0 +1,565 @@
+%PDF-1.4
+%PDFX ReportLab Generated PDF document (opensource)
+1 0 obj
+<<
+/F1 2 0 R /F2 3 0 R
+>>
+endobj
+2 0 obj
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
+endobj
+3 0 obj
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
+endobj
+4 0 obj
+<<
+/Contents 9 0 R /MediaBox [ 0 0 792 612 ] /Parent 8 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+5 0 obj
+<<
+/Contents 10 0 R /MediaBox [ 0 0 792 612 ] /Parent 8 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
+endobj
+6 0 obj
+<<
+/PageMode /UseNone /Pages 8 0 R /Type /Catalog
+>>
+endobj
+7 0 obj
+<<
+/Author (\(anonymous\)) /CreationDate (D:20260604023524+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20260604023524+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
+endobj
+8 0 obj
+<<
+/Count 2 /Kids [ 4 0 R 5 0 R ] /Type /Pages
+>>
+endobj
+9 0 obj
+<<
+/Length 6584
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 8 Tf 9.6 TL ET
+.294118 .333333 .388235 rg
+BT 1 0 0 1 333.384 25.2 Tm (Written by Brian McCarthy | Page 1) Tj T* ET
+Q
+q
+1 0 0 1 38.4 549.6 cm
+q
+.058824 .090196 .164706 rg
+BT 1 0 0 1 0 4 Tm /F2 20 Tf 24 TL 202 0 Td (Cucumber Test Report - 6/3/2026) Tj T* -202 0 Td ET
+Q
+Q
+q
+1 0 0 1 38.4 525.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Generated report capture date: 6/3/2026. Source: public GitHub Pages dashboard and repository report artifacts.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 517.6 cm
+Q
+q
+1 0 0 1 38.4 485.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Cucumber BDD Report Page) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 465.6 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 3 Tm /F1 9 Tf 12 TL (Cucumber is the business-readable report for feature and scenario coverage. Use Allure as the main evidence dashboard and this page for Given/When/Then traceability.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 433.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Report Links Displayed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 361.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 64 741.6 -16 re f*
+1 1 1 rg
+n 0 48 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 32 741.6 -16 re f*
+1 1 1 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Link) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Target / purpose) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Open Cucumber HTML) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Business-readable Cucumber HTML report) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Open Cucumber JSON) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Raw JSON scenario data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Back to consolidated portal) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Return to portfolio report dashboard) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 64 m 741.6 64 l S
+n 0 0 m 741.6 0 l S
+n 0 0 m 0 64 l S
+n 741.6 0 m 741.6 64 l S
+n 0 48 m 741.6 48 l S
+n 0 32 m 741.6 32 l S
+n 0 16 m 741.6 16 l S
+n 180 0 m 180 64 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 353.6 cm
+Q
+q
+1 0 0 1 38.4 321.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Expected Evidence Fields) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 249.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 64 741.6 -16 re f*
+1 1 1 rg
+n 0 48 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 32 741.6 -16 re f*
+1 1 1 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Feature Area) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (What Should Display) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Account authentication) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Valid login, invalid credentials, blank credentials, and validation behavior.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Order lifecycle) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Catalog selection, cart, checkout, payment, and confirmation scenarios.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (DTCC public site) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Public-safe page coverage for home, client center, notices, legal, products, and news.) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 64 m 741.6 64 l S
+n 0 0 m 741.6 0 l S
+n 0 0 m 0 64 l S
+n 741.6 0 m 741.6 64 l S
+n 0 48 m 741.6 48 l S
+n 0 32 m 741.6 32 l S
+n 0 16 m 741.6 16 l S
+n 180 0 m 180 64 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 241.6 cm
+Q
+q
+1 0 0 1 38.4 209.6 cm
+q
+.117647 .227451 .541176 rg
+BT 1 0 0 1 0 4 Tm /F2 16 Tf 20 TL (Cucumber JSON Scenario Data) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 153.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 48 741.6 -16 re f*
+1 1 1 rg
+n 0 32 741.6 -16 re f*
+.972549 .980392 .988235 rg
+n 0 16 741.6 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Field) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Value) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Feature name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (End to End E-Commerce Order Lifecycle Validation) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Scenario name) Tj T* ET
+Q
+Q
+q
+1 0 0 1 184 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Successful user login and complete checkout fulfillment workflow) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 48 m 741.6 48 l S
+n 0 0 m 741.6 0 l S
+n 0 0 m 0 48 l S
+n 741.6 0 m 741.6 48 l S
+n 0 32 m 741.6 32 l S
+n 0 16 m 741.6 16 l S
+n 180 0 m 180 48 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 145.6 cm
+Q
+q
+1 0 0 1 38.4 119.6 cm
+q
+.066667 .094118 .152941 rg
+BT 1 0 0 1 0 4 Tm /F2 12 Tf 16 TL (Given / When / Then Steps) Tj T* ET
+Q
+Q
+q
+1 0 0 1 38.4 49.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 64 676.8 -16 re f*
+1 1 1 rg
+n 0 48 676.8 -16 re f*
+.972549 .980392 .988235 rg
+n 0 32 676.8 -16 re f*
+1 1 1 rg
+n 0 16 676.8 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Step) Tj T* ET
+Q
+Q
+q
+1 0 0 1 551.2 51 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Status) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Given User is on the login screen) Tj T* ET
+Q
+Q
+q
+1 0 0 1 551.2 35 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (passed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (When User authenticates with valid credentials) Tj T* ET
+Q
+Q
+q
+1 0 0 1 551.2 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (passed) Tj T* ET
+Q
+Q
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (And User adds a specific item from the catalogue) Tj T* ET
+Q
+Q
+q
+1 0 0 1 551.2 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (passed) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 64 m 676.8 64 l S
+n 0 0 m 0 64 l S
+n 676.8 0 m 676.8 64 l S
+n 0 0 m 676.8 0 l S
+n 0 48 m 676.8 48 l S
+n 0 32 m 676.8 32 l S
+n 0 16 m 676.8 16 l S
+n 547.2 0 m 547.2 64 l S
+Q
+Q
+Q
+ 
+endstream
+endobj
+10 0 obj
+<<
+/Length 1047
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+BT /F1 8 Tf 9.6 TL ET
+.294118 .333333 .388235 rg
+BT 1 0 0 1 333.384 25.2 Tm (Written by Brian McCarthy | Page 2) Tj T* ET
+Q
+q
+1 0 0 1 38.4 541.6 cm
+q
+.858824 .917647 .996078 rg
+n 0 32 676.8 -16 re f*
+1 1 1 rg
+n 0 16 676.8 -16 re f*
+.058824 .090196 .164706 rg
+BT /F2 10 Tf 12 TL ET
+q
+1 0 0 1 4 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Step) Tj T* ET
+Q
+Q
+q
+1 0 0 1 551.2 19 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Status) Tj T* ET
+Q
+Q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 4 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (Then The order confirmation payload should display a successful transition status) Tj T* ET
+Q
+Q
+q
+1 0 0 1 551.2 3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 8 Tf 10 TL (passed) Tj T* ET
+Q
+Q
+q
+1 J
+1 j
+.796078 .835294 .882353 RG
+.25 w
+n 0 32 m 676.8 32 l S
+n 0 16 m 0 32 l S
+n 0 0 m 0 16 l S
+n 676.8 16 m 676.8 32 l S
+n 676.8 0 m 676.8 16 l S
+n 0 0 m 676.8 0 l S
+n 0 16 m 676.8 16 l S
+n 547.2 16 m 547.2 32 l S
+n 547.2 0 m 547.2 16 l S
+Q
+Q
+Q
+q
+1 0 0 1 38.4 533.6 cm
+Q
+ 
+endstream
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000514 00000 n 
+0000000708 00000 n 
+0000000776 00000 n 
+0000001056 00000 n 
+0000001121 00000 n 
+0000007756 00000 n 
+trailer
+<<
+/ID 
+[<9d2de69cacc5c5dc3b69bb59f2aefef9><9d2de69cacc5c5dc3b69bb59f2aefef9>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 7 0 R
+/Root 6 0 R
+/Size 11
+>>
+startxref
+8855
+%%EOF
